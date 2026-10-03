@@ -27,26 +27,24 @@ so players never run into GitHub's API limits. A GitHub Action rebuilds `index.j
 | [Apocatremors](https://github.com/DeonUrist/Apocatremors) | Desert ambushes while you drive |
 | [Apocaunloader](https://github.com/DeonUrist/Apocaunloader) | Hold R to unload your gun |
 
-## Getting your mod listed
+## For mod makers: getting your mod listed
 
-**[Open a "Submit a mod" issue](../../issues/new?template=submit-mod.yml)** and fill in the form. An automatic check comments within a
-minute or two. When the maintainer has looked at the mod, the **approved** label lists it, and the issue closes itself.
+1. **Public GitHub repository** for your mod.
+2. **Every release**: tag = version (`v1.2.0`), the same version in your `[BepInPlugin]`, and a **`.zip` attached** that unpacks into
+   `BepInEx\plugins` (`YourMod.dll`, or a `YourMod\` folder with the DLL and its files; a README at the zip root is ignored).
+3. **Icon** (optional, recommended): a square PNG, 64×64, light lines on a transparent background. Ship it in the zip as
+   `YourMod\icon.png` (mod in its own folder) or `YourMod.png` next to a single `YourMod.dll`. Without one, players see your initials.
+4. **Settings in the Mods window** (optional): bind `Config.Bind("General", "Apocasetter", true, "Show this mod in the Apocasetter Mods menu");`
+   and give every config entry a clear description.
+5. **Submit once**: **[open a "Submit a mod" issue](../../issues/new?template=submit-mod.yml)** and fill in the form, or open a pull request
+   that adds `mods/<your GUID>.json` (format below). An automatic check comments within a minute or two; the maintainer lists the mod by
+   adding the **approved** label.
 
-Or open a pull request that adds `mods/<your GUID>.json` (format below). The same checks run on the pull request.
-
-What your mod needs:
-
-- a **public GitHub repository**;
-- a **GitHub release** whose tag is the version (`v1.2.0` or `1.2.0`, compared as numbers);
-- a **`.zip` attached to the release** containing your plugin DLL. Any of these layouts works:
-  `YourMod.dll` · `YourMod/YourMod.dll` (+ your assets) · `BepInEx/plugins/YourMod/...`. A README at the zip root is ignored;
-- the DLL must contain your plugin GUID (it does if it has `[BepInPlugin("your.guid", ...)]`).
-
-After that you only publish releases as usual. The next hourly run picks them up and players are offered the update.
+After that you only publish releases as usual: the hourly index build picks them up, and players get an update badge and a one-click
+install in the Mods window.
 
 What approval means: the maintainer has looked at the mod and the repository. Later releases are not reviewed by hand, but every one
-goes through the automatic checks (zip readable, no paths that escape the plugin folder, DLL with the same GUID) before players are
-offered it.
+goes through the automatic checks (zip readable, no paths outside the plugin folder, a DLL with the same GUID) before players are offered it.
 
 ## Entry format (`mods/<guid>.json`)
 
