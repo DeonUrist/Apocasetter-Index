@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-03T22:09:14Z",
+  "generated": "2026-10-03T22:53:12Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -19,6 +19,10 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
       "latest": {
         "version": "1.0.2",
         "tag": "v1.0.2",
@@ -65,6 +69,10 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
       "latest": {
         "version": "1.5.3",
         "tag": "v1.5.3",
@@ -110,6 +118,10 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
       "latest": {
         "version": "1.20.3",
         "tag": "v1.20.3",
@@ -151,6 +163,10 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
       "latest": {
         "version": "1.5.0",
         "tag": "v1.5.0",
@@ -196,6 +212,15 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": true,
+      "deprecatedReason": "Apocaraider has been split into four mods you can pick separately. Install the ones you want and disable Apocaraider: running it together with them applies the same features twice.",
+      "replacedBy": [
+        "com.denis.apocalypter.gunplay",
+        "com.denis.apocalypter.gunplayhud",
+        "com.denis.apocalypter.npcai",
+        "com.denis.apocalypter.womenofwasteland"
+      ],
+      "replaces": [],
       "latest": {
         "version": "1.7.0",
         "tag": "v1.7.0",
@@ -237,6 +262,10 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
       "latest": {
         "version": "1.7.1",
         "tag": "v1.7.1",
@@ -279,32 +308,18 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
       "latest": {
-        "version": "2.0.6",
-        "tag": "v2.0.6",
-        "title": "Apocasetter 2.0.6",
-        "published": "2026-10-03T22:07:55Z",
-        "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.0.6",
-        "notes": "## Apocasetter 2.0.6\r\n\r\n**Fix: CHECK FOR UPDATES could keep showing an old list.** On some PCs a cache between the game and GitHub (in Windows, the internet provider or antivirus web filtering) kept answering with an index that was hours old, so new releases didn't show up even after pressing CHECK FOR UPDATES. CHECK FOR UPDATES now asks GitHub directly for the current list, and every request tells caches on the way not to answer. `BepInEx\\LogOutput.log` now shows when the list it received was built.\r\n\r\n**Install / update**\r\n- From the Mods window: CHECK FOR UPDATES → Apocasetter → UPDATE → QUIT GAME TO APPLY.\r\n- By hand: unzip into the game folder (the zip holds `BepInEx/plugins/Apocasetter/` and `BepInEx/patchers/Apocasetter.Installer.dll`). Requires BepInEx 5.x.",
-        "zip": {
-          "name": "Apocasetter-2.0.6.zip",
-          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v2.0.6/Apocasetter-2.0.6.zip",
-          "size": 319673,
-          "assetId": 608619042,
-          "updated": "2026-10-03T22:08:57Z",
-          "sha256": "19946201fcc4c5853a88b51b6290e8680903fc408e6d71b9d88a8778f98d90c6",
-          "extractTo": "BepInEx",
-          "stripPrefix": "BepInEx/",
-          "topFolder": null,
-          "dlls": [
-            "plugins/Apocasetter/Apocasetter.dll",
-            "patchers/Apocasetter.Installer.dll"
-          ],
-          "guidDll": "plugins/Apocasetter/Apocasetter.dll",
-          "skip": [
-            "README.md"
-          ]
-        }
+        "version": "2.0.7",
+        "tag": "v2.0.7",
+        "title": "Apocasetter 2.0.7",
+        "published": "2026-10-03T22:53:00Z",
+        "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.0.7",
+        "notes": "## Apocasetter 2.0.7\n\n**Retired mods and their replacements.** When a mod is retired in the Apocasetter index, the Mods window now says so:\n- A **DEPRECATED** badge in the list, and on the mod's page the reason plus buttons for the mods that take over (✓ when you already have them). **INSTALL ALL** installs the replacements in one go.\n- Retired mods are no longer offered for install.\n- Installing a replacement also disables the old mod at the next start, so the same features don't run twice. If you already have both, both pages show a warning with a **DISABLE** button.\n\nFirst use: **Apocaraider** is split into **Gunplay**, **Gunplay HUD**, **NPCAI** and **Women of Wasteland**. Pick the ones you want; Apocaraider gets disabled when you install them.\n\nAlso: icons for the four new mods, and \"no release yet\" for listed mods that have no release.\n\n**Install / update**\n- From the Mods window: CHECK FOR UPDATES → Apocasetter → UPDATE → QUIT GAME TO APPLY.\n- By hand: unzip into the game folder (the zip holds `BepInEx/plugins/Apocasetter/` and `BepInEx/patchers/Apocasetter.Installer.dll`). Requires BepInEx 5.x.",
+        "zip": null
       },
       "error": null
     },
@@ -326,6 +341,10 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
       "latest": {
         "version": "1.3.1",
         "tag": "v1.3.1",
@@ -370,6 +389,10 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
       "latest": {
         "version": "1.2.0",
         "tag": "v1.2.0",
@@ -411,6 +434,10 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
       "latest": {
         "version": "1.1.1",
         "tag": "v1.1.1",
@@ -433,6 +460,220 @@
           ],
           "guidDll": "Apocaunloader.dll",
           "skip": []
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.gunplay",
+      "name": "Gunplay",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/Gunplay",
+      "summary": "Real bullets: travel time, tracers, range falloff, headshots, shotgun pellets, vehicle and wheel damage. Part of what was Apocaraider.",
+      "tags": [
+        "combat",
+        "weapons",
+        "vehicles"
+      ],
+      "requires": [],
+      "optional": [
+        "com.denis.apocalypter.npcai",
+        "com.denis.apocalypter.gunplayhud",
+        "com.denis.apocalypter.apocapatrol"
+      ],
+      "pluginFolder": "Gunplay",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [
+        "com.denis.apocalypter.apocaraider"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "title": "Gunplay 1.0.0",
+        "published": "2026-10-03T22:47:50Z",
+        "page": "https://github.com/DeonUrist/Gunplay/releases/tag/v1.0.0",
+        "notes": "First standalone release. Projectile simulation for player and NPC shots: glowing tracers and crossbow bolts with travel time, per-weapon effective range and damage falloff, headshots, shotgun pellets, vehicle damage/penetration, wheel damage and detachment, corpse hit blood and stab sounds, human boss health. NPCAI and GunplayHUD hook in automatically when installed.\r\n\r\nPart of the Apocaraider split: **Gunplay**, **GunplayHUD**, **NPCAI** and **WomenOfWasteland** replace the combined Apocaraider (now frozen). Each works on its own and with any combination of the others. **Remove Apocaraider** when installing these, otherwise its hooks run twice. Old Apocaraider settings are imported on first run.\r\n\r\n**Install:** unzip into `BepInEx\\plugins` (creates `BepInEx\\plugins\\Gunplay\\`).",
+        "zip": {
+          "name": "Gunplay-1.0.0.zip",
+          "url": "https://github.com/DeonUrist/Gunplay/releases/download/v1.0.0/Gunplay-1.0.0.zip",
+          "size": 282739,
+          "assetId": 608676772,
+          "updated": "2026-10-03T22:51:27Z",
+          "sha256": "91e355768bb5ef3c26c473e1edca0b23a3677d8843b3e1c57cf297f368b6c53b",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "Gunplay",
+          "dlls": [
+            "Gunplay/Gunplay.dll"
+          ],
+          "guidDll": "Gunplay/Gunplay.dll",
+          "skip": [
+            "README.md"
+          ]
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.gunplayhud",
+      "name": "Gunplay HUD",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/GunplayHUD",
+      "summary": "Hit markers, floating damage numbers and vehicle damage percentages, with an option to hide the crosshair. Part of what was Apocaraider.",
+      "tags": [
+        "hud",
+        "combat",
+        "ui"
+      ],
+      "requires": [],
+      "optional": [
+        "com.denis.apocalypter.gunplay"
+      ],
+      "pluginFolder": "GunplayHUD",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [
+        "com.denis.apocalypter.apocaraider"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "title": "GunplayHUD 1.0.0",
+        "published": "2026-10-03T22:47:51Z",
+        "page": "https://github.com/DeonUrist/GunplayHUD/releases/tag/v1.0.0",
+        "notes": "First standalone release. Hit markers, floating and list damage numbers, vehicle condition feedback and crosshair options. Works with vanilla shots on its own and with Gunplay's projectiles when Gunplay is installed.\r\n\r\nPart of the Apocaraider split: **Gunplay**, **GunplayHUD**, **NPCAI** and **WomenOfWasteland** replace the combined Apocaraider (now frozen). Each works on its own and with any combination of the others. **Remove Apocaraider** when installing these, otherwise its hooks run twice. Old Apocaraider settings are imported on first run.\r\n\r\n**Install:** unzip into `BepInEx\\plugins` (creates `BepInEx\\plugins\\GunplayHUD\\`).",
+        "zip": {
+          "name": "GunplayHUD-1.0.0.zip",
+          "url": "https://github.com/DeonUrist/GunplayHUD/releases/download/v1.0.0/GunplayHUD-1.0.0.zip",
+          "size": 11286,
+          "assetId": 608676484,
+          "updated": "2026-10-03T22:51:11Z",
+          "sha256": "19d26cef30a46d78c67c2e6f77ae51cd2b9e1b5de11819887445ed28f3635641",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "GunplayHUD",
+          "dlls": [
+            "GunplayHUD/GunplayHUD.dll"
+          ],
+          "guidDll": "GunplayHUD/GunplayHUD.dll",
+          "skip": [
+            "README.md"
+          ]
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.npcai",
+      "name": "NPCAI",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/NPCAI",
+      "summary": "NPCs that see, hear, search and pursue, find their way through camps and buildings, and aim within their weapon's reach. Part of what was Apocaraider.",
+      "tags": [
+        "ai",
+        "npcs",
+        "combat"
+      ],
+      "requires": [],
+      "optional": [
+        "com.denis.apocalypter.gunplay",
+        "com.denis.apocalypter.gunplayhud",
+        "com.denis.apocalypter.womenofwasteland",
+        "com.denis.apocalypter.apocapatrol"
+      ],
+      "pluginFolder": "NPCAI",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [
+        "com.denis.apocalypter.apocaraider"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "title": "NPCAI 1.0.0",
+        "published": "2026-10-03T22:47:52Z",
+        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.0.0",
+        "notes": "First standalone release. Smarter human NPCs: aim pacing, sight and hearing, search and pursuit, combat movement, baked navigation, idle behaviour, friendly pass-through, storm reactions and optional AI debug overlays. Uses Gunplay's weapon ranges when it is installed, its own defaults otherwise.\r\n\r\nPart of the Apocaraider split: **Gunplay**, **GunplayHUD**, **NPCAI** and **WomenOfWasteland** replace the combined Apocaraider (now frozen). Each works on its own and with any combination of the others. **Remove Apocaraider** when installing these, otherwise its hooks run twice. Old Apocaraider settings are imported on first run.\r\n\r\n**Install:** unzip into `BepInEx\\plugins` (creates `BepInEx\\plugins\\NPCAI\\`).",
+        "zip": {
+          "name": "NPCAI-1.0.0.zip",
+          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.0.0/NPCAI-1.0.0.zip",
+          "size": 87853,
+          "assetId": 608676232,
+          "updated": "2026-10-03T22:50:57Z",
+          "sha256": "aa8fcae85c469006557e225f2fe9f4dc76e718ba38822e6f9bf93070a6432afb",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "NPCAI",
+          "dlls": [
+            "NPCAI/NPCAI.dll"
+          ],
+          "guidDll": "NPCAI/NPCAI.dll",
+          "skip": [
+            "README.md"
+          ]
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.womenofwasteland",
+      "name": "Women of Wasteland",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/WomenOfWasteland",
+      "summary": "Turns a share of Flexa and Sprokka raiders into female Gungirls and Shootas with their own models, textures and voices. Part of what was Apocaraider.",
+      "tags": [
+        "npcs",
+        "models"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": "WomenOfWasteland",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [
+        "com.denis.apocalypter.apocaraider"
+      ],
+      "latest": {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "title": "WomenOfWasteland 1.0.0",
+        "published": "2026-10-03T22:47:53Z",
+        "page": "https://github.com/DeonUrist/WomenOfWasteland/releases/tag/v1.0.0",
+        "notes": "First standalone release. Female raiders in the wasteland: female models and textures, their own voice lines, female corpses, and the appearance saved with the game. Ships its Models and Sounds folders next to the DLL.\r\n\r\nPart of the Apocaraider split: **Gunplay**, **GunplayHUD**, **NPCAI** and **WomenOfWasteland** replace the combined Apocaraider (now frozen). Each works on its own and with any combination of the others. **Remove Apocaraider** when installing these, otherwise its hooks run twice. Old Apocaraider settings are imported on first run.\r\n\r\n**Install:** unzip into `BepInEx\\plugins` (creates `BepInEx\\plugins\\WomenOfWasteland\\`).",
+        "zip": {
+          "name": "WomenOfWasteland-1.0.0.zip",
+          "url": "https://github.com/DeonUrist/WomenOfWasteland/releases/download/v1.0.0/WomenOfWasteland-1.0.0.zip",
+          "size": 12136532,
+          "assetId": 608673956,
+          "updated": "2026-10-03T22:49:08Z",
+          "sha256": "f71cd1cfdc5ec0fb78a6385db458b06f3aaeca082a573961bc0226dc57c368dc",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "WomenOfWasteland",
+          "dlls": [
+            "WomenOfWasteland/WomenOfWasteland.dll"
+          ],
+          "guidDll": "WomenOfWasteland/WomenOfWasteland.dll",
+          "skip": [
+            "README.md"
+          ]
         }
       },
       "error": null
