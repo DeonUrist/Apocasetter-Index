@@ -36,6 +36,9 @@ FIELDS = {
     "trust": ((str,), "community"),
     "blocked": ((bool,), False),
     "blockedReason": ((str,), ""),
+    "deprecated": ((bool,), False),
+    "deprecatedReason": ((str,), ""),
+    "replacedBy": ((list,), []),
 }
 REQUIRED = ("guid", "name", "author", "repo", "summary")
 
@@ -116,6 +119,18 @@ def check_entry(path, e):
         for g in e.get(k, []):
             if not isinstance(g, str) or not GUID_RE.match(g):
                 errs.append("%s: '%s' is not a plugin GUID" % (k, g))
+    rb = e.get("replacedBy", [])
+    if len(rb) > 4:
+        errs.append("replacedBy: at most 4 mods")
+    for g in rb:
+        if not isinstance(g, str) or not GUID_RE.match(g):
+            errs.append("replacedBy: '%s' is not a plugin GUID" % g)
+        elif g == guid:
+            errs.append("replacedBy can't list the mod itself")
+    if rb and not e.get("deprecated", False):
+        errs.append("replacedBy is only used together with \"deprecated\": true")
+    if len(e.get("deprecatedReason", "")) > 300:
+        errs.append("deprecatedReason is longer than 300 characters")
     pf = e.get("pluginFolder")
     if pf is not None and (not FOLDER_RE.match(pf) or pf.strip(".") == ""):
         errs.append("pluginFolder must be a plain folder name (no slashes)")

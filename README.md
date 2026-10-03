@@ -75,6 +75,7 @@ goes through the automatic checks (zip readable, no paths outside the plugin fol
 | `pluginFolder` | Folder under `BepInEx\plugins\` the mod lives in; `null` for a single DLL directly in `plugins`. |
 | `trust` | `official` (the maintainer's own mods) or `community`. |
 | `blocked`, `blockedReason` | Set by the maintainer. A blocked mod is never offered for install or update, and players who have it get a warning with the reason. |
+| `deprecated`, `deprecatedReason`, `replacedBy` | Set by the maintainer. A deprecated mod is no longer offered for install; players who have it see a DEPRECATED badge and the reason, plus buttons for up to 4 mods in `replacedBy` (GUIDs) that take over. Updates are still offered. |
 
 ## index.json
 
@@ -102,7 +103,12 @@ doesn't contain. `latest` is `null` while a repository has no release.
 
 - **List a submission:** add the `approved` label to the issue (only the repository owner's label counts).
 - **Block a mod:** set `"blocked": true` and a `blockedReason` in its entry and push. It takes effect at the next index build.
-- **Remove a mod:** delete its entry.
+- **Deprecate a mod** (it still works, but you no longer develop it): add to its entry
+  `"deprecated": true, "deprecatedReason": "One or two sentences for players.", "replacedBy": ["guid.one", "guid.two"]` (up to 4 GUIDs) and push.
+  It disappears from the mods players can install; players who have it see the reason and buttons that open the replacements' pages.
+  Needs Apocasetter 2.0.7 or newer; older versions ignore these fields.
+- **Remove a mod:** delete `mods/<guid>.json` and push; the next index build drops it. Players who have it keep it, but it shows
+  "no update source" and is no longer offered for install. Prefer deprecating: removing gives players no explanation.
 - **Run locally:** `python3 scripts/validate.py --online` and `python3 scripts/build_index.py` (Python 3, standard library only;
   set `GITHUB_TOKEN` to avoid the 60-requests-an-hour limit).
 - GitHub pauses scheduled workflows in repositories with no activity for 60 days. The index commits keep it active while mods
