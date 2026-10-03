@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-03T22:53:12Z",
+  "generated": "2026-10-03T22:55:54Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -318,8 +318,26 @@
         "title": "Apocasetter 2.0.7",
         "published": "2026-10-03T22:53:00Z",
         "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.0.7",
-        "notes": "## Apocasetter 2.0.7\n\n**Retired mods and their replacements.** When a mod is retired in the Apocasetter index, the Mods window now says so:\n- A **DEPRECATED** badge in the list, and on the mod's page the reason plus buttons for the mods that take over (✓ when you already have them). **INSTALL ALL** installs the replacements in one go.\n- Retired mods are no longer offered for install.\n- Installing a replacement also disables the old mod at the next start, so the same features don't run twice. If you already have both, both pages show a warning with a **DISABLE** button.\n\nFirst use: **Apocaraider** is split into **Gunplay**, **Gunplay HUD**, **NPCAI** and **Women of Wasteland**. Pick the ones you want; Apocaraider gets disabled when you install them.\n\nAlso: icons for the four new mods, and \"no release yet\" for listed mods that have no release.\n\n**Install / update**\n- From the Mods window: CHECK FOR UPDATES → Apocasetter → UPDATE → QUIT GAME TO APPLY.\n- By hand: unzip into the game folder (the zip holds `BepInEx/plugins/Apocasetter/` and `BepInEx/patchers/Apocasetter.Installer.dll`). Requires BepInEx 5.x.",
-        "zip": null
+        "notes": "## Apocasetter 2.0.7\r\n\r\n**Retired mods and their replacements.** When a mod is retired in the Apocasetter index, the Mods window now says so:\r\n- A **DEPRECATED** badge in the list, and on the mod's page the reason plus buttons for the mods that take over (✓ when you already have them). **INSTALL ALL** installs the replacements in one go.\r\n- Retired mods are no longer offered for install.\r\n- Installing a replacement also disables the old mod at the next start, so the same features don't run twice. If you already have both, both pages show a warning with a **DISABLE** button.\r\n\r\nFirst use: **Apocaraider** is split into **Gunplay**, **Gunplay HUD**, **NPCAI** and **Women of Wasteland**. Pick the ones you want; Apocaraider gets disabled when you install them.\r\n\r\nAlso: icons for the four new mods, and \"no release yet\" for listed mods that have no release.\r\n\r\n**Install / update**\r\n- From the Mods window: CHECK FOR UPDATES → Apocasetter → UPDATE → QUIT GAME TO APPLY.\r\n- By hand: unzip into the game folder (the zip holds `BepInEx/plugins/Apocasetter/` and `BepInEx/patchers/Apocasetter.Installer.dll`). Requires BepInEx 5.x.",
+        "zip": {
+          "name": "Apocasetter-2.0.7.zip",
+          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v2.0.7/Apocasetter-2.0.7.zip",
+          "size": 327606,
+          "assetId": 608681425,
+          "updated": "2026-10-03T22:55:05Z",
+          "sha256": "73d0c810712e7db2cce8a2341b6c53ebcc97fd44dece703ab316b8fabf9c1065",
+          "extractTo": "BepInEx",
+          "stripPrefix": "BepInEx/",
+          "topFolder": null,
+          "dlls": [
+            "plugins/Apocasetter/Apocasetter.dll",
+            "patchers/Apocasetter.Installer.dll"
+          ],
+          "guidDll": "plugins/Apocasetter/Apocasetter.dll",
+          "skip": [
+            "README.md"
+          ]
+        }
       },
       "error": null
     },
