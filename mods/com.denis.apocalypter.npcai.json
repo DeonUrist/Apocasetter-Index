@@ -1,0 +1,25 @@
+{
+  "guid": "com.denis.apocalypter.npcai",
+  "name": "NPCAI",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/NPCAI",
+  "summary": "NPCs that see, hear, search and pursue, find their way through camps and buildings, and aim within their weapon's reach. Part of what was Apocaraider.",
+  "tags": [
+    "ai",
+    "npcs",
+    "combat"
+  ],
+  "requires": [],
+  "optional": [
+    "com.denis.apocalypter.gunplay",
+    "com.denis.apocalypter.gunplayhud",
+    "com.denis.apocalypter.womenofwasteland",
+    "com.denis.apocalypter.apocapatrol"
+  ],
+  "pluginFolder": "NPCAI",
+  "trust": "official",
+  "blocked": false,
+  "replaces": [
+    "com.denis.apocalypter.apocaraider"
+  ]
+}

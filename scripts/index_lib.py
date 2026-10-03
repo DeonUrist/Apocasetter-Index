@@ -39,6 +39,7 @@ FIELDS = {
     "deprecated": ((bool,), False),
     "deprecatedReason": ((str,), ""),
     "replacedBy": ((list,), []),
+    "replaces": ((list,), []),
 }
 REQUIRED = ("guid", "name", "author", "repo", "summary")
 
@@ -127,6 +128,11 @@ def check_entry(path, e):
             errs.append("replacedBy: '%s' is not a plugin GUID" % g)
         elif g == guid:
             errs.append("replacedBy can't list the mod itself")
+    for g in e.get("replaces", []):
+        if not isinstance(g, str) or not GUID_RE.match(g):
+            errs.append("replaces: '%s' is not a plugin GUID" % g)
+        elif g == guid:
+            errs.append("replaces can't list the mod itself")
     if rb and not e.get("deprecated", False):
         errs.append("replacedBy is only used together with \"deprecated\": true")
     if len(e.get("deprecatedReason", "")) > 300:

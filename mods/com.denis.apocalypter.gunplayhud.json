@@ -1,0 +1,22 @@
+{
+  "guid": "com.denis.apocalypter.gunplayhud",
+  "name": "Gunplay HUD",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/GunplayHUD",
+  "summary": "Hit markers, floating damage numbers and vehicle damage percentages, with an option to hide the crosshair. Part of what was Apocaraider.",
+  "tags": [
+    "hud",
+    "combat",
+    "ui"
+  ],
+  "requires": [],
+  "optional": [
+    "com.denis.apocalypter.gunplay"
+  ],
+  "pluginFolder": "GunplayHUD",
+  "trust": "official",
+  "blocked": false,
+  "replaces": [
+    "com.denis.apocalypter.apocaraider"
+  ]
+}

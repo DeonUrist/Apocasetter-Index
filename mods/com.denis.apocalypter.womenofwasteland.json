@@ -1,0 +1,19 @@
+{
+  "guid": "com.denis.apocalypter.womenofwasteland",
+  "name": "Women of Wasteland",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/WomenOfWasteland",
+  "summary": "Turns a share of Flexa and Sprokka raiders into female Gungirls and Shootas with their own models, textures and voices. Part of what was Apocaraider.",
+  "tags": [
+    "npcs",
+    "models"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": "WomenOfWasteland",
+  "trust": "official",
+  "blocked": false,
+  "replaces": [
+    "com.denis.apocalypter.apocaraider"
+  ]
+}

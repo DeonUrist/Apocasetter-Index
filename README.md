@@ -75,6 +75,7 @@ goes through the automatic checks (zip readable, no paths outside the plugin fol
 | `pluginFolder` | Folder under `BepInEx\plugins\` the mod lives in; `null` for a single DLL directly in `plugins`. |
 | `trust` | `official` (the maintainer's own mods) or `community`. |
 | `blocked`, `blockedReason` | Set by the maintainer. A blocked mod is never offered for install or update, and players who have it get a warning with the reason. |
+| `replaces` | GUIDs of mods this one takes over (features that must not run twice). Installing it from the Mods window also disables those mods, and a player who has both gets a warning with a DISABLE button. |
 | `deprecated`, `deprecatedReason`, `replacedBy` | Set by the maintainer. A deprecated mod is no longer offered for install; players who have it see a DEPRECATED badge and the reason, plus buttons for up to 4 mods in `replacedBy` (GUIDs) that take over. Updates are still offered. |
 
 ## index.json

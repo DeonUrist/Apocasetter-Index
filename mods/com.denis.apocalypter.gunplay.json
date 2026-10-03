@@ -1,0 +1,24 @@
+{
+  "guid": "com.denis.apocalypter.gunplay",
+  "name": "Gunplay",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/Gunplay",
+  "summary": "Real bullets: travel time, tracers, range falloff, headshots, shotgun pellets, vehicle and wheel damage. Part of what was Apocaraider.",
+  "tags": [
+    "combat",
+    "weapons",
+    "vehicles"
+  ],
+  "requires": [],
+  "optional": [
+    "com.denis.apocalypter.npcai",
+    "com.denis.apocalypter.gunplayhud",
+    "com.denis.apocalypter.apocapatrol"
+  ],
+  "pluginFolder": "Gunplay",
+  "trust": "official",
+  "blocked": false,
+  "replaces": [
+    "com.denis.apocalypter.apocaraider"
+  ]
+}

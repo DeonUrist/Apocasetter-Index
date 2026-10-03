@@ -15,5 +15,13 @@
   ],
   "pluginFolder": "Apocaraider",
   "trust": "official",
-  "blocked": false
+  "blocked": false,
+  "deprecated": true,
+  "deprecatedReason": "Apocaraider has been split into four mods you can pick separately. Install the ones you want and disable Apocaraider: running it together with them applies the same features twice.",
+  "replacedBy": [
+    "com.denis.apocalypter.gunplay",
+    "com.denis.apocalypter.gunplayhud",
+    "com.denis.apocalypter.npcai",
+    "com.denis.apocalypter.womenofwasteland"
+  ]
 }
