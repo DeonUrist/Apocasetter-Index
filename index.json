@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-03T17:39:38Z",
+  "generated": "2026-10-03T18:03:47Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -243,8 +243,23 @@
         "title": "Apocasaver 1.7.1",
         "published": "2026-09-30T11:33:11Z",
         "page": "https://github.com/DeonUrist/Apocasaver/releases/tag/v1.7.1",
-        "notes": "## 1.7.1\n\n- **Fix: save names forgotten on some PCs.** On Windows set to a date format with dots or dashes (for example `30.09.2026`, common in many regions even with English as the language), the mod could not read back the name in a slot's label. The naming popup came up empty and autosaves dropped the name. Slot labels are now always stamped as `dd/MM/yyyy HH:mm`, and labels stamped by 1.7.0 with dots or dashes are recognised too, so existing names come back.\n\nInstall: replace `BepInEx\\plugins\\Apocasaver.dll`. Requires BepInEx 5.x.",
-        "zip": null
+        "notes": "## 1.7.1\r\n\r\n- **Fix: save names forgotten on some PCs.** On Windows set to a date format with dots or dashes (for example `30.09.2026`, common in many regions even with English as the language), the mod could not read back the name in a slot's label. The naming popup came up empty and autosaves dropped the name. Slot labels are now always stamped as `dd/MM/yyyy HH:mm`, and labels stamped by 1.7.0 with dots or dashes are recognised too, so existing names come back.\r\n\r\nInstall: replace `BepInEx\\plugins\\Apocasaver.dll`. Requires BepInEx 5.x.",
+        "zip": {
+          "name": "Apocasaver-1.7.1.zip",
+          "url": "https://github.com/DeonUrist/Apocasaver/releases/download/v1.7.1/Apocasaver-1.7.1.zip",
+          "size": 21661,
+          "assetId": 608249765,
+          "updated": "2026-10-03T17:45:49Z",
+          "sha256": "00b5f711ebcafefa1803cbabc5d7b45dc0914e17a32ff805bcd9abf4b815da27",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": null,
+          "dlls": [
+            "Apocasaver.dll"
+          ],
+          "guidDll": "Apocasaver.dll",
+          "skip": []
+        }
       },
       "error": null
     },
@@ -265,31 +280,13 @@
       "blocked": false,
       "blockedReason": "",
       "latest": {
-        "version": "2.0.2",
-        "tag": "v2.0.2",
-        "title": "Apocasetter 2.0.2",
-        "published": "2026-10-03T17:30:24Z",
-        "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.0.2",
-        "notes": "## Apocasetter 2.0.2\r\n\r\n**New: ABOUT tab for installed mods.** Every installed mod now has an ABOUT tab between SETTINGS and WHAT'S NEW: the mod's summary from the index, author, installed and latest version, GitHub repo, what it needs and works with, which installed mods use it, tags and plugin ID. Mods that are not installed or are disabled show the same page.\r\n\r\n**Install / update**\r\n- From the Mods window: CHECK FOR UPDATES → Apocasetter → UPDATE → QUIT GAME TO APPLY.\r\n- By hand: unzip into the game folder (the zip holds `BepInEx/plugins/Apocasetter/` and `BepInEx/patchers/Apocasetter.Installer.dll`). Requires BepInEx 5.x.",
-        "zip": {
-          "name": "Apocasetter-2.0.2.zip",
-          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v2.0.2/Apocasetter-2.0.2.zip",
-          "size": 314299,
-          "assetId": 608227841,
-          "updated": "2026-10-03T17:30:46Z",
-          "sha256": "924bf735d9872d1d5cbd36770edbce8624b1015b6bb7da65dba89e3c9a9a5647",
-          "extractTo": "BepInEx",
-          "stripPrefix": "BepInEx/",
-          "topFolder": null,
-          "dlls": [
-            "plugins/Apocasetter/Apocasetter.dll",
-            "patchers/Apocasetter.Installer.dll"
-          ],
-          "guidDll": "plugins/Apocasetter/Apocasetter.dll",
-          "skip": [
-            "README.md"
-          ]
-        }
+        "version": "2.0.3",
+        "tag": "v2.0.3",
+        "title": "Apocasetter 2.0.3",
+        "published": "2026-10-03T17:46:37Z",
+        "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.0.3",
+        "notes": "## Apocasetter 2.0.3\n\n**Fixes to how things look**\n- The update counter on the MODS button is now centred vertically on the button, and its number uses the game's menu font.\n- Numbers in setting fields, key bindings and list values use the game's menu font and are centred vertically.\n\n**Install / update**\n- From the Mods window: CHECK FOR UPDATES → Apocasetter → UPDATE → QUIT GAME TO APPLY.\n- By hand: unzip into the game folder (the zip holds `BepInEx/plugins/Apocasetter/` and `BepInEx/patchers/Apocasetter.Installer.dll`). Requires BepInEx 5.x.",
+        "zip": null
       },
       "error": null
     },
