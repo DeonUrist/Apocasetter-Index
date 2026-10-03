@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-03T18:03:47Z",
+  "generated": "2026-10-03T18:14:09Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -285,8 +285,26 @@
         "title": "Apocasetter 2.0.3",
         "published": "2026-10-03T17:46:37Z",
         "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.0.3",
-        "notes": "## Apocasetter 2.0.3\n\n**Fixes to how things look**\n- The update counter on the MODS button is now centred vertically on the button, and its number uses the game's menu font.\n- Numbers in setting fields, key bindings and list values use the game's menu font and are centred vertically.\n\n**Install / update**\n- From the Mods window: CHECK FOR UPDATES → Apocasetter → UPDATE → QUIT GAME TO APPLY.\n- By hand: unzip into the game folder (the zip holds `BepInEx/plugins/Apocasetter/` and `BepInEx/patchers/Apocasetter.Installer.dll`). Requires BepInEx 5.x.",
-        "zip": null
+        "notes": "## Apocasetter 2.0.3\r\n\r\n**Fixes to how things look**\r\n- The update counter on the MODS button is now centred vertically on the button, and its number uses the game's menu font.\r\n- Numbers in setting fields, key bindings and list values use the game's menu font and are centred vertically.\r\n\r\n**Install / update**\r\n- From the Mods window: CHECK FOR UPDATES → Apocasetter → UPDATE → QUIT GAME TO APPLY.\r\n- By hand: unzip into the game folder (the zip holds `BepInEx/plugins/Apocasetter/` and `BepInEx/patchers/Apocasetter.Installer.dll`). Requires BepInEx 5.x.",
+        "zip": {
+          "name": "Apocasetter-2.0.3.zip",
+          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v2.0.3/Apocasetter-2.0.3.zip",
+          "size": 315139,
+          "assetId": 608286727,
+          "updated": "2026-10-03T18:13:16Z",
+          "sha256": "ba2397dbffe25072f81d17bf7a8a2060c7de42442fde64565fdf240ae2369054",
+          "extractTo": "BepInEx",
+          "stripPrefix": "BepInEx/",
+          "topFolder": null,
+          "dlls": [
+            "plugins/Apocasetter/Apocasetter.dll",
+            "patchers/Apocasetter.Installer.dll"
+          ],
+          "guidDll": "plugins/Apocasetter/Apocasetter.dll",
+          "skip": [
+            "README.md"
+          ]
+        }
       },
       "error": null
     },
