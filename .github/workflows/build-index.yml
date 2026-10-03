@@ -1,0 +1,35 @@
+name: Build index
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # hourly: picks up new releases of listed mods
+  push:
+    branches: [main]
+    paths: ["mods/**", "scripts/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: index-write
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build index.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/build_index.py
+      - name: Commit if it changed
+        run: |
+          git add index.json
+          git diff --cached --quiet && { echo "no change"; exit 0; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "index: update"
+          git pull --rebase
+          git push

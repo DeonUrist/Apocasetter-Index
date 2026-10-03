@@ -1,0 +1,31 @@
+name: Validate entries
+
+on:
+  pull_request:
+    paths: ["mods/**", "scripts/**"]
+  push:
+    branches: [main]
+    paths: ["mods/**", "scripts/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: List changed entries
+        if: github.event_name == 'pull_request'
+        env:
+          BASE: ${{ github.base_ref }}
+        run: git diff --name-only --diff-filter=AM "origin/$BASE...HEAD" -- 'mods/*.json' > changed.txt
+      - name: Check entries (GitHub checks only for changed ones in a PR)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f changed.txt ]; then python3 scripts/validate.py --online --changed changed.txt
+          else python3 scripts/validate.py --online; fi
