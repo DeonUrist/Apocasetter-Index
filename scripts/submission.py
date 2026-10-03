@@ -75,6 +75,21 @@ def comment(number, text, update_mark=False):
     http("%s/repos/%s/issues/%d/comments" % (API, repo, number), data={"body": text}, method="POST")
 
 
+def ensure_labels(number):
+    """Creates the two labels the flow uses (first run only) and tags the issue as a submission."""
+    repo = os.environ["GITHUB_REPOSITORY"]
+    for name, color, desc in (("submission", "1D76DB", "A mod submitted through the form"),
+                              ("approved", "0E8A16", "Maintainer: list the submitted mod")):
+        try:
+            http("%s/repos/%s/labels" % (API, repo), data={"name": name, "color": color, "description": desc}, method="POST")
+        except Exception:
+            pass  # already there
+    try:
+        http("%s/repos/%s/issues/%d/labels" % (API, repo, number), data={"labels": ["submission"]}, method="POST")
+    except Exception as x:
+        print("could not label the issue: %s" % x)
+
+
 def run_checks(entry):
     path = os.path.join(MODS_DIR, (entry.get("guid") or "missing") + ".json")
     errs = check_entry(path, entry)
@@ -121,6 +136,8 @@ def main(mode):
         http("%s/repos/%s/issues/%d" % (API, os.environ["GITHUB_REPOSITORY"], issue["number"]),
              data={"state": "closed", "state_reason": "completed"}, method="PATCH")
         return 0
+    if mode == "check":
+        ensure_labels(issue["number"])
     path, errs, warns, details = run_checks(entry)
     comment(issue["number"], report(entry, errs, warns, details), update_mark=True)
     if mode == "check":
