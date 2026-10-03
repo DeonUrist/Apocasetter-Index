@@ -19,17 +19,31 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # ref: main, so "Re-run jobs" on an old run builds on today's main, not the commit that run started from
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Build index.json
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/build_index.py
       - name: Commit if it changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add index.json
           git diff --cached --quiet && { echo "no change"; exit 0; }
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "index: update"
-          git pull --rebase
-          git push
+          # index.json is generated: if main moved meanwhile, rebuild on top of it instead of merging
+          for i in 1 2 3; do
+            git push origin HEAD:main && exit 0
+            git fetch origin main
+            git reset --hard origin/main
+            python3 scripts/build_index.py
+            git add index.json
+            git diff --cached --quiet && { echo "no change"; exit 0; }
+            git commit -m "index: update"
+          done
+          exit 1
