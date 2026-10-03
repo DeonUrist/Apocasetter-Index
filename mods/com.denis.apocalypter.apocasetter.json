@@ -1,0 +1,16 @@
+{
+  "guid": "com.denis.apocalypter.apocasetter",
+  "name": "Apocasetter",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/Apocasetter",
+  "summary": "In-game Mods menu: change any mod's settings without leaving the game.",
+  "tags": [
+    "ui",
+    "tools"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": "Apocasetter",
+  "trust": "official",
+  "blocked": false
+}

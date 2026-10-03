@@ -1,0 +1,18 @@
+{
+  "guid": "com.denis.apocalypter.apocatremors",
+  "name": "Apocatremors",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/Apocatremors",
+  "summary": "Mutants burst out of the sand ahead of your car while you drive, more often the farther you go.",
+  "tags": [
+    "creatures",
+    "events"
+  ],
+  "requires": [],
+  "optional": [
+    "com.denis.apocalypter.apocapatrol"
+  ],
+  "pluginFolder": null,
+  "trust": "official",
+  "blocked": false
+}

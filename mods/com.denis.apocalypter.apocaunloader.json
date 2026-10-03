@@ -1,0 +1,15 @@
+{
+  "guid": "com.denis.apocalypter.apocaunloader",
+  "name": "Apocaunloader",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/Apocaunloader",
+  "summary": "Hold R to unload your gun; the rounds go back into your backpack.",
+  "tags": [
+    "weapons"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": null,
+  "trust": "official",
+  "blocked": false
+}

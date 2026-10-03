@@ -1,0 +1,81 @@
+name: Submit a mod
+description: Ask for your Apocalypter mod to be listed in Apocasetter's Mods window.
+title: "[Submit] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Listed mods appear in Apocasetter's **Mods** window: players see new versions and can install, update or remove them in-game.
+        An automatic check runs as soon as you submit and comments here. The maintainer then reviews the mod and lists it by adding the **approved** label.
+
+        Your mod needs: a **public GitHub repository**, and a **GitHub release with a `.zip` attached** that contains your plugin DLL.
+        Later releases are picked up automatically; you don't need to submit again.
+  - type: input
+    id: name
+    attributes:
+      label: Mod name
+      placeholder: Apocabikes
+    validations:
+      required: true
+  - type: input
+    id: guid
+    attributes:
+      label: Plugin GUID
+      description: The first argument of your `[BepInPlugin(...)]` attribute.
+      placeholder: com.yourname.apocalypter.apocabikes
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repository
+      placeholder: yourname/Apocabikes
+    validations:
+      required: true
+  - type: input
+    id: summary
+    attributes:
+      label: One-line summary
+      description: What players read in the list. Up to 200 characters.
+    validations:
+      required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: Name shown in the list.
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Up to 6, comma separated.
+      placeholder: vehicles, combat
+  - type: input
+    id: requires
+    attributes:
+      label: Requires
+      description: GUIDs of plugins your mod cannot run without, comma separated.
+  - type: input
+    id: optional
+    attributes:
+      label: Works with
+      description: GUIDs of plugins your mod has extra features for, comma separated.
+  - type: input
+    id: folder
+    attributes:
+      label: Plugin folder
+      description: The folder under `BepInEx\plugins\` your mod lives in. Leave empty if it is a single DLL directly in `plugins`.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Checklist
+      options:
+        - label: I own or maintain this repository.
+          required: true
+        - label: Every release I want offered has a .zip with the plugin DLL attached.
+          required: true
+        - label: The mod has no malware, ads or tracking, and doesn't download and run other programs.
+          required: true

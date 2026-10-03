@@ -1,0 +1,19 @@
+{
+  "guid": "com.denis.apocalypter.apocapatrol",
+  "name": "Apocapatrol",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/Apocapatrol",
+  "summary": "Raider gangs in scrap-built cars, trucks and bikes roam the wasteland, hunt you down and carry loot worth taking.",
+  "tags": [
+    "raiders",
+    "vehicles",
+    "combat"
+  ],
+  "requires": [],
+  "optional": [
+    "com.denis.apocalypter.apocatremors"
+  ],
+  "pluginFolder": "Apocapatrol",
+  "trust": "official",
+  "blocked": false
+}

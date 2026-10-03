@@ -1,0 +1,16 @@
+{
+  "guid": "com.denis.apocalypter.apocahud43",
+  "name": "ApocaHUD43",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/ApocaHUD43",
+  "summary": "Keeps the HUD on the screen edges at any aspect ratio (4:3, 16:10, 21:9).",
+  "tags": [
+    "hud",
+    "ui"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": null,
+  "trust": "official",
+  "blocked": false
+}

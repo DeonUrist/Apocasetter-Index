@@ -1,0 +1,18 @@
+{
+  "guid": "com.denis.apocalypter.apocaspawner",
+  "name": "Apocaspawner",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/Apocaspawner",
+  "summary": "Spawn any item, vehicle or trailer from a searchable window (F4).",
+  "tags": [
+    "tools",
+    "cheats"
+  ],
+  "requires": [
+    "com.denis.apocalypter.apocasetter"
+  ],
+  "optional": [],
+  "pluginFolder": null,
+  "trust": "official",
+  "blocked": false
+}

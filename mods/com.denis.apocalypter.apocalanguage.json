@@ -1,0 +1,18 @@
+{
+  "guid": "com.denis.apocalypter.apocalanguage",
+  "name": "ApocaLanguage",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/ApocaLanguage",
+  "summary": "Translates every text the game shows: menus, HUD, prompts, items, creatures, codex and trader prices.",
+  "tags": [
+    "translation",
+    "ui"
+  ],
+  "requires": [],
+  "optional": [
+    "com.denis.apocalypter.apocasetter"
+  ],
+  "pluginFolder": "ApocaLanguage",
+  "trust": "official",
+  "blocked": false
+}

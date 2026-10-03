@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "generated": "2026-10-03T16:19:34Z",
+  "source": "https://github.com/DeonUrist/Apocasetter-Index",
+  "mods": [
+    {
+      "guid": "com.denis.apocalypter.apocahud43",
+      "name": "ApocaHUD43",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/ApocaHUD43",
+      "summary": "Keeps the HUD on the screen edges at any aspect ratio (4:3, 16:10, 21:9).",
+      "tags": [
+        "hud",
+        "ui"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": null,
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "title": "ApocaHUD43 1.0.2",
+        "published": "2026-10-02T13:11:56Z",
+        "page": "https://github.com/DeonUrist/ApocaHUD43/releases/tag/v1.0.2",
+        "notes": "Keeps Apocalypter's HUD on the screen edges at any aspect ratio (4:3, 16:10, 21:9).\r\n\r\nThe game lays its HUD out for 16:9 with everything anchored to the screen centre, so on 4:3 the bottom row (weapon card, survival card, quick items, ammo / nuts / armour, compass) hangs above the bottom of the screen. ApocaHUD43 re-anchors each element to the edge or corner it was designed next to:\r\n\r\n- bottom / top rows stick to the bottom / top edge, corner groups to their corners\r\n- survival rows (health, hunger, thirst, fatigue, sanity, radiation) stay in the bottom-left corner\r\n- the loading screen picture covers the whole screen (aspect kept, edges cropped)\r\n- the middle of the screen (crosshair, item names, prompts, scopes) is unchanged; at 16:9 nothing moves\r\n- works with Apocapocket's extra slot card 4 / 5 / 6\r\n\r\n**Install:** BepInEx 5.4.x; copy `ApocaHUD43.dll` from the zip into `Apocalypter\\BepInEx\\plugins\\`.\r\nConfig: `[General] Enabled` (live toggle, also in the Apocasetter Mods menu).",
+        "zip": {
+          "name": "ApocaHUD43-1.0.2.zip",
+          "url": "https://github.com/DeonUrist/ApocaHUD43/releases/download/v1.0.2/ApocaHUD43-1.0.2.zip",
+          "size": 7012,
+          "assetId": 605645720,
+          "updated": "2026-10-02T13:13:49Z",
+          "sha256": "5feb4256dd8aa3fab86102dd1a696280bd5f24174c9d598501b1930ee4d17853",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": null,
+          "dlls": [
+            "ApocaHUD43.dll"
+          ],
+          "guidDll": "ApocaHUD43.dll",
+          "skip": [
+            "README.md"
+          ]
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.apocalanguage",
+      "name": "ApocaLanguage",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/ApocaLanguage",
+      "summary": "Translates every text the game shows: menus, HUD, prompts, items, creatures, codex and trader prices.",
+      "tags": [
+        "translation",
+        "ui"
+      ],
+      "requires": [],
+      "optional": [
+        "com.denis.apocalypter.apocasetter"
+      ],
+      "pluginFolder": "ApocaLanguage",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.5.2",
+        "tag": "v1.5.2",
+        "title": "ApocaLanguage 1.5.2",
+        "published": "2026-10-03T02:23:48Z",
+        "page": "https://github.com/DeonUrist/ApocaLanguage/releases/tag/v1.5.2",
+        "notes": "- Brazilian Portuguese is listed as **Português (BR)** in the language selection.\r\n\r\nIncludes everything from 1.5.1 (European Portuguese in `PT`, Brazilian in `PT-BR`, default Font size 0.7 / Cursor text size 1.2).\r\n\r\n### Languages\r\nEnglish, Русский, Български, Deutsch, Français, Español, Português (Portugal), Português (BR), Polski, Magyar, Română, 简体中文, 繁體中文, 日本語\r\n\r\n### Install\r\nUnzip into `BepInEx\\plugins\\` (replace the old `ApocaLanguage` folder).",
+        "zip": {
+          "name": "ApocaLanguage-1.5.2.zip",
+          "url": "https://github.com/DeonUrist/ApocaLanguage/releases/download/v1.5.2/ApocaLanguage-1.5.2.zip",
+          "size": 493880,
+          "assetId": 606976555,
+          "updated": "2026-10-03T02:26:02Z",
+          "sha256": "7e9632fe22bab5f9b10d668f35646a90be7bf8b2278edbba9f8813d4fd6dd57e",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "ApocaLanguage",
+          "dlls": [
+            "ApocaLanguage/ApocaLanguage.dll"
+          ],
+          "guidDll": "ApocaLanguage/ApocaLanguage.dll",
+          "skip": []
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.apocapatrol",
+      "name": "Apocapatrol",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/Apocapatrol",
+      "summary": "Raider gangs in scrap-built cars, trucks and bikes roam the wasteland, hunt you down and carry loot worth taking.",
+      "tags": [
+        "raiders",
+        "vehicles",
+        "combat"
+      ],
+      "requires": [],
+      "optional": [
+        "com.denis.apocalypter.apocatremors"
+      ],
+      "pluginFolder": "Apocapatrol",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.20.3",
+        "tag": "v1.20.3",
+        "title": "Apocapatrol 1.20.3",
+        "published": "2026-10-02T20:04:08Z",
+        "page": "https://github.com/DeonUrist/Apocapatrol/releases/tag/v1.20.3",
+        "notes": "## Changes since 1.9.1\r\n\r\n**Bikers**\r\n- New Halfbreed motorcycles in basic and advanced versions.\r\n- New spawn groups: Basic, Advanced and Super Bikers.\r\n- 30% of convoys now get motorcycle escorts.\r\n\r\n**Cars**\r\n- New Poloska, TinyTyrant and Junker looks (TinyTyrant has its own raider texture); Halfbreed paint.\r\n- Every raider car now has headlights, and they are switched on.\r\n- Doors open before NPCs get out, or before a passenger kicks out a dead driver.\r\n- Doors, hood and trunk now sit where the game places them.\r\n- Junkers: no windshield on the advanced one, and the metal plates are removed.\r\n\r\n**Loot**\r\n- Cars (except trucks and motorcycles) may carry an ammo box (70%) or a bandage (30%) on the back seat.\r\n- The roll scales with LootMultiplier, and advanced cars get double.\r\n- Cargo boxes only spawn in trucks.\r\n\r\n**Fixes**\r\n- Paint jobs survive save/load, including Steam Cloud saves (raider data is now stored inside the save file).\r\n- Engines popped off exploded cars lie still and can be picked up.\r\n- Wrecks get high grip only while they settle after the explosion, then return to normal physics.\r\n- Melee weapons (knives etc.) now damage wheels fitted on cars. With Apocaraider 1.5.4+, Apocaraider's own rules apply.\r\n\r\n**Config and tools**\r\n- MinConvoyCooldown and MaxConvoyCooldown are back in [Scaling].\r\n- New [Debug] CustomPaintjobs switch (on by default).\r\n- F3 spawner menu: simulated km travelled and boss kills; \"Spawn (game roll)\" picks exactly like the game.\r\n- Car templates (made with Apocatemplater) can list several kinds, e.g. `small;motorcycle`.\r\n",
+        "zip": {
+          "name": "Apocapatrol-1.20.3.zip",
+          "url": "https://github.com/DeonUrist/Apocapatrol/releases/download/v1.20.3/Apocapatrol-1.20.3.zip",
+          "size": 26629152,
+          "assetId": 606389369,
+          "updated": "2026-10-02T20:05:19Z",
+          "sha256": "639678aea678ec4648d6042d8d555d02d010d25193e7d374661aa03c80e886d7",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "Apocapatrol",
+          "dlls": [
+            "Apocapatrol/Apocapatrol.dll"
+          ],
+          "guidDll": "Apocapatrol/Apocapatrol.dll",
+          "skip": []
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.apocapocket",
+      "name": "Apocapocket",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/Apocapocket",
+      "summary": "Weapon slots 1-3 also hold ordinary items, and a backpack adds item slots 4-6.",
+      "tags": [
+        "inventory"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": null,
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.5.0",
+        "tag": "v1.5.0",
+        "title": "Apocapocket 1.5.0",
+        "published": "2026-10-01T14:46:49Z",
+        "page": "https://github.com/DeonUrist/Apocapocket/releases/tag/v1.5.0",
+        "notes": "## Apocapocket 1.5.0\r\n\r\n**Settings trimmed to what a player needs.** The config (and the Apocasetter Mods menu) now shows only:\r\n\r\n| Setting | Default | |\r\n| --- | --- | --- |\r\n| `[General] Enabled` | on | item slots on/off |\r\n| `[General] RequireBackpack` | on | slots 4-6 unlocked by the worn backpack (small = 4, medium = 4-5, large / huge = 4-6) |\r\n| `[Debug] VerboseLog` | off | detailed logging for debugging |\r\n\r\nEverything else (pocket blacklist, icon size, hand-pose defaults, fallback keys, slot count) is built in at its previous default.\r\nThe keys for slots 4-6 are rebound in the game's **Controls** screen (rows \"Item 4/5/6\") and stored in `com.denis.apocalypter.apocapocket.keys.cfg`.\r\nExisting config files are cleaned up automatically on the first start (your rebound keys are kept).\r\n\r\nIncludes 1.4.1 (hand-grabbed gun pressed into slot 1-3 no longer vanishes when dropped) and 1.4.0 (Use picks ground weapons into slots 4-6, blast-lance fixes).\r\n\r\nInstall: copy `Apocapocket.dll` into `BepInEx\\plugins\\` (replace the old one). Requires BepInEx 5.4.x.\r\n",
+        "zip": {
+          "name": "Apocapocket-1.5.0.zip",
+          "url": "https://github.com/DeonUrist/Apocapocket/releases/download/v1.5.0/Apocapocket-1.5.0.zip",
+          "size": 32830,
+          "assetId": 603472670,
+          "updated": "2026-10-01T14:47:32Z",
+          "sha256": "48f3aff507ed2acaf68ff61a54cc240c5f13830b4f81d1aca1ae2639600e4f2f",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": null,
+          "dlls": [
+            "Apocapocket.dll"
+          ],
+          "guidDll": "Apocapocket.dll",
+          "skip": []
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.apocaraider",
+      "name": "Apocaraider",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/Apocaraider",
+      "summary": "Real bullets and headshots, raiders that see, hear and search, smarter pathing, and female raiders.",
+      "tags": [
+        "combat",
+        "ai",
+        "npcs"
+      ],
+      "requires": [],
+      "optional": [
+        "com.denis.apocalypter.apocapatrol"
+      ],
+      "pluginFolder": "Apocaraider",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.7.0",
+        "tag": "v1.7.0",
+        "title": "Apocaraider 1.7.0",
+        "published": "2026-10-03T04:11:08Z",
+        "page": "https://github.com/DeonUrist/Apocaraider/releases/tag/v1.7.0",
+        "notes": "## Changes since 1.5.5\r\n\r\n- **Shoota - female Sprokka:** a share of the Sprokkas the game spawns are now Shootas, with their own body, no armour vest, the female voice, and their own corpse. They stay Shootas after save and load.\r\n- **New setting `FemalePopulation` (50 %):** how many Flexas and Sprokkas spawn as Gungirls / Shootas, right under EnableFemaleNpc.\r\n- **Smoother walk to a checked spot:** raiders heading to a gunshot or a sighting leave their camp or cave through the best exit and walk there as smoothly as they walk back home.\r\n- **Melee on corpses:** knife, shiv and machete hits on a body bleed instead of raising dust, and blades make a stabbing sound.\r\n\r\nInstall: copy the `Apocaraider` folder from the zip into `BepInEx\\plugins\\` (replace the old one). New files: `Models\\Sprokka_female.glb`, `Models\\sprokka_female.png`, `Sounds\\knifestab.wav`.",
+        "zip": {
+          "name": "Apocaraider-1.7.0.zip",
+          "url": "https://github.com/DeonUrist/Apocaraider/releases/download/v1.7.0/Apocaraider-1.7.0.zip",
+          "size": 12491818,
+          "assetId": 607110962,
+          "updated": "2026-10-03T04:12:15Z",
+          "sha256": "adeecd2fa32970115c94cbc5defb21612aca0106487005382028cec1c2d80301",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "Apocaraider",
+          "dlls": [
+            "Apocaraider/Apocaraider.dll"
+          ],
+          "guidDll": "Apocaraider/Apocaraider.dll",
+          "skip": []
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.apocasaver",
+      "name": "Apocasaver",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/Apocasaver",
+      "summary": "Autosave into the slot you are playing and give your saves names.",
+      "tags": [
+        "saves"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": null,
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.7.1",
+        "tag": "v1.7.1",
+        "title": "Apocasaver 1.7.1",
+        "published": "2026-09-30T11:33:11Z",
+        "page": "https://github.com/DeonUrist/Apocasaver/releases/tag/v1.7.1",
+        "notes": "## 1.7.1\n\n- **Fix: save names forgotten on some PCs.** On Windows set to a date format with dots or dashes (for example `30.09.2026`, common in many regions even with English as the language), the mod could not read back the name in a slot's label. The naming popup came up empty and autosaves dropped the name. Slot labels are now always stamped as `dd/MM/yyyy HH:mm`, and labels stamped by 1.7.0 with dots or dashes are recognised too, so existing names come back.\n\nInstall: replace `BepInEx\\plugins\\Apocasaver.dll`. Requires BepInEx 5.x.",
+        "zip": null
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.apocasetter",
+      "name": "Apocasetter",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/Apocasetter",
+      "summary": "In-game Mods menu: change any mod's settings without leaving the game.",
+      "tags": [
+        "ui",
+        "tools"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": "Apocasetter",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "title": "Apocasetter 1.0.2",
+        "published": "2026-09-30T11:33:11Z",
+        "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v1.0.2",
+        "notes": "## Apocasetter 1.0.2\r\n\r\n**Fix: decimal numbers typed with a comma.** On PCs that use a comma as the decimal separator, typing `0,5` into a setting in the Mods menu was saved as `5` (ten times too big) without any error. A comma typed into a decimal setting is now read as the decimal point, so `0,5` and `0.5` both give 0.5. The slider was not affected.\r\n\r\nInstall: replace `BepInEx\\plugins\\Apocasetter\\Apocasetter.dll` (keep the `theme\\` folder). Requires BepInEx 5.x.",
+        "zip": {
+          "name": "Apocasetter-1.0.2.zip",
+          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v1.0.2/Apocasetter-1.0.2.zip",
+          "size": 69735,
+          "assetId": 603805297,
+          "updated": "2026-10-01T17:50:49Z",
+          "sha256": "af5b91240664bb026bcd834343f647dc3b345abd002e71dc7f440f88e29b9ba8",
+          "extractTo": "plugins",
+          "stripPrefix": "BepInEx/plugins/",
+          "topFolder": "Apocasetter",
+          "dlls": [
+            "Apocasetter/Apocasetter.dll"
+          ],
+          "guidDll": "Apocasetter/Apocasetter.dll",
+          "skip": [
+            "README.md"
+          ]
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.apocaspawner",
+      "name": "Apocaspawner",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/Apocaspawner",
+      "summary": "Spawn any item, vehicle or trailer from a searchable window (F4).",
+      "tags": [
+        "tools",
+        "cheats"
+      ],
+      "requires": [
+        "com.denis.apocalypter.apocasetter"
+      ],
+      "optional": [],
+      "pluginFolder": null,
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.3.1",
+        "tag": "v1.3.1",
+        "title": "Apocaspawner 1.3.1",
+        "published": "2026-09-26T23:08:15Z",
+        "page": "https://github.com/DeonUrist/Apocaspawner/releases/tag/v1.3.1",
+        "notes": "## Apocaspawner 1.3.1\r\n\r\n**Tidy, sorted `[Names]` section.**\r\n\r\n- On every game start the names already in the config are loaded in alphabetical order, so both the config file and the Apocasetter settings menu list them sorted. Newly discovered prefabs are appended and fall into place on the next start; your edited values are kept.\r\n- No more per-entry comments: the `[Names]` section is written as one header line explaining the format followed by plain `prefab = Display Name` lines.\r\n- An emptied value is regenerated from the game's item name / prefab name on the next start.\r\n\r\nRequires [Apocasetter](https://github.com/DeonUrist/Apocasetter). Install: copy `Apocaspawner.dll` to `BepInEx\\plugins\\`.\r\n",
+        "zip": {
+          "name": "Apocaspawner-1.3.1.zip",
+          "url": "https://github.com/DeonUrist/Apocaspawner/releases/download/v1.3.1/Apocaspawner-1.3.1.zip",
+          "size": 15925,
+          "assetId": 591639234,
+          "updated": "2026-09-26T23:08:39Z",
+          "sha256": "1afd23a6f75c62bc375decda767d52e7fd5688ccde3ead01664dda0d3fad9f8e",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": null,
+          "dlls": [
+            "Apocaspawner.dll"
+          ],
+          "guidDll": "Apocaspawner.dll",
+          "skip": []
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.apocatremors",
+      "name": "Apocatremors",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/Apocatremors",
+      "summary": "Mutants burst out of the sand ahead of your car while you drive, more often the farther you go.",
+      "tags": [
+        "creatures",
+        "events"
+      ],
+      "requires": [],
+      "optional": [
+        "com.denis.apocalypter.apocapatrol"
+      ],
+      "pluginFolder": null,
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "title": "Apocatremors 1.2.0",
+        "published": "2026-10-01T14:30:49Z",
+        "page": "https://github.com/DeonUrist/Apocatremors/releases/tag/v1.2.0",
+        "notes": "Config cleanup + ambush clock change.\r\n\r\n- The config now has only `[General]` (Enabled, ShowNotification, CooldownMinSeconds, CooldownMaxSeconds, SkipChance, DistanceMultiplier, DespawnDistance, MaxAlive), `[Apocapatrol]` (Enabled — the former AiCars, PlayerCooldownMultiplier, PlayerSkipChance) and `[Debug]` (TestKey, VerboseLog). Everything else is fixed in code at its former default; the per-creature sections are gone (their rules live in the code). Old keys and sections are removed from your cfg automatically.\r\n- New defaults: CooldownMaxSeconds 1200, MaxAlive 8.\r\n- New `SkipChance` (25 %): share of ambush rolls that spawn nothing. `PlayerSkipChance` applies on top while Apocapatrol is loaded.\r\n- The ambush clock now runs whenever you play, on foot too. Once it is out, the ambush comes as soon as you drive faster than 15 km/h — so after a long stretch on foot you get it right after driving off.\r\n\r\nInstall: copy `Apocatremors.dll` into `BepInEx\\plugins\\` (BepInEx 5). DLL md5 `903451415cac4c6d8c691d13104a3d5a`.\r\n",
+        "zip": {
+          "name": "Apocatremors-1.2.0.zip",
+          "url": "https://github.com/DeonUrist/Apocatremors/releases/download/v1.2.0/Apocatremors-1.2.0.zip",
+          "size": 22526,
+          "assetId": 603446216,
+          "updated": "2026-10-01T14:32:43Z",
+          "sha256": "004c3443c44cc25dbb136609ec46865f614fe982a12f17e1719ae2b1b5d90f26",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": null,
+          "dlls": [
+            "Apocatremors.dll"
+          ],
+          "guidDll": "Apocatremors.dll",
+          "skip": []
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.apocaunloader",
+      "name": "Apocaunloader",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/Apocaunloader",
+      "summary": "Hold R to unload your gun; the rounds go back into your backpack.",
+      "tags": [
+        "weapons"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": null,
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "latest": {
+        "version": "1.1.1",
+        "tag": "v1.1.1",
+        "title": "Apocaunloader v1.1.1",
+        "published": "2026-09-26T20:16:16Z",
+        "page": "https://github.com/DeonUrist/Apocaunloader/releases/tag/v1.1.1",
+        "notes": "Hold R to unload your gun: rounds go back to the backpack, overflow drops as an ammo box.\r\n\r\n**Install:** unzip into the game folder (`BepInEx\\plugins\\Apocaunloader.dll`).\r\n\r\nConfig `[General]`: `Enabled`, `HoldSeconds` (0.35), `AnimationTimeout`, `FallbackKey`, `VerboseLog`. Appears in the Apocasetter MODS menu if installed (not required).",
+        "zip": {
+          "name": "Apocaunloader_1.1.1.zip",
+          "url": "https://github.com/DeonUrist/Apocaunloader/releases/download/v1.1.1/Apocaunloader_1.1.1.zip",
+          "size": 9245,
+          "assetId": 591412784,
+          "updated": "2026-09-26T20:36:49Z",
+          "sha256": "8a099d4057c3135b25ba8555e6e35c2a7181d6063d0e046cb4a7e8b078d15dda",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": null,
+          "dlls": [
+            "Apocaunloader.dll"
+          ],
+          "guidDll": "Apocaunloader.dll",
+          "skip": []
+        }
+      },
+      "error": null
+    }
+  ]
+}

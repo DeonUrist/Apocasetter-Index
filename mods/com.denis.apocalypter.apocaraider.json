@@ -1,0 +1,19 @@
+{
+  "guid": "com.denis.apocalypter.apocaraider",
+  "name": "Apocaraider",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/Apocaraider",
+  "summary": "Real bullets and headshots, raiders that see, hear and search, smarter pathing, and female raiders.",
+  "tags": [
+    "combat",
+    "ai",
+    "npcs"
+  ],
+  "requires": [],
+  "optional": [
+    "com.denis.apocalypter.apocapatrol"
+  ],
+  "pluginFolder": "Apocaraider",
+  "trust": "official",
+  "blocked": false
+}
