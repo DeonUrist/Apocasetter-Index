@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-04T04:30:50Z",
+  "generated": "2026-10-04T04:47:59Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -46,7 +46,8 @@
           "guidDll": "ApocaHUD43.dll",
           "skip": [
             "README.md"
-          ]
+          ],
+          "icon": null
         }
       },
       "error": null
@@ -94,7 +95,8 @@
             "ApocaLanguage/ApocaLanguage.dll"
           ],
           "guidDll": "ApocaLanguage/ApocaLanguage.dll",
-          "skip": []
+          "skip": [],
+          "icon": null
         }
       },
       "error": null
@@ -143,7 +145,8 @@
             "Apocapatrol/Apocapatrol.dll"
           ],
           "guidDll": "Apocapatrol/Apocapatrol.dll",
-          "skip": []
+          "skip": [],
+          "icon": null
         }
       },
       "error": null
@@ -188,7 +191,8 @@
             "Apocapocket.dll"
           ],
           "guidDll": "Apocapocket.dll",
-          "skip": []
+          "skip": [],
+          "icon": null
         }
       },
       "error": null
@@ -242,7 +246,8 @@
             "Apocaraider/Apocaraider.dll"
           ],
           "guidDll": "Apocaraider/Apocaraider.dll",
-          "skip": []
+          "skip": [],
+          "icon": null
         }
       },
       "error": null
@@ -287,7 +292,8 @@
             "Apocasaver.dll"
           ],
           "guidDll": "Apocasaver.dll",
-          "skip": []
+          "skip": [],
+          "icon": null
         }
       },
       "error": null
@@ -336,7 +342,8 @@
           "guidDll": "plugins/Apocasetter/Apocasetter.dll",
           "skip": [
             "README.md"
-          ]
+          ],
+          "icon": null
         }
       },
       "error": null
@@ -384,7 +391,8 @@
             "Apocaspawner.dll"
           ],
           "guidDll": "Apocaspawner.dll",
-          "skip": []
+          "skip": [],
+          "icon": null
         }
       },
       "error": null
@@ -432,7 +440,8 @@
             "Apocatremors.dll"
           ],
           "guidDll": "Apocatremors.dll",
-          "skip": []
+          "skip": [],
+          "icon": null
         }
       },
       "error": null
@@ -477,7 +486,8 @@
             "Apocaunloader.dll"
           ],
           "guidDll": "Apocaunloader.dll",
-          "skip": []
+          "skip": [],
+          "icon": null
         }
       },
       "error": null
@@ -532,7 +542,8 @@
           "guidDll": "Gunplay/Gunplay.dll",
           "skip": [
             "README.md"
-          ]
+          ],
+          "icon": null
         }
       },
       "error": null
@@ -585,7 +596,8 @@
           "guidDll": "GunplayHUD/GunplayHUD.dll",
           "skip": [
             "README.md"
-          ]
+          ],
+          "icon": null
         }
       },
       "error": null
@@ -641,7 +653,8 @@
           "guidDll": "NPCAI/NPCAI.dll",
           "skip": [
             "README.md"
-          ]
+          ],
+          "icon": null
         }
       },
       "error": null
@@ -687,7 +700,16 @@
             "PartAdjustment/PartAdjustment.dll"
           ],
           "guidDll": "PartAdjustment/PartAdjustment.dll",
-          "skip": []
+          "skip": [],
+          "icon": {
+            "path": "PartAdjustment/icon.png",
+            "size": [
+              64,
+              64
+            ],
+            "sha256": "9eadae5cb2d9044a11a64906702176890b362c5410244541f2185e4850eb6aba",
+            "png": "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"
+          }
         }
       },
       "error": null
@@ -737,7 +759,8 @@
           "guidDll": "WomenOfWasteland/WomenOfWasteland.dll",
           "skip": [
             "README.md"
-          ]
+          ],
+          "icon": null
         }
       },
       "error": null
