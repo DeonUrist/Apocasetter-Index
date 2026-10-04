@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-04T18:46:50Z",
+  "generated": "2026-10-04T22:49:33Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -97,6 +97,63 @@
           "guidDll": "ApocaLanguage/ApocaLanguage.dll",
           "skip": [],
           "icon": null
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "dev.apocalypter.vehicletuninglite",
+      "name": "Apocalypter Vehicle Tuning Lite",
+      "author": "CoffeeKills",
+      "repo": "CoffeeKills/ApocalypterVehicleTuningLite",
+      "summary": "Steering, suspension and ABS/TCS assists for keyboard and mouse, with presets; panel on F7. Don't run it together with the full Vehicle Tuning mod.",
+      "tags": [
+        "vehicles",
+        "driving"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": null,
+      "trust": "community",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
+      "latest": {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "title": "Apocalypter Vehicle Tuning Lite 1.0.0",
+        "published": "2026-10-04T22:32:00Z",
+        "page": "https://github.com/CoffeeKills/ApocalypterVehicleTuningLite/releases/tag/v1.0.0",
+        "notes": "First release: steering, suspension and ABS/TCS assists for keyboard-and-mouse driving. Everything off by default; F7 opens the panel. See the README for the recommended setup. Do not run alongside the full Apocalypter Vehicle Tuning mod.",
+        "zip": {
+          "name": "ApocalypterVehicleTuningLite-1.0.0.zip",
+          "url": "https://github.com/CoffeeKills/ApocalypterVehicleTuningLite/releases/download/v1.0.0/ApocalypterVehicleTuningLite-1.0.0.zip",
+          "size": 59532,
+          "assetId": 610830240,
+          "updated": "2026-10-04T22:31:59Z",
+          "sha256": "e53a1fadaefa7d54a6e35adcba2f623daec205a53ac1a28d9421bb9f33b6db31",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": null,
+          "dlls": [
+            "ApocalypterSteeringLite.dll"
+          ],
+          "guidDll": "ApocalypterSteeringLite.dll",
+          "skip": [
+            "README.txt"
+          ],
+          "icon": {
+            "path": "ApocalypterSteeringLite.png",
+            "size": [
+              64,
+              64
+            ],
+            "sha256": "f72dad807a175ea257768cd1a2cb877bc50444388fb5e5cb0cae515fddf62376",
+            "png": "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"
+          }
         }
       },
       "error": null
@@ -650,6 +707,55 @@
             "GunplayHUD/GunplayHUD.dll"
           ],
           "guidDll": "GunplayHUD/GunplayHUD.dll",
+          "skip": [
+            "README.md"
+          ],
+          "icon": null
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.healthstacks",
+      "name": "HealthStacks",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/HealthStacks",
+      "summary": "Use on a bandage or first aid kit on the ground tops up the one in your quick slot (up to 3 charges) instead of saying FULL.",
+      "tags": [
+        "items",
+        "healing"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": null,
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
+      "latest": {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "title": "HealthStacks 1.0.0",
+        "published": "2026-10-04T22:11:23Z",
+        "page": "https://github.com/DeonUrist/HealthStacks/releases/tag/v1.0.0",
+        "notes": "Tops up your partly used **Bandage (F1)** / **First Aid (F2)** from the ones you find.\r\n\r\n- Press **Use (F)** on a bandage / first aid kit on the ground while your slot holds a partly used one: its charges move into your slot, up to **3**.\r\n- Leftover charges stay in the item on the ground; an item that gives away all its charges disappears.\r\n- Empty slot → normal pickup; slot already at 3 → the normal \"FULL\".\r\n\r\n**Install:** BepInEx 5 — copy `HealthStacks.dll` into `BepInEx\\plugins\\`.\r\nConfig `com.denis.apocalypter.healthstacks.cfg`: `[General] Enabled` (also in the Apocasetter Mods menu).",
+        "zip": {
+          "name": "HealthStacks-1.0.0.zip",
+          "url": "https://github.com/DeonUrist/HealthStacks/releases/download/v1.0.0/HealthStacks-1.0.0.zip",
+          "size": 5291,
+          "assetId": 610812826,
+          "updated": "2026-10-04T22:22:00Z",
+          "sha256": "447eb52039599a5649a1fe892998baf9f9ee2bf3a18d281ca26691152baa8bcb",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": null,
+          "dlls": [
+            "HealthStacks.dll"
+          ],
+          "guidDll": "HealthStacks.dll",
           "skip": [
             "README.md"
           ],
