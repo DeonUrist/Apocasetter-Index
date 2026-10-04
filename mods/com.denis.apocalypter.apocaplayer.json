@@ -1,0 +1,17 @@
+{
+  "guid": "com.denis.apocalypter.apocaplayer",
+  "name": "Apocaplayer",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/Apocaplayer",
+  "summary": "See your character: a full body in first person, a third-person camera on foot and in cars, and a choice of a female character or the game's own man.",
+  "tags": [
+    "player",
+    "camera",
+    "models"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": "Apocaplayer",
+  "trust": "official",
+  "blocked": false
+}
