@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-04T00:50:31Z",
+  "generated": "2026-10-04T04:30:50Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -642,6 +642,52 @@
           "skip": [
             "README.md"
           ]
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.denis.apocalypter.partadjustment",
+      "name": "Part Adjuster Tools",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/PartAdjusterTools",
+      "summary": "The Part Adjustment tool can also select the suspension: widen or narrow both axles and raise or lower the suspension (numpad 4/6/2/8, 0 resets), saved per car.",
+      "tags": [
+        "vehicles",
+        "tools"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": "PartAdjustment",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
+      "latest": {
+        "version": "1.0.4",
+        "tag": "v1.0.4",
+        "title": "Part Adjuster Tools 1.0.4",
+        "published": "2026-10-04T04:07:52Z",
+        "page": "https://github.com/DeonUrist/PartAdjusterTools/releases/tag/v1.0.4",
+        "notes": "Adds the actual floating wrench indicators for front and rear suspension. Version 1.0.3 changed only the on-screen cursor; it did not add these world-space indicators.\n\nThe new indicators reuse vanilla's wrench mesh, material, size and tool visibility group. They face the camera, follow the active stock/lifted axles as width/height changes, and stay the same size while stretching. Aim at either wrench within the normal two-metre tool reach to select the suspension. They hide when the tool is put away and are recreated on load.\n\nRetains the Apocasetter PNG icon, suspension controls, per-car saves and third-person brace visibility fix.\n\nInstall: extract PartAdjusterTools-1.0.4.zip into BepInEx/plugins, then restart the game. Keep only one active PartAdjustment.dll.\n\nValidation: Release build has zero warnings/errors; all 35 managed checks pass. Native marker assets and visibility FSM were inspected offline. Installed DLL hash matches the packaged file. The game was not executed for this update; floating-wrench rendering and selection require an in-game check.\r\n",
+        "zip": {
+          "name": "PartAdjusterTools-1.0.4.zip",
+          "url": "https://github.com/DeonUrist/PartAdjusterTools/releases/download/v1.0.4/PartAdjusterTools-1.0.4.zip",
+          "size": 20439,
+          "assetId": 609092132,
+          "updated": "2026-10-04T04:07:52Z",
+          "sha256": "8a04b090205346e6559e29fca1fa954d310fb20524b2b6bee5c0358e3cf81881",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "PartAdjustment",
+          "dlls": [
+            "PartAdjustment/PartAdjustment.dll"
+          ],
+          "guidDll": "PartAdjustment/PartAdjustment.dll",
+          "skip": []
         }
       },
       "error": null
