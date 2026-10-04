@@ -1,0 +1,16 @@
+{
+  "guid": "dev.apocalypter.vehicletuninglite",
+  "name": "Apocalypter Vehicle Tuning Lite",
+  "author": "CoffeeKills",
+  "repo": "CoffeeKills/ApocalypterVehicleTuningLite",
+  "summary": "Steering, suspension and ABS/TCS assists for keyboard and mouse, with presets; panel on F7. Don't run it together with the full Vehicle Tuning mod.",
+  "tags": [
+    "vehicles",
+    "driving"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": null,
+  "trust": "community",
+  "blocked": false
+}

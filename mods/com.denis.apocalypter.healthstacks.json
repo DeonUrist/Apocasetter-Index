@@ -1,0 +1,16 @@
+{
+  "guid": "com.denis.apocalypter.healthstacks",
+  "name": "HealthStacks",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/HealthStacks",
+  "summary": "Use on a bandage or first aid kit on the ground tops up the one in your quick slot (up to 3 charges) instead of saying FULL.",
+  "tags": [
+    "items",
+    "healing"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": null,
+  "trust": "official",
+  "blocked": false
+}
