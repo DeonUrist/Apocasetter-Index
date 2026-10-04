@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-03T22:55:54Z",
+  "generated": "2026-10-04T00:09:03Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -619,19 +619,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.0.0",
-        "tag": "v1.0.0",
-        "title": "NPCAI 1.0.0",
-        "published": "2026-10-03T22:47:52Z",
-        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.0.0",
-        "notes": "First standalone release. Smarter human NPCs: aim pacing, sight and hearing, search and pursuit, combat movement, baked navigation, idle behaviour, friendly pass-through, storm reactions and optional AI debug overlays. Uses Gunplay's weapon ranges when it is installed, its own defaults otherwise.\r\n\r\nPart of the Apocaraider split: **Gunplay**, **GunplayHUD**, **NPCAI** and **WomenOfWasteland** replace the combined Apocaraider (now frozen). Each works on its own and with any combination of the others. **Remove Apocaraider** when installing these, otherwise its hooks run twice. Old Apocaraider settings are imported on first run.\r\n\r\n**Install:** unzip into `BepInEx\\plugins` (creates `BepInEx\\plugins\\NPCAI\\`).",
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "title": "NPCAI 1.0.1",
+        "published": "2026-10-04T00:07:50Z",
+        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.0.1",
+        "notes": "NPCAI weapon ranges can now be changed only through the optional Gunplay mod.\r\n\r\n- Removed NPCAI's six editable fallback range settings.\r\n- Without Gunplay, NPCs use fixed ranges: pistol 60 m, SMG 70 m, rifle 120 m, sniper 250 m, shotgun 35 m, crossbow 90 m.\r\n- With Gunplay installed, its configured ranges remain authoritative.\r\n- Old NPCAI range entries are removed automatically while preserving other settings.\r\n- Other AI behavior remains unchanged.\r\n\r\nBuild and managed/static verification passed. In-game behavior has not been verified for this release.\r\n\r\nThe release ZIP will be attached manually. Install its NPCAI folder under BepInEx/plugins, replacing the previous NPCAI.dll, then restart the game.\r\n",
         "zip": {
-          "name": "NPCAI-1.0.0.zip",
-          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.0.0/NPCAI-1.0.0.zip",
-          "size": 87853,
-          "assetId": 608676232,
-          "updated": "2026-10-03T22:50:57Z",
-          "sha256": "aa8fcae85c469006557e225f2fe9f4dc76e718ba38822e6f9bf93070a6432afb",
+          "name": "NPCAI-1.0.1.zip",
+          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.0.1/NPCAI-1.0.1.zip",
+          "size": 89157,
+          "assetId": 608769028,
+          "updated": "2026-10-04T00:08:39Z",
+          "sha256": "7b4c3bed71a99f12c03b8f55549edb04f4dee98070e0dc9d501081ed4be48dc0",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "NPCAI",
