@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-04T09:43:44Z",
+  "generated": "2026-10-04T11:23:03Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -324,8 +324,27 @@
         "title": "Apocasetter 2.0.8",
         "published": "2026-10-04T04:48:17Z",
         "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.0.8",
-        "notes": "- Mods you haven't installed yet show their real icon in the Mods list. The Apocasetter index now copies each mod's icon.png out of its release zip, so the icon appears before you install the mod.\n- Mod makers: nothing new to do. Ship `YourMod\\icon.png` (or `YourMod.png` beside a loose DLL) in your release zip as before.\n\nInstall: Apocasetter updates itself from the Mods window (UPDATE, then restart), or extract the zip into the game folder.",
-        "zip": null
+        "notes": "- Mods you haven't installed yet show their real icon in the Mods list. The Apocasetter index now copies each mod's icon.png out of its release zip, so the icon appears before you install the mod.\r\n- Mod makers: nothing new to do. Ship `YourMod\\icon.png` (or `YourMod.png` beside a loose DLL) in your release zip as before.\r\n\r\nInstall: Apocasetter updates itself from the Mods window (UPDATE, then restart), or extract the zip into the game folder.",
+        "zip": {
+          "name": "Apocasetter-2.0.8.zip",
+          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v2.0.8/Apocasetter-2.0.8.zip",
+          "size": 327877,
+          "assetId": 609707199,
+          "updated": "2026-10-04T11:22:44Z",
+          "sha256": "3c46d61b81b78348811dac690104f3a2ee188fd855070df29b8e8db808652916",
+          "extractTo": "BepInEx",
+          "stripPrefix": "BepInEx/",
+          "topFolder": null,
+          "dlls": [
+            "plugins/Apocasetter/Apocasetter.dll",
+            "patchers/Apocasetter.Installer.dll"
+          ],
+          "guidDll": "plugins/Apocasetter/Apocasetter.dll",
+          "skip": [
+            "README.md"
+          ],
+          "icon": null
+        }
       },
       "error": null
     },
