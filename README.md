@@ -34,6 +34,7 @@ so players never run into GitHub's API limits. A GitHub Action rebuilds `index.j
    `BepInEx\plugins` (`YourMod.dll`, or a `YourMod\` folder with the DLL and its files; a README at the zip root is ignored).
 3. **Icon** (optional, recommended): a square PNG, 64×64, light lines on a transparent background. Ship it in the zip as
    `YourMod\icon.png` (mod in its own folder) or `YourMod.png` next to a single `YourMod.dll`. Without one, players see your initials.
+   The index copies it out of the zip (PNG, up to 256×256 and 48 KB), so players see it in the list before they install the mod.
 4. **Settings in the Mods window** (optional): bind `Config.Bind("General", "Apocasetter", true, "Show this mod in the Apocasetter Mods menu");`
    and give every config entry a clear description.
 5. **Submit once**: **[open a "Submit a mod" issue](../../issues/new?template=submit-mod.yml)** and fill in the form, or open a pull request
@@ -90,7 +91,8 @@ Built by `scripts/build_index.py`; don't edit it by hand. Each entry is the entr
   "zip": {
     "name": "Apocapatrol-1.20.3.zip", "url": "...", "size": 26629152, "sha256": "...",
     "extractTo": "plugins", "stripPrefix": "", "topFolder": "Apocapatrol",
-    "dlls": ["Apocapatrol/Apocapatrol.dll"], "guidDll": "Apocapatrol/Apocapatrol.dll", "skip": []
+    "dlls": ["Apocapatrol/Apocapatrol.dll"], "guidDll": "Apocapatrol/Apocapatrol.dll", "skip": [],
+    "icon": { "path": "Apocapatrol/icon.png", "size": [64, 64], "sha256": "...", "png": "<base64>" }
   }
 },
 "error": null
@@ -98,7 +100,8 @@ Built by `scripts/build_index.py`; don't edit it by hand. Each entry is the entr
 
 `zip` is `null` when the release has no zip (players get a link to the release page instead). Apocasetter checks `sha256` after
 downloading, extracts the files minus `stripPrefix` into `BepInEx\<extractTo>\`, skips the files in `skip`, and never deletes files the zip
-doesn't contain. `latest` is `null` while a repository has no release.
+doesn't contain. `latest` is `null` while a repository has no release. `icon` is `null` when the zip has no icon.png (Apocasetter 2.0.8+
+shows it for mods that aren't installed yet).
 
 ## For the maintainer
 

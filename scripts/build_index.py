@@ -24,7 +24,8 @@ def previous():
 
 def zip_info(entry, asset, prev_latest):
     old = (prev_latest or {}).get("zip") or {}
-    if old.get("assetId") == asset["id"] and old.get("updated") == asset.get("updated_at") and old.get("sha256"):
+    # "icon" missing = indexed before icons were read from zips: download once more
+    if old.get("assetId") == asset["id"] and old.get("updated") == asset.get("updated_at") and old.get("sha256") and "icon" in old:
         return old, None
     if asset.get("size", 0) > MAX_ZIP:
         return None, "%s is larger than 200 MB" % asset["name"]
@@ -45,6 +46,7 @@ def zip_info(entry, asset, prev_latest):
         "dlls": z["dlls"],
         "guidDll": z["guidDll"],
         "skip": z["skip"],
+        "icon": z["icon"],
     }, (None if z["guidDll"] else "no DLL in the zip contains the plugin GUID")
 
 

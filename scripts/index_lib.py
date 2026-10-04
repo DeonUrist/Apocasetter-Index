@@ -2,8 +2,10 @@
 
 Standard library only, so it runs the same on GitHub Actions and on a player's PC.
 """
+import base64
 import hashlib
 import io
+import struct
 import json
 import os
 import re
@@ -21,6 +23,8 @@ REPO_RE = re.compile(r"^[A-Za-z0-9\-]{1,39}/[A-Za-z0-9._\-]{1,100}$")
 FOLDER_RE = re.compile(r"^[A-Za-z0-9_.\- ]{1,64}$")
 TRUST = ("official", "community")
 MAX_ZIP = 200 * 1024 * 1024
+MAX_ICON = 48 * 1024        # bytes; the icon travels inside index.json as base64
+MAX_ICON_SIDE = 256
 
 # field -> (types, default)
 FIELDS = {
@@ -194,6 +198,7 @@ def analyze_zip(data, guid):
         if n.lower().endswith(".dll") and n not in unsafe and needle in z.read(orig[n]):
             guid_dll = n[len(strip):]
             break
+    icon = find_icon(z, orig, strip, guid_dll)
     return {
         "sha256": hashlib.sha256(data).hexdigest(),
         "fileCount": len(names),
@@ -204,7 +209,41 @@ def analyze_zip(data, guid):
         "guidDll": guid_dll,
         "skip": docs,
         "unsafe": unsafe,
+        "icon": icon,
     }
+
+
+def png_size(b):
+    """(width, height) of a PNG, or None when it is not one."""
+    if len(b) < 24 or b[:8] != b"\x89PNG\r\n\x1a\n" or b[12:16] != b"IHDR":
+        return None
+    return struct.unpack(">II", b[16:24])
+
+
+def find_icon(z, orig, strip, guid_dll):
+    """The mod's icon from its zip, the same places Apocasetter looks once it is installed:
+    icon.png in the mod's own folder, or <Dll>.png beside the DLL. -> {path, size, sha256, png(base64)} or None."""
+    if not guid_dll:
+        return None
+    parts = guid_dll.split("/")
+    top = parts[:2] if parts[0].lower() == "plugins" else parts[:1]   # zips that extract into BepInEx\ carry plugins/<Mod>/...
+    cands = []
+    if len(parts) > len(top):
+        cands.append("/".join(top) + "/icon.png")                     # the mod's own folder
+        cands.append("/".join(parts[:-1]) + "/icon.png")              # beside the DLL
+    cands.append(guid_dll[:-4] + ".png")                               # <Dll>.png beside a loose DLL
+    lower = {k.lower(): v for k, v in orig.items()}
+    for c in cands:
+        n = lower.get((strip + c).lower())
+        if not n:
+            continue
+        b = z.read(n)
+        wh = png_size(b)
+        if not wh or len(b) > MAX_ICON or max(wh) > MAX_ICON_SIDE:
+            continue
+        return {"path": c, "size": list(wh), "sha256": hashlib.sha256(b).hexdigest(),
+                "png": base64.b64encode(b).decode("ascii")}
+    return None
 
 
 def online_check(e):
