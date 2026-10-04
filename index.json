@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-04T00:09:03Z",
+  "generated": "2026-10-04T00:50:31Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -563,19 +563,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.0.0",
-        "tag": "v1.0.0",
-        "title": "GunplayHUD 1.0.0",
-        "published": "2026-10-03T22:47:51Z",
-        "page": "https://github.com/DeonUrist/GunplayHUD/releases/tag/v1.0.0",
-        "notes": "First standalone release. Hit markers, floating and list damage numbers, vehicle condition feedback and crosshair options. Works with vanilla shots on its own and with Gunplay's projectiles when Gunplay is installed.\r\n\r\nPart of the Apocaraider split: **Gunplay**, **GunplayHUD**, **NPCAI** and **WomenOfWasteland** replace the combined Apocaraider (now frozen). Each works on its own and with any combination of the others. **Remove Apocaraider** when installing these, otherwise its hooks run twice. Old Apocaraider settings are imported on first run.\r\n\r\n**Install:** unzip into `BepInEx\\plugins` (creates `BepInEx\\plugins\\GunplayHUD\\`).",
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "title": "GunplayHUD 1.2.0",
+        "published": "2026-10-04T00:49:05Z",
+        "page": "https://github.com/DeonUrist/GunplayHUD/releases/tag/v1.2.0",
+        "notes": "GunplayHUD 1.2.0 adds configurable crosshairs and headshot audio while preserving existing hit feedback and optional Gunplay integration.\r\n\r\n- Crosshair slider: 0 = none, 1 = vanilla, 2 = two horizontal lines, 3 = dot.\r\n- Independent SelectionDot toggle for the unarmed selection dot.\r\n- Headshot sound enabled by default, with a 75 ms minimum interval and at most two overlapping voices; busy clips are never restarted.\r\n- Weapon dot is half its original displayed width and height. Headshot sound has 30% more sample gain, with peaks limited to the valid audio range.\r\n- Existing TurnOffCrosshair settings migrate to the new controls; explicit new settings take precedence.\r\n- Bundled crosshair textures and headshot.mp3 load from the plugin folder. Copy the complete GunplayHUD folder, including Textures and Sounds, when installing the release package.\r\n\r\nValidation: release build passed with zero warnings/errors; 37 focused managed checks passed. Managed compatibility checks passed for all eight installation combinations containing GunplayHUD. In-game rendering and audio playback remain unverified.\r\n\r\nThe release ZIP will be attached manually.\r\n",
         "zip": {
-          "name": "GunplayHUD-1.0.0.zip",
-          "url": "https://github.com/DeonUrist/GunplayHUD/releases/download/v1.0.0/GunplayHUD-1.0.0.zip",
-          "size": 11286,
-          "assetId": 608676484,
-          "updated": "2026-10-03T22:51:11Z",
-          "sha256": "19d26cef30a46d78c67c2e6f77ae51cd2b9e1b5de11819887445ed28f3635641",
+          "name": "GunplayHUD-1.2.0.zip",
+          "url": "https://github.com/DeonUrist/GunplayHUD/releases/download/v1.2.0/GunplayHUD-1.2.0.zip",
+          "size": 41763,
+          "assetId": 608838934,
+          "updated": "2026-10-04T00:49:54Z",
+          "sha256": "b529697a2627618c334a224257b880a2f0d39eed24548566a20a149b2783cd0f",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "GunplayHUD",
@@ -624,7 +624,7 @@
         "title": "NPCAI 1.0.1",
         "published": "2026-10-04T00:07:50Z",
         "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.0.1",
-        "notes": "NPCAI weapon ranges can now be changed only through the optional Gunplay mod.\r\n\r\n- Removed NPCAI's six editable fallback range settings.\r\n- Without Gunplay, NPCs use fixed ranges: pistol 60 m, SMG 70 m, rifle 120 m, sniper 250 m, shotgun 35 m, crossbow 90 m.\r\n- With Gunplay installed, its configured ranges remain authoritative.\r\n- Old NPCAI range entries are removed automatically while preserving other settings.\r\n- Other AI behavior remains unchanged.\r\n\r\nBuild and managed/static verification passed. In-game behavior has not been verified for this release.\r\n\r\nThe release ZIP will be attached manually. Install its NPCAI folder under BepInEx/plugins, replacing the previous NPCAI.dll, then restart the game.\r\n",
+        "notes": "NPCAI weapon ranges can now be changed only through the optional Gunplay mod.\r\n\r\n- Removed NPCAI's six editable fallback range settings.\r\n- Without Gunplay, NPCs use fixed ranges: pistol 60 m, SMG 70 m, rifle 120 m, sniper 250 m, shotgun 35 m, crossbow 90 m.\r\n- With Gunplay installed, its configured ranges remain authoritative.\r\n- Old NPCAI range entries are removed automatically while preserving other settings.\r\n- Other AI behavior remains unchanged.\r\n\r\nInstall its NPCAI folder under BepInEx/plugins, replacing the previous NPCAI.dll, then restart the game.\r\n",
         "zip": {
           "name": "NPCAI-1.0.1.zip",
           "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.0.1/NPCAI-1.0.1.zip",
