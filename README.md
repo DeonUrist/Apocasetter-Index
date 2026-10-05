@@ -33,7 +33,8 @@ so players never run into GitHub's API limits. A GitHub Action rebuilds `index.j
 2. **Every release**: tag = version (`v1.2.0`), the same version in your `[BepInPlugin]`, and a **`.zip` attached** that unpacks into
    `BepInEx\plugins` (`YourMod.dll`, or a `YourMod\` folder with the DLL and its files; a README at the zip root is ignored).
 3. **Icon** (optional, recommended): a square PNG, 64×64, light lines on a transparent background. Ship it in the zip as
-   `YourMod\icon.png` (mod in its own folder) or `YourMod.png` next to a single `YourMod.dll`. Without one, players see your initials.
+   `YourMod\icon.png` (mod in its own folder) or `YourMod.png` next to a single `YourMod.dll`. Without one, players see your initials. If the zip has none,
+   the index uses `icon.png` from the root of your repository (at the release tag, else on the default branch) for the Mods window.
    The index copies it out of the zip (PNG, up to 256×256 and 48 KB), so players see it in the list before they install the mod.
 4. **Settings in the Mods window** (optional): bind `Config.Bind("General", "Apocasetter", true, "Show this mod in the Apocasetter Mods menu");`
    and give every config entry a clear description.

@@ -9,8 +9,10 @@ import json
 import sys
 import urllib.error
 
-from index_lib import (INDEX_PATH, analyze_zip, check_entry, http, latest_release,
-                       load_entries, normalized, pick_zip, MAX_ZIP)
+from index_lib import (API, INDEX_PATH, analyze_zip, check_entry, http, latest_release,
+                       load_entries, normalized, pick_zip, png_size, MAX_ICON, MAX_ICON_SIDE, MAX_ZIP)
+import base64
+import hashlib
 
 
 def previous():
@@ -50,6 +52,25 @@ def zip_info(entry, asset, prev_latest):
     }, (None if z["guidDll"] else "no DLL in the zip contains the plugin GUID")
 
 
+def repo_icon(repo, ref):
+    """No icon in the zip: fall back to icon.png in the repository root, at the release tag or else on the default
+    branch (an icon added after the release still shows, no new mod release needed)."""
+    b = None
+    for r in (ref, None):
+        try:
+            b = http("%s/repos/%s/contents/icon.png%s" % (API, repo, "?ref=" + r if r else ""), raw=True, accept="application/vnd.github.raw")
+            break
+        except urllib.error.HTTPError:
+            continue
+    if not b:
+        return None
+    wh = png_size(b)
+    if not wh or len(b) > MAX_ICON or max(wh) > MAX_ICON_SIDE:
+        return None
+    return {"path": "repo:icon.png", "size": list(wh), "sha256": hashlib.sha256(b).hexdigest(),
+            "png": base64.b64encode(b).decode("ascii")}
+
+
 def build():
     prev = previous()
     mods, problems = [], 0
@@ -67,6 +88,9 @@ def build():
             if rel:
                 asset = pick_zip(rel, e["repo"])
                 zinfo, zerr = (zip_info(e, asset, prev.get(e["guid"], {}).get("latest")) if asset else (None, None))
+                if zinfo and not zinfo.get("icon"):
+                    zinfo = dict(zinfo)   # zip_info may hand back the previous index's dict, which the change check compares against
+                    zinfo["icon"] = repo_icon(e["repo"], rel.get("tag_name"))
                 item["latest"] = {
                     "version": (rel.get("tag_name") or "").lstrip("vV"),
                     "tag": rel.get("tag_name"),
