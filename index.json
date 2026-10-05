@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-05T18:24:30Z",
+  "generated": "2026-10-05T21:02:59Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -633,33 +633,15 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.0.0",
-        "tag": "v1.0.0",
-        "title": "Gunplay 1.0.0",
-        "published": "2026-10-03T22:47:50Z",
-        "page": "https://github.com/DeonUrist/Gunplay/releases/tag/v1.0.0",
-        "notes": "First standalone release. Projectile simulation for player and NPC shots: glowing tracers and crossbow bolts with travel time, per-weapon effective range and damage falloff, headshots, shotgun pellets, vehicle damage/penetration, wheel damage and detachment, corpse hit blood and stab sounds, human boss health. NPCAI and GunplayHUD hook in automatically when installed.\r\n\r\nPart of the Apocaraider split: **Gunplay**, **GunplayHUD**, **NPCAI** and **WomenOfWasteland** replace the combined Apocaraider (now frozen). Each works on its own and with any combination of the others. **Remove Apocaraider** when installing these, otherwise its hooks run twice. Old Apocaraider settings are imported on first run.\r\n\r\n**Install:** unzip into `BepInEx\\plugins` (creates `BepInEx\\plugins\\Gunplay\\`).",
-        "zip": {
-          "name": "Gunplay-1.0.0.zip",
-          "url": "https://github.com/DeonUrist/Gunplay/releases/download/v1.0.0/Gunplay-1.0.0.zip",
-          "size": 282739,
-          "assetId": 608676772,
-          "updated": "2026-10-03T22:51:27Z",
-          "sha256": "91e355768bb5ef3c26c473e1edca0b23a3677d8843b3e1c57cf297f368b6c53b",
-          "extractTo": "plugins",
-          "stripPrefix": "",
-          "topFolder": "Gunplay",
-          "dlls": [
-            "Gunplay/Gunplay.dll"
-          ],
-          "guidDll": "Gunplay/Gunplay.dll",
-          "skip": [
-            "README.md"
-          ],
-          "icon": null
-        }
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "title": "gunplay 1.0.1",
+        "published": "2026-10-05T21:01:19Z",
+        "page": "https://github.com/DeonUrist/Gunplay/releases/tag/v1.0.1",
+        "notes": "## gunplay 1.0.1\n\n- gunplay 1.0.1: Car passenger support\n- Update README.md",
+        "zip": null
       },
-      "error": null
+      "error": "no DLL in the zip contains the plugin GUID"
     },
     {
       "guid": "com.denis.apocalypter.gunplayhud",
@@ -687,33 +669,15 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.2.0",
-        "tag": "v1.2.0",
-        "title": "GunplayHUD 1.2.0",
-        "published": "2026-10-04T00:49:05Z",
-        "page": "https://github.com/DeonUrist/GunplayHUD/releases/tag/v1.2.0",
-        "notes": "GunplayHUD 1.2.0 adds configurable crosshairs and headshot audio while preserving existing hit feedback and optional Gunplay integration.\r\n\r\n- Crosshair slider: 0 = none, 1 = vanilla, 2 = two horizontal lines, 3 = dot.\r\n- Independent SelectionDot toggle for the unarmed selection dot.\r\n- Headshot sound enabled by default, with a 75 ms minimum interval and at most two overlapping voices; busy clips are never restarted.\r\n- Weapon dot is half its original displayed width and height. Headshot sound has 30% more sample gain, with peaks limited to the valid audio range.\r\n- Existing TurnOffCrosshair settings migrate to the new controls; explicit new settings take precedence.\r\n- Bundled crosshair textures and headshot.mp3 load from the plugin folder. Copy the complete GunplayHUD folder, including Textures and Sounds, when installing the release package.\r\n\r\nValidation: release build passed with zero warnings/errors; 37 focused managed checks passed. Managed compatibility checks passed for all eight installation combinations containing GunplayHUD. In-game rendering and audio playback remain unverified.\r\n\r\nThe release ZIP will be attached manually.\r\n",
-        "zip": {
-          "name": "GunplayHUD-1.2.0.zip",
-          "url": "https://github.com/DeonUrist/GunplayHUD/releases/download/v1.2.0/GunplayHUD-1.2.0.zip",
-          "size": 41763,
-          "assetId": 608838934,
-          "updated": "2026-10-04T00:49:54Z",
-          "sha256": "b529697a2627618c334a224257b880a2f0d39eed24548566a20a149b2783cd0f",
-          "extractTo": "plugins",
-          "stripPrefix": "",
-          "topFolder": "GunplayHUD",
-          "dlls": [
-            "GunplayHUD/GunplayHUD.dll"
-          ],
-          "guidDll": "GunplayHUD/GunplayHUD.dll",
-          "skip": [
-            "README.md"
-          ],
-          "icon": null
-        }
+        "version": "1.2.1",
+        "tag": "v1.2.1",
+        "title": "gunplayhud 1.2.1",
+        "published": "2026-10-05T21:02:11Z",
+        "page": "https://github.com/DeonUrist/GunplayHUD/releases/tag/v1.2.1",
+        "notes": "## gunplayhud 1.2.1\n\n- gunplay 1.0.1: Car passenger support.",
+        "zip": null
       },
-      "error": null
+      "error": "no DLL in the zip contains the plugin GUID"
     },
     {
       "guid": "com.denis.apocalypter.healthstacks",
