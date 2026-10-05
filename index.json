@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-05T00:55:15Z",
+  "generated": "2026-10-05T01:16:05Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -763,7 +763,15 @@
           "skip": [
             "README.md"
           ],
-          "icon": null
+          "icon": {
+            "path": "repo:icon.png",
+            "size": [
+              64,
+              64
+            ],
+            "sha256": "a5c58f366bb7feed6fad6f3ac07d478ac4d3ffbd54748ee611d146e7e4c966e9",
+            "png": "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"
+          }
         }
       },
       "error": null
