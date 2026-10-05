@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-05T02:12:31Z",
+  "generated": "2026-10-05T08:59:44Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -260,31 +260,27 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.0.0",
-        "tag": "v2.0.0",
-        "title": "Apocapocket 2.0.0",
-        "published": "2026-10-05T00:09:49Z",
-        "page": "https://github.com/DeonUrist/Apocapocket/releases/tag/v2.0.0",
-        "notes": "# Apocapocket 2.0.0\n\nSix logical slots now hold items and weapons, with explicit inventory transactions and rollback when a game operation times out.\n\n- Store and retrieve ordinary items with their recorded hand pose. Switching slots and Weapon off return held items to their origin, a free slot, or the world when all slots are occupied.\n- Pick up weapons with Use / F into the first free slot in order 1–6, including automatic drawing when that slot is already selected.\n- Unlock slots 4, 4–5 or 4–6 with the worn backpack. Removing or downsizing it ejects overflow after a short stable gameplay delay.\n- Expand the original slot card progressively to 1–4, 1–5 and 1–6 while preserving texture scale and end caps. The ammo/value panel and card's right edge stay fixed; the slot row and grenade/drop/unequip hints move left as capacity increases.\n- Save logical slot mappings and hand poses inside the game's ES3 save. Ordinary stored items and extra-slot weapons are normalized to physical world items during serialization, then restored to the inventory.\n- Cache generated item icons on disk; retain native item icons when available.\n- Fix the Unity `Start() can not take parameters` error by renaming the transaction entry method. Verification now checks Unity lifecycle signatures on all plugin MonoBehaviours.\n\n## Installation\n\nRequires Apocalypter and BepInEx 5.4.x. Copy `Apocapocket.dll` into `BepInEx/plugins/Apocapocket`, replacing the previous version. Keep only one copy of the plugin DLL and restart the game. Existing extra-slot key bindings and the plugin GUID are retained.\n\n## Validation and known limits\n\nThe production inventory, transaction and persistence code passed 77 checks with headless adapters. The plugin compiled against the installed game assemblies; all four Harmony patches and Unity lifecycle signatures passed the assembly smoke checks.\n\nThe expanding artwork was confirmed in-game. The latest leftward layout correction and the complete save/load, vehicle and physical-item acceptance scenarios still need in-game verification; see `VALIDATION.md` in the source and release archive. The native Unity mesh check could not run because the local editor lacked an activated license.\n\nStale inventory mappings from saves written without the plugin are detected using the saved vanilla Timeline. A re-save with an exactly unchanged Timeline cannot be distinguished by this check. Hand-carried items remain under vanilla/Apocasaver save handling.\n",
+        "version": "2.0.1",
+        "tag": "v2.0.1",
+        "title": "Apocapocket 2.0.1",
+        "published": "2026-10-05T02:35:34Z",
+        "page": "https://github.com/DeonUrist/Apocapocket/releases/tag/v2.0.1",
+        "notes": "## Apocapocket 2.0.1\r\n\r\n**Fix: attachable items taken out of a slot can be attached to cars again** (spikes, bumpers and other attachables).\r\nStoring an item switches off its attach logic; 2.0.0 never switched it back on when the item came back into your hand.\r\n\r\nAttachables already taken out with 2.0.0 (even if saved that way) are repaired automatically the next time you pick them up.\r\n\r\nInstall: copy `Apocapocket.dll` into `BepInEx\\plugins\\Apocapocket\\` (replace the old one). Requires BepInEx 5.4.x.\r\n",
         "zip": {
-          "name": "Apocapocket-2.0.0.zip",
-          "url": "https://github.com/DeonUrist/Apocapocket/releases/download/v2.0.0/Apocapocket-2.0.0.zip",
-          "size": 42785,
-          "assetId": 610995170,
-          "updated": "2026-10-05T00:09:49Z",
-          "sha256": "d0592801bdb9d0e8b3cfb3d6cb2c11dc7f718918851fba57e217c41f5af39485",
+          "name": "Apocapocket-2.0.1.zip",
+          "url": "https://github.com/DeonUrist/Apocapocket/releases/download/v2.0.1/Apocapocket-2.0.1.zip",
+          "size": 35782,
+          "assetId": 611268891,
+          "updated": "2026-10-05T02:35:52Z",
+          "sha256": "97848be73cba27505df4e97b64eb0cbf2f35dec01f59ccd2c179722dcefc5392",
           "extractTo": "plugins",
           "stripPrefix": "",
-          "topFolder": null,
+          "topFolder": "Apocapocket",
           "dlls": [
-            "Apocapocket.dll"
+            "Apocapocket/Apocapocket.dll"
           ],
-          "guidDll": "Apocapocket.dll",
-          "skip": [
-            "CHANGELOG.md",
-            "README.md",
-            "VALIDATION.md"
-          ],
+          "guidDll": "Apocapocket/Apocapocket.dll",
+          "skip": [],
           "icon": null
         }
       },
