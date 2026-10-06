@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-06T12:46:44Z",
+  "generated": "2026-10-06T14:50:54Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -487,19 +487,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "1.3.1",
-        "tag": "v1.3.1",
-        "title": "Apocaspawner 1.3.1",
-        "published": "2026-09-26T23:08:15Z",
-        "page": "https://github.com/DeonUrist/Apocaspawner/releases/tag/v1.3.1",
-        "notes": "## Apocaspawner 1.3.1\r\n\r\n**Tidy, sorted `[Names]` section.**\r\n\r\n- On every game start the names already in the config are loaded in alphabetical order, so both the config file and the Apocasetter settings menu list them sorted. Newly discovered prefabs are appended and fall into place on the next start; your edited values are kept.\r\n- No more per-entry comments: the `[Names]` section is written as one header line explaining the format followed by plain `prefab = Display Name` lines.\r\n- An emptied value is regenerated from the game's item name / prefab name on the next start.\r\n\r\nRequires [Apocasetter](https://github.com/DeonUrist/Apocasetter). Install: copy `Apocaspawner.dll` to `BepInEx\\plugins\\`.\r\n",
+        "version": "2.0.4",
+        "tag": "v2.0.4",
+        "title": "Apocaspawner 2.0.4",
+        "published": "2026-10-06T14:47:02Z",
+        "page": "https://github.com/DeonUrist/Apocaspawner/releases/tag/v2.0.4",
+        "notes": "## Apocaspawner 2.0.4\n\n- Apocaspawner 2.0.4: Global rework, NPC spawn",
         "zip": {
-          "name": "Apocaspawner-1.3.1.zip",
-          "url": "https://github.com/DeonUrist/Apocaspawner/releases/download/v1.3.1/Apocaspawner-1.3.1.zip",
-          "size": 15925,
-          "assetId": 591639234,
-          "updated": "2026-09-26T23:08:39Z",
-          "sha256": "1afd23a6f75c62bc375decda767d52e7fd5688ccde3ead01664dda0d3fad9f8e",
+          "name": "Apocaspawner-2.0.4.zip",
+          "url": "https://github.com/DeonUrist/Apocaspawner/releases/download/v2.0.4/Apocaspawner-2.0.4.zip",
+          "size": 42710,
+          "assetId": 615795089,
+          "updated": "2026-10-06T14:47:03Z",
+          "sha256": "96bdb52599690d842d147d9bf7392d6e42f5da138783c2217a122da50849a464",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": null,
@@ -507,7 +507,9 @@
             "Apocaspawner.dll"
           ],
           "guidDll": "Apocaspawner.dll",
-          "skip": [],
+          "skip": [
+            "README.md"
+          ],
           "icon": null
         }
       },
