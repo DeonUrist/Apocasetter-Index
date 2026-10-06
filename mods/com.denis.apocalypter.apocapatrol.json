@@ -9,7 +9,10 @@
     "vehicles",
     "combat"
   ],
-  "requires": [],
+  "requires": [
+    "com.denis.apocalypter.apocaplayer",
+    "com.denis.apocalypter.partadjustment"
+  ],
   "optional": [
     "com.denis.apocalypter.apocatremors"
   ],
