@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-06T07:32:21Z",
+  "generated": "2026-10-06T09:41:44Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -182,13 +182,29 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.3.4",
-        "tag": "v2.3.4",
-        "title": "Apocapatrol 2.3.4",
-        "published": "2026-10-06T06:51:16Z",
-        "page": "https://github.com/DeonUrist/Apocapatrol/releases/tag/v2.3.4",
-        "notes": "## Changes since 2.0.6 (2.3.4)\n\n**Human turrets** (2.2.x): a template takes up to three raiders on a car's roof (one on the seat of a motorcycle, none on trucks): a **Warboy** (Scraffa with blast lances who screams \"Witness me!\" and leaps at your car, exploding) or a **gunner** (Boltjaw, Flexa, Lugnut, Scrud, Sprokka) who crouches on the roof and shoots all around; on a bike he sits straight and turns the upper body up to 55 degrees. A car with a Warboy on board rams cars. Turrets that jump off become normal raiders at once, look around and attack. Set them with **E** on a template or in the save-template window. `[Combat] HumanTurrets` (replaces BlastlanceRiders), `[Debug] TurretSpotEditor` (replaces the Apocaspotter plugin - remove its DLL).\n\n**Settings**: `[General] Enabled` (automatic spawns on/off), `[General] Fury Road` (every patrol and convoy group spawns from the start, off by default), SelfDestruct moved to [General]. The game's \"Could not find FSM: ID on GameObject\" log spam is silenced.\n\n**Suspension** (2.3.0): templates remember the suspension lift kit's adjustment (Part Adjustment's wheel spacing and height) and spawned cars get it, with or without Part Adjustment installed (with 1.2.0+ both agree) - only cars with a lift kit. The car you drive no longer vibrates with a raised suspension or big truck wheels: the wheel colliders used to collide with the driver once they reached into the cabin.\n\nAlso: the \"Witness me!\" blast no longer depends on the lance's physics, the driver pulls up alongside you for the leap, the leap is short and flat; drivers sit in the driving pose and raise the gun only to shoot; bike riders hold the grips; raider cars no longer roll over in turns; cassette music from templates; red \"You hear a sound of distant engines\" spawn warning; editor QOL (rename, E dialog, reorder, sorted lists).\n\nInstall: extract into `BepInEx/plugins` (the `Apocapatrol` folder with DLL, BaseTemplates, Textures, Sounds, theme). Needs Apocaplayer for the turret animations.\n\n**2.3.1**: a lifted suspension lowers the centre of mass by the lift (hidden `SuspensionLiftCenterOfMass`, same rule as Part Adjustment 1.2.1), so tall cars on big wheels do not flip in turns; `[Debug] CarProbe` logs wheel state and contacts of the car you sit in.\n\n**2.3.2**: dropdown clicks in the editors no longer fall through to the control beneath; human turrets leave a god-mode player alone.\n\n**2.3.3 / 2.3.4**: a car standing still no longer rocks itself (StandstillDamping, same as Part Adjustment 1.2.2); the centre-of-mass shift is on/off; a Rustliner template keeps its passenger.\n",
-        "zip": null
+        "version": "2.5.1",
+        "tag": "v2.5.1",
+        "title": "Apocapatrol 2.5.1",
+        "published": "2026-10-06T09:13:18Z",
+        "page": "https://github.com/DeonUrist/Apocapatrol/releases/tag/v2.5.1",
+        "notes": "## Apocapatrol 2.5.1\r\n\r\n2.5.1: Warboy_Armored_Tyrant ships with its Warboy's roof spot.\r\n\r\n## 2.5.0\r\n\r\n**No more physics changes.** The 2.4.0 parking hold left some cars unable to move; it is gone, and so is the driver/wheel-collider rule. The mod no longer touches a car's physics or wheels. The one stability rule left is the **centre of mass**: a car with a suspension lift kit carries it 0.3 m lower, plus 1.5 x any extra lift of the body, so tall cars on big wheels do not flip in turns (Part Adjuster Tools 1.4.0 applies the same rule to the car you drive).\r\n\r\n**The current templates and spawn tables are the shipped defaults.** 24 BaseTemplates - Buzzard bikes (Bike, Blast Bike, Fast Blast Bike, Spikeback), Bike with Rider Scrud / Flexa, Chariot, Porcupine, Piperat Scout / Bandit, Tiny Tyrant, Big Tyrant, Weak Warboy, Junker Warboy, Warboy Tyrant, Warboy Armored Tyrant, Warboy Bike, War rig, Junker Basic / Advanced, the Rustcargo loot trucks - with the 16 patrol and 4 convoy groups and loot profiles that use them, embedded in the DLL as what a fresh install and *Reset to defaults* produce. The old Basic / Advanced sets are no longer shipped (an existing install keeps its files).\r\n\r\nAlso in 2.4.0: Rustliner crews bail out through the rear door, the bus passenger sits on the small chair, raider Rustliners wear `Textures/rustliner.png`, turrets ignore a god-mode player, dropdown click-through fixed.\r\n\r\nInstall: unzip into `BepInEx\\plugins\\` (replaces the `Apocapatrol` folder; keep your `PlayerTemplates`). Companion: Part Adjuster Tools 1.4.0.\r\n",
+        "zip": {
+          "name": "Apocapatrol-2.5.1.zip",
+          "url": "https://github.com/DeonUrist/Apocapatrol/releases/download/v2.5.1/Apocapatrol-2.5.1.zip",
+          "size": 33551445,
+          "assetId": 615086446,
+          "updated": "2026-10-06T09:40:54Z",
+          "sha256": "b182e583f43b6dc90f434e94625bd6f23e8873798cc00818711a71bc007c9c5e",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "Apocapatrol",
+          "dlls": [
+            "Apocapatrol/Apocapatrol.dll"
+          ],
+          "guidDll": "Apocapatrol/Apocapatrol.dll",
+          "skip": [],
+          "icon": null
+        }
       },
       "error": null
     },
@@ -814,13 +830,37 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "1.2.2",
-        "tag": "v1.2.2",
-        "title": "Part Adjuster Tools 1.2.2",
-        "published": "2026-10-06T06:51:16Z",
-        "page": "https://github.com/DeonUrist/PartAdjusterTools/releases/tag/v1.2.2",
-        "notes": "`StandstillDamping` (on): a car standing still gets extra angular damping below 0.6 m/s (gone by 1.2 m/s), so a wide, lifted chassis on heavy wheels stops rocking itself side to side instead of shaking in place - the body rolls, the wheels slide sideways, their grip pushes it back. `LiftCenterOfMass` is now on/off. Apocapatrol 2.3.3+ has the same damper; whichever mod reaches a car first owns it.\n\nA lifted suspension lowers the car's centre of mass by the lift (`LiftCenterOfMass`, 1 = the centre stays where it was with the body raised), so a tall car on big wheels does not flip in turns; the automatic centre is re-read as parts change.\n\nRequires a suspension lift kit on the vehicle to adjust the suspension; without one the width and height stay standard and the hint says so. Removing the kit returns an adjusted car to standard.\n\nAdds a public `PartAdjustment.SuspensionApi` (`Set`, `Get`, `KitFitted`) so other mods can apply suspension values that are then saved with the car - Apocapatrol 2.3.0 applies its car templates' suspension through it.\n\nFixes the car you drive vibrating with a raised suspension or big truck wheels: the wheel colliders (NWH's wheel mesh colliders and the game's wheel hub sphere) collide with the driver, and once they reach into the cabin PhysX pushes the driver and the car apart every physics step. Collisions between the driver and the wheel colliders of their car are now ignored, re-checked twice a second.\n\nExtract the ZIP into BepInEx/plugins, replace the existing DLL and keep one active copy. Restart the game after updating.\n",
-        "zip": null
+        "version": "1.4.0",
+        "tag": "v1.4.0",
+        "title": "Part Adjuster Tools 1.4.0",
+        "published": "2026-10-06T08:44:33Z",
+        "page": "https://github.com/DeonUrist/PartAdjusterTools/releases/tag/v1.4.0",
+        "notes": "## Part Adjuster Tools 1.4.0\r\n\r\n**No more physics changes.** The 1.3.0 parking hold left some cars unable to move; it is gone, together with the 1.2.0 driver/wheel-collider rule. The mod no longer touches a car's physics or wheels.\r\n\r\nThe one stability rule left is the **centre of mass** (`LiftCenterOfMass`, on/off, default on): a car with a suspension lift kit carries it 0.3 m lower, plus 1.5 x any extra lift of the body, so a tall car on big wheels does not flip in turns. Apocapatrol 2.5.0 applies the same rule to its raider cars.\r\n\r\nSHA256 of the zip is in `SHA256SUMS.txt`.\r\n",
+        "zip": {
+          "name": "PartAdjustment-1.4.0.zip",
+          "url": "https://github.com/DeonUrist/PartAdjusterTools/releases/download/v1.4.0/PartAdjustment-1.4.0.zip",
+          "size": 34448,
+          "assetId": 615036204,
+          "updated": "2026-10-06T09:12:51Z",
+          "sha256": "1c098733c2b0e0ca5acdb16ad135b8e7bc8e886799b892fdd7dd3d7e37e7d938",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "PartAdjustment",
+          "dlls": [
+            "PartAdjustment/PartAdjustment.dll"
+          ],
+          "guidDll": "PartAdjustment/PartAdjustment.dll",
+          "skip": [],
+          "icon": {
+            "path": "repo:icon.png",
+            "size": [
+              64,
+              64
+            ],
+            "sha256": "9eadae5cb2d9044a11a64906702176890b362c5410244541f2185e4850eb6aba",
+            "png": "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"
+          }
+        }
       },
       "error": null
     },
