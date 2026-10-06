@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-06T17:48:30Z",
+  "generated": "2026-10-06T17:57:50Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -695,10 +695,28 @@
         "title": "gunplayhud 1.2.1",
         "published": "2026-10-05T21:02:11Z",
         "page": "https://github.com/DeonUrist/GunplayHUD/releases/tag/v1.2.1",
-        "notes": "## gunplayhud 1.2.1\n\n- gunplay 1.0.1: Car passenger support.",
-        "zip": null
+        "notes": "## gunplayhud 1.2.1\r\n\r\n- gunplay 1.0.1: Car passenger support.",
+        "zip": {
+          "name": "GunplayHUD-1.2.1.zip",
+          "url": "https://github.com/DeonUrist/GunplayHUD/releases/download/v1.2.1/GunplayHUD-1.2.1.zip",
+          "size": 16964,
+          "assetId": 616243565,
+          "updated": "2026-10-06T17:56:36Z",
+          "sha256": "29ece8e757bca628627efb4203bc28817d2649966bf7030ea07840a28001b26e",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "GunplayHUD",
+          "dlls": [
+            "GunplayHUD/GunplayHUD.dll"
+          ],
+          "guidDll": "GunplayHUD/GunplayHUD.dll",
+          "skip": [
+            "README.md"
+          ],
+          "icon": null
+        }
       },
-      "error": "no DLL in the zip contains the plugin GUID"
+      "error": null
     },
     {
       "guid": "com.denis.apocalypter.healthstacks",
