@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-06T00:47:36Z",
+  "generated": "2026-10-06T01:00:42Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -638,10 +638,26 @@
         "title": "gunplay 1.1.0",
         "published": "2026-10-06T00:15:21Z",
         "page": "https://github.com/DeonUrist/Gunplay/releases/tag/v1.1.0",
-        "notes": "## gunplay 1.1.0\n\n- Gunplay 1.1.0: monster projectiles stop at walls",
-        "zip": null
+        "notes": "## gunplay 1.1.0\r\n\r\n- Gunplay 1.1.0: monster projectiles stop at walls",
+        "zip": {
+          "name": "Gunplay-1.1.0.zip",
+          "url": "https://github.com/DeonUrist/Gunplay/releases/download/v1.1.0/Gunplay-1.1.0.zip",
+          "size": 282719,
+          "assetId": 614051466,
+          "updated": "2026-10-06T00:59:55Z",
+          "sha256": "d414a17dd7c53698e0fd1f1b70c336309545734f974a5fbf6b5f027d0c8f4973",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "Gunplay",
+          "dlls": [
+            "Gunplay/Gunplay.dll"
+          ],
+          "guidDll": "Gunplay/Gunplay.dll",
+          "skip": [],
+          "icon": null
+        }
       },
-      "error": "no DLL in the zip contains the plugin GUID"
+      "error": null
     },
     {
       "guid": "com.denis.apocalypter.gunplayhud",
