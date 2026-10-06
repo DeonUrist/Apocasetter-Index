@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-06T03:51:29Z",
+  "generated": "2026-10-06T05:13:13Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -416,7 +416,7 @@
       "name": "Apocasetter",
       "author": "DeonUrist",
       "repo": "DeonUrist/Apocasetter",
-      "summary": "In-game Mods menu: change any mod's settings without leaving the game.",
+      "summary": "In-game Mods menu: settings for every mod, updates, install and remove from GitHub, without leaving the game.",
       "tags": [
         "ui",
         "tools"
@@ -432,19 +432,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.0.8",
-        "tag": "v2.0.8",
-        "title": "Apocasetter 2.0.8",
-        "published": "2026-10-04T04:48:17Z",
-        "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.0.8",
-        "notes": "- Mods you haven't installed yet show their real icon in the Mods list. The Apocasetter index now copies each mod's icon.png out of its release zip, so the icon appears before you install the mod.\r\n- Mod makers: nothing new to do. Ship `YourMod\\icon.png` (or `YourMod.png` beside a loose DLL) in your release zip as before.\r\n\r\nInstall: Apocasetter updates itself from the Mods window (UPDATE, then restart), or extract the zip into the game folder.",
+        "version": "2.0.9",
+        "tag": "v2.0.9",
+        "title": "Apocasetter 2.0.9",
+        "published": "2026-10-06T05:03:43Z",
+        "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.0.9",
+        "notes": "## Apocasetter 2.0.9\r\n\r\n**Mods that need other mods.** When a mod's index entry says it requires another mod:\r\n- **Updating** to a version that newly needs one installs that mod at the same restart; the update banner tells you so.\r\n- **Disabling or removing** a mod also disables the mods that can't run without it (the dialog names them). Their files and settings stay; ENABLE brings both back.\r\n- **Enabling** a disabled mod brings its requirements back too.\r\n- A mod whose requirement is missing anyway shows a red **NEEDS …** block with an INSTALL or ENABLE button.\r\n\r\n**Install / update**\r\n- From the Mods window: CHECK FOR UPDATES → Apocasetter → UPDATE → QUIT GAME TO APPLY.\r\n- By hand: unzip into the game folder (the zip holds `BepInEx/plugins/Apocasetter/` and `BepInEx/patchers/Apocasetter.Installer.dll`). Requires BepInEx 5.x.",
         "zip": {
-          "name": "Apocasetter-2.0.8.zip",
-          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v2.0.8/Apocasetter-2.0.8.zip",
-          "size": 327877,
-          "assetId": 609707199,
-          "updated": "2026-10-04T11:22:44Z",
-          "sha256": "3c46d61b81b78348811dac690104f3a2ee188fd855070df29b8e8db808652916",
+          "name": "Apocasetter-2.0.9.zip",
+          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v2.0.9/Apocasetter-2.0.9.zip",
+          "size": 329392,
+          "assetId": 614556582,
+          "updated": "2026-10-06T05:12:02Z",
+          "sha256": "2f9c212e1ebb6bcb260fedc327c32446232d54e24ddbe27dcfb86aa05ab6a78c",
           "extractTo": "BepInEx",
           "stripPrefix": "BepInEx/",
           "topFolder": null,
