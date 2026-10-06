@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-06T09:41:44Z",
+  "generated": "2026-10-06T10:27:57Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -169,7 +169,10 @@
         "vehicles",
         "combat"
       ],
-      "requires": [],
+      "requires": [
+        "com.denis.apocalypter.apocaplayer",
+        "com.denis.apocalypter.partadjustment"
+      ],
       "optional": [
         "com.denis.apocalypter.apocatremors"
       ],
