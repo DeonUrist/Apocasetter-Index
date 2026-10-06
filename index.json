@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-06T02:37:47Z",
+  "generated": "2026-10-06T03:51:29Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -786,8 +786,26 @@
         "title": "NPCAI 1.1.0",
         "published": "2026-10-06T02:24:38Z",
         "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.1.0",
-        "notes": "NPCAI 1.1.0 - a lot more logical to fight\n\n- NPCs lose you when you break line of sight (1.5 s, was 10 s) and never shoot without a clear line: no more bursts through the wall you just stepped behind.\n- A human that loses you goes to where it last saw you, then guesses where you went (8, 16, 24 m off, along your way); hounds, Grimhounds, pups, Nightwalkers, spiders, arachnids and scorpions track your real position.\n- Hits, gunshots and shouts give rough spots, not your exact position. A gunshot is checked by the nearest 4 NPCs plus everyone within 25 m, not a whole camp.\n- Night by the game clock: 21 h a bit darker, 22 twilight, 23-4 night, 5 twilight, 6 bright (NightHours). It had never been dark for NPC eyes.\n- Shouts only while an NPC sees you - at once, then every 12-25 s (was every 0.1-4 s at anything, ghosts included). A shout sends friends to look near you.\n- Cover: the game's own \"hide\" is walked with the map instead of blindly; a human below 50 % health runs to a cover object or a spot out of your sight and fights from there. An NPC in cover keeps its target and ignores everything else until it comes out.\n- A hit gunman sidesteps and kneels; gunmen advance when you have gone quiet for 8 s, never when hurt. Humans sent to check a spot come in from one side, the side alternating between NPCs.\n- Nightwalkers steered like everyone else (their chase state is named differently).\n- Map baking finishes what it starts (flying or driving past camps used to leave none of them mapped), the camp you are at first, a camp an NPC needs fastest.\n- Same-faction NPCs walk through each other only in corridors.\n- Save/load fix: NPCs alert at the save stood still for 90 s after the load.\n- Simplified: fixed aim pacing values, Guesses instead of PursuitMin/Max, no sound muffling, no Apocaraider config import, two ghost ranks (seen / heard).\n\nUnpack into BepInEx\\plugins (NPCAI\\NPCAI.dll). Remove Apocaraider if still installed.\n",
-        "zip": null
+        "notes": "NPCAI 1.1.0 - a lot more logical to fight\r\n\r\n- NPCs lose you when you break line of sight (1.5 s, was 10 s) and never shoot without a clear line: no more bursts through the wall you just stepped behind.\r\n- A human that loses you goes to where it last saw you, then guesses where you went (8, 16, 24 m off, along your way); hounds, Grimhounds, pups, Nightwalkers, spiders, arachnids and scorpions track your real position.\r\n- Hits, gunshots and shouts give rough spots, not your exact position. A gunshot is checked by the nearest 4 NPCs plus everyone within 25 m, not a whole camp.\r\n- Night by the game clock: 21 h a bit darker, 22 twilight, 23-4 night, 5 twilight, 6 bright (NightHours). It had never been dark for NPC eyes.\r\n- Shouts only while an NPC sees you - at once, then every 12-25 s (was every 0.1-4 s at anything, ghosts included). A shout sends friends to look near you.\r\n- Cover: the game's own \"hide\" is walked with the map instead of blindly; a human below 50 % health runs to a cover object or a spot out of your sight and fights from there. An NPC in cover keeps its target and ignores everything else until it comes out.\r\n- A hit gunman sidesteps and kneels; gunmen advance when you have gone quiet for 8 s, never when hurt. Humans sent to check a spot come in from one side, the side alternating between NPCs.\r\n- Nightwalkers steered like everyone else (their chase state is named differently).\r\n- Map baking finishes what it starts (flying or driving past camps used to leave none of them mapped), the camp you are at first, a camp an NPC needs fastest.\r\n- Same-faction NPCs walk through each other only in corridors.\r\n- Save/load fix: NPCs alert at the save stood still for 90 s after the load.\r\n- Simplified: fixed aim pacing values, Guesses instead of PursuitMin/Max, no sound muffling, no Apocaraider config import, two ghost ranks (seen / heard).\r\n\r\nUnpack into BepInEx\\plugins (NPCAI\\NPCAI.dll). Remove Apocaraider if still installed.\r\n",
+        "zip": {
+          "name": "NPCAI-1.1.0.zip",
+          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.1.0/NPCAI-1.1.0.zip",
+          "size": 96488,
+          "assetId": 614400967,
+          "updated": "2026-10-06T03:49:29Z",
+          "sha256": "d33268e887d9bd696c0635bfa0d30374e20eb601a8bcf1646f0ea0b5280c297f",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "NPCAI",
+          "dlls": [
+            "NPCAI/NPCAI.dll"
+          ],
+          "guidDll": "NPCAI/NPCAI.dll",
+          "skip": [
+            "README.md"
+          ],
+          "icon": null
+        }
       },
       "error": null
     },
