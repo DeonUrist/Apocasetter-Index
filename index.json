@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-05T21:02:59Z",
+  "generated": "2026-10-06T00:47:36Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -633,12 +633,12 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.0.1",
-        "tag": "v1.0.1",
-        "title": "gunplay 1.0.1",
-        "published": "2026-10-05T21:01:19Z",
-        "page": "https://github.com/DeonUrist/Gunplay/releases/tag/v1.0.1",
-        "notes": "## gunplay 1.0.1\n\n- gunplay 1.0.1: Car passenger support\n- Update README.md",
+        "version": "1.1.0",
+        "tag": "v1.1.0",
+        "title": "gunplay 1.1.0",
+        "published": "2026-10-06T00:15:21Z",
+        "page": "https://github.com/DeonUrist/Gunplay/releases/tag/v1.1.0",
+        "notes": "## gunplay 1.1.0\n\n- Gunplay 1.1.0: monster projectiles stop at walls",
         "zip": null
       },
       "error": "no DLL in the zip contains the plugin GUID"
