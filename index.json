@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-07T13:07:07Z",
+  "generated": "2026-10-07T19:27:38Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -584,27 +584,29 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "1.1.1",
-        "tag": "v1.1.1",
-        "title": "Apocaunloader v1.1.1",
-        "published": "2026-09-26T20:16:16Z",
-        "page": "https://github.com/DeonUrist/Apocaunloader/releases/tag/v1.1.1",
-        "notes": "Hold R to unload your gun: rounds go back to the backpack, overflow drops as an ammo box.\r\n\r\n**Install:** unzip into the game folder (`BepInEx\\plugins\\Apocaunloader.dll`).\r\n\r\nConfig `[General]`: `Enabled`, `HoldSeconds` (0.35), `AnimationTimeout`, `FallbackKey`, `VerboseLog`. Appears in the Apocasetter MODS menu if installed (not required).",
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "title": "Apocaunloader v1.2.0",
+        "published": "2026-10-07T19:27:18Z",
+        "page": "https://github.com/DeonUrist/Apocaunloader/releases/tag/v1.2.0",
+        "notes": "Fixes ammo loss caused by the vanilla capacity clamp when switching to a smaller backpack.\n\n- Excess ammunition drops as matching ammo boxes instead of disappearing.\n- Removing a backpack restores normal ammo capacities and drops the excess. The brief empty slot during a swap does not trigger removal drops.\n- Batteries drop as a pack with the exact excess count; grenades drop individually.\n- If a drop cannot be created and registered for saving, ammo is retained and the mod retries once per second.\n- New `DropBackpackOverflow` setting is enabled by default.\n\n**Install:** extract `Apocaunloader_1.2.0.zip` into the game folder, replacing `BepInEx/plugins/Apocaunloader.dll`.\n\n**Validation:** Release build passes without warnings. Conservation and retry tests pass, including 15,251 count/capacity combinations. In-game pickup and save/reload behavior has not yet been verified.\n",
         "zip": {
-          "name": "Apocaunloader_1.1.1.zip",
-          "url": "https://github.com/DeonUrist/Apocaunloader/releases/download/v1.1.1/Apocaunloader_1.1.1.zip",
-          "size": 9245,
-          "assetId": 591412784,
-          "updated": "2026-09-26T20:36:49Z",
-          "sha256": "8a099d4057c3135b25ba8555e6e35c2a7181d6063d0e046cb4a7e8b078d15dda",
+          "name": "Apocaunloader_1.2.0.zip",
+          "url": "https://github.com/DeonUrist/Apocaunloader/releases/download/v1.2.0/Apocaunloader_1.2.0.zip",
+          "size": 13843,
+          "assetId": 619592401,
+          "updated": "2026-10-07T19:27:17Z",
+          "sha256": "b33f520acfc893688feb461f1595a451dabf165f87bf852cd49ae3519d0b3a27",
           "extractTo": "plugins",
-          "stripPrefix": "",
+          "stripPrefix": "BepInEx/plugins/",
           "topFolder": null,
           "dlls": [
             "Apocaunloader.dll"
           ],
           "guidDll": "Apocaunloader.dll",
-          "skip": [],
+          "skip": [
+            "README.md"
+          ],
           "icon": null
         }
       },
