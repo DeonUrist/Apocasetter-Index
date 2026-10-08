@@ -1,0 +1,22 @@
+{
+  "guid": "local.apocalypter.duststorm",
+  "name": "ApocaDustStorm",
+  "author": "Jaime-Wolf",
+  "repo": "Jaime-Wolf/Dust-storms",
+  "summary": "Worldwide dust storms for Apocalypter, inspired by Mad Max (2015).",
+  "tags": [
+    "vehicles",
+    "sound",
+    "combat",
+    "npcs"
+  ],
+  "requires": [
+    "com.denis.apocalypter.apocasetter"
+  ],
+  "optional": [
+    "com.denis.apocalypter.npcai"
+  ],
+  "pluginFolder": "ApocaDustStorm",
+  "trust": "community",
+  "blocked": false
+}
