@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-08T15:20:10Z",
+  "generated": "2026-10-08T15:40:15Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -865,19 +865,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.2.0",
-        "tag": "v1.2.0",
-        "title": "NPCAI 1.2.0",
-        "published": "2026-10-08T00:07:38Z",
-        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.2.0",
-        "notes": "## NPCAI 1.2.0 (changes since 1.1.2)\r\n\r\nNeeds **Apocaplayer 2.2.0 or newer** for the new animations; without it enemies use the game's own animations as before.\r\n\r\n- **Enemy animations:** gunmen now move with the player's own animations - walk, run, sprint and strafe in every direction, relaxed while chasing, aiming when they stand and face you or fire, turning in place, hopping over low edges.\r\n- **Crouching:** rifle and pistol enemies kneel (pistol enemies kneel again).\r\n- **Reloads:** the full reload animation; revolvers, Slambergs, Redmarks and Rochesters load one round at a time, once for each round fired.\r\n- **Shotgun pump / bolt:** pump and bolt guns are racked after every burst and after reloading.\r\n- **Guns in hand:** held in the right hand at the same positions as the player's.\r\n- Dead, seated in a car or swinging a machete, an enemy goes back to the game's own animations.\r\n\r\n**Install:** extract into `BepInEx\\plugins\\` (the DLL goes in `plugins\\NPCAI\\`).\r\n",
+        "version": "1.2.1",
+        "tag": "v1.2.1",
+        "title": "NPCAI 1.2.1",
+        "published": "2026-10-08T15:39:36Z",
+        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.2.1",
+        "notes": "Fixed eye height for small scorpions.",
         "zip": {
-          "name": "NPCAI-1.2.0.zip",
-          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.2.0/NPCAI-1.2.0.zip",
-          "size": 103868,
-          "assetId": 620182911,
-          "updated": "2026-10-08T00:08:51Z",
-          "sha256": "94d7235200ccd0230959fd142f13ff3a25cdcb2a7ced41c85b36464044481241",
+          "name": "NPCAI-1.2.1.zip",
+          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.2.1/NPCAI-1.2.1.zip",
+          "size": 104272,
+          "assetId": 622242314,
+          "updated": "2026-10-08T15:39:11Z",
+          "sha256": "a88381479a9cec70c9cfe777ef8e7b49ec039d742c8dcdabb8fa701c4bf32b54",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "NPCAI",
