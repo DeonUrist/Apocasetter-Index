@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-08T13:09:04Z",
+  "generated": "2026-10-08T14:10:28Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -608,6 +608,65 @@
             "README.md"
           ],
           "icon": null
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.burner.apocalypter.enginesim",
+      "name": "Engine Sim",
+      "author": "Wad67",
+      "repo": "Wad67/Apocalypter-enginesim",
+      "summary": "Replaces the recorded engine sounds with a live engine simulation (engine-sim) built from the fitted engine: cylinders, exhaust, wear, misfires, rev limiter.",
+      "tags": [
+        "vehicles",
+        "sound",
+        "engines"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": "EngineSim",
+      "trust": "community",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
+      "latest": {
+        "version": "1.0.0",
+        "tag": "v1.0.0",
+        "title": "Engine Sim 1.0.0",
+        "published": "2026-10-08T14:02:37Z",
+        "page": "https://github.com/Wad67/Apocalypter-enginesim/releases/tag/v1.0.0",
+        "notes": "First release. Replaces Apocalypter's recorded engine sounds with a live simulation from\n[engine-sim](https://github.com/ange-yaghi/engine-sim).\n\n- Every running engine near you is simulated (up to `MaxEngines`, nearest first); the rest keep the stock sound.\n- Engines are built from the fitted engine part: displacement, cylinders, layout and fuel.\n- Follows the game's RPM, throttle and ignition; bounces off the game's rev limiter.\n- Engine condition: misfires, rough and hunting idle, and lost cylinders on badly worn engines.\n- Forced induction raises the simulated intake pressure.\n- The fitted exhaust changes the sound; exhausts and the base sound are configurable.\n- All settings in the Apocasetter Mods menu.\n\nInstall: unzip into `Apocalypter\\BepInEx\\plugins` (requires BepInEx 5, x64).\n",
+        "zip": {
+          "name": "EngineSim-1.0.0.zip",
+          "url": "https://github.com/Wad67/Apocalypter-enginesim/releases/download/v1.0.0/EngineSim-1.0.0.zip",
+          "size": 563846,
+          "assetId": 621999730,
+          "updated": "2026-10-08T14:02:38Z",
+          "sha256": "c36cbdcc1e1559ddd9bd62eb69dd8450d840414ded94ebd7344be1dba972841f",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "EngineSim",
+          "dlls": [
+            "EngineSim/EngineSim.dll",
+            "EngineSim/enginesim_native.dll"
+          ],
+          "guidDll": "EngineSim/EngineSim.dll",
+          "skip": [
+            "README.md"
+          ],
+          "icon": {
+            "path": "EngineSim/icon.png",
+            "size": [
+              64,
+              64
+            ],
+            "sha256": "bc44513ea07d78a08c5d4b83497228013d2a16c22313a9f8aeea682b02be335d",
+            "png": "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"
+          }
         }
       },
       "error": null
