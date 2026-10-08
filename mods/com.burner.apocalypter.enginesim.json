@@ -1,0 +1,17 @@
+{
+  "guid": "com.burner.apocalypter.enginesim",
+  "name": "Engine Sim",
+  "author": "Wad67",
+  "repo": "Wad67/Apocalypter-enginesim",
+  "summary": "Replaces the recorded engine sounds with a live engine simulation (engine-sim) built from the fitted engine: cylinders, exhaust, wear, misfires, rev limiter.",
+  "tags": [
+    "vehicles",
+    "sound",
+    "engines"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": "EngineSim",
+  "trust": "community",
+  "blocked": false
+}
