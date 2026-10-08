@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-07T23:58:39Z",
+  "generated": "2026-10-08T00:09:19Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -806,19 +806,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.1.2",
-        "tag": "v1.1.2",
-        "title": "NPCAI 1.1.2",
-        "published": "2026-10-06T17:45:48Z",
-        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.1.2",
-        "notes": "## NPCAI 1.1.2\r\n\r\nGunmen reload.\r\n\r\n- Magazine per gun = the player's own weapon capacity, read from the game's Reload FSMs (AKs / M16 30, akm_drum 70, borz 25, folk_17 17, revolver 5, Slambergs 5, Redmarks 4, Rochesters 2, pipe pistol / slam-fire / crossbow 1; the 22_pipe_smg's 165 cut to 30). Hidden `[NpcAim] MagazineTable`.\r\n- Every ray of a burst is a shot; a burst never fires past the magazine (a single-shot gun fires one ray per burst); the next burst is replaced by the reload.\r\n- With Apocaplayer: `RifleReload` / `PistolReload` on an upper-body layer over the legs - he keeps strafing, backing up or kneeling while reloading, like the player. `ReloadSeconds` without the clip, `SingleShotReload` (1 s) for 1-2 round guns.\r\n- Reload sounds: the clips the player's copy of that gun plays while reloading, 3D at the NPC (`ReloadVolume`, `ReloadSoundRange`).\r\n- A running chaser with an empty gun reloads when he next squares up. `Magazines = false` turns it off.\r\n- The bone-bent kneel is gone: crouching exists only with Apocaplayer's crouch clips.\r\n\r\nInstall: unzip, copy `NPCAI/NPCAI.dll` into `BepInEx/plugins/`.\r\n",
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "title": "NPCAI 1.2.0",
+        "published": "2026-10-08T00:07:38Z",
+        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.2.0",
+        "notes": "## NPCAI 1.2.0 (changes since 1.1.2)\r\n\r\nNeeds **Apocaplayer 2.2.0 or newer** for the new animations; without it enemies use the game's own animations as before.\r\n\r\n- **Enemy animations:** gunmen now move with the player's own animations - walk, run, sprint and strafe in every direction, relaxed while chasing, aiming when they stand and face you or fire, turning in place, hopping over low edges.\r\n- **Crouching:** rifle and pistol enemies kneel (pistol enemies kneel again).\r\n- **Reloads:** the full reload animation; revolvers, Slambergs, Redmarks and Rochesters load one round at a time, once for each round fired.\r\n- **Shotgun pump / bolt:** pump and bolt guns are racked after every burst and after reloading.\r\n- **Guns in hand:** held in the right hand at the same positions as the player's.\r\n- Dead, seated in a car or swinging a machete, an enemy goes back to the game's own animations.\r\n\r\n**Install:** extract into `BepInEx\\plugins\\` (the DLL goes in `plugins\\NPCAI\\`).\r\n",
         "zip": {
-          "name": "NPCAI-1.1.2.zip",
-          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.1.2/NPCAI-1.1.2.zip",
-          "size": 108084,
-          "assetId": 616222728,
-          "updated": "2026-10-06T17:47:55Z",
-          "sha256": "196b0636b6d4e8479b945c697e9340dfe5059d4fc37d8a1bc43be00619cd2e23",
+          "name": "NPCAI-1.2.0.zip",
+          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.2.0/NPCAI-1.2.0.zip",
+          "size": 103868,
+          "assetId": 620182911,
+          "updated": "2026-10-08T00:08:51Z",
+          "sha256": "94d7235200ccd0230959fd142f13ff3a25cdcb2a7ced41c85b36464044481241",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "NPCAI",
