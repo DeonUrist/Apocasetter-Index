@@ -1,8 +1,61 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-08T21:55:08Z",
+  "generated": "2026-10-08T23:41:32Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
+    {
+      "guid": "local.apocalypter.duststorm",
+      "name": "ApocaDustStorm",
+      "author": "Jaime-Wolf",
+      "repo": "Jaime-Wolf/Dust-storms",
+      "summary": "Worldwide dust storms for Apocalypter, inspired by Mad Max (2015).",
+      "tags": [
+        "vehicles",
+        "sound",
+        "combat",
+        "npcs"
+      ],
+      "requires": [
+        "com.denis.apocalypter.apocasetter"
+      ],
+      "optional": [
+        "com.denis.apocalypter.npcai"
+      ],
+      "pluginFolder": "ApocaDustStorm",
+      "trust": "community",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
+      "latest": {
+        "version": "0.1.26",
+        "tag": "v0.1.26",
+        "title": "ApocaDustStorm 0.1.26",
+        "published": "2026-10-08T22:40:05Z",
+        "page": "https://github.com/Jaime-Wolf/Dust-storms/releases/tag/v0.1.26",
+        "notes": "Worldwide dust storms with low visibility, directional wind, dust lightning, shelter protection and player exposure hazards. Release build with testing hotkeys removed.\r\n\r\nRepackaged ZIP: opens directly to the ApocaDustStorm folder. Version and gameplay are unchanged.\r\n\r\nRequires BepInEx 5 x64 and Apocasetter. Download **ApocaDustStorm-0.1.26.zip** and copy its **ApocaDustStorm** folder into **BepInEx/plugins**.",
+        "zip": {
+          "name": "ApocaDustStorm-0.1.26.zip",
+          "url": "https://github.com/Jaime-Wolf/Dust-storms/releases/download/v0.1.26/ApocaDustStorm-0.1.26.zip",
+          "size": 53520,
+          "assetId": 623200434,
+          "updated": "2026-10-08T22:39:55Z",
+          "sha256": "70058b4d30495fbecb4e97c2d845e8c81f82db1a96f97232575ff3f7bb90444c",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "ApocaDustStorm",
+          "dlls": [
+            "ApocaDustStorm/ApocaDustStorm.dll"
+          ],
+          "guidDll": "ApocaDustStorm/ApocaDustStorm.dll",
+          "skip": [],
+          "icon": null
+        }
+      },
+      "error": null
+    },
     {
       "guid": "com.denis.apocalypter.apocahud43",
       "name": "ApocaHUD43",
@@ -865,19 +918,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.2.1",
-        "tag": "v1.2.1",
-        "title": "NPCAI 1.2.1",
-        "published": "2026-10-08T15:39:36Z",
-        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.2.1",
-        "notes": "Fixed eye height for small scorpions.",
+        "version": "1.9.1",
+        "tag": "v1.9.1",
+        "title": "NPCAI 1.9.1",
+        "published": "2026-10-08T23:02:19Z",
+        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.9.1",
+        "notes": "Install: unzip into `BepInEx/plugins/` (keeps `NPCAI/NPCAI.dll` and `NPCAI/Models/npcai_dogs.bundle` together). Optional: Apocaplayer 2.2.0+ for gunmen animations.\r\n\r\n**Since 1.2.1**\r\n- **Scorpions**: small ones burrow on sand and ambush at 3-5 m (only the tail shows; other NPCs see them from 5 m). Big ones hunt underground within 15 m, travel at twice their run speed and burst out behind their enemy.\r\n- **Small spiders** zigzag in and leap at you from 5-6 m, bite (with the game's hurt sound and flash) and run off; shot in the air, the carcass tumbles on.\r\n- **Spider nests**: caves, wrecks and camps with spiders get webs (inside caves, never in the rock), big spiders sit in them head down (1 m reach). Touch any web and the nest comes at you 1.5x faster. Webs darken at night and indoors, light up in your flashlight, and come back identical after save/load.\r\n- **Ambush predators**: scorpions and spiders attack only within 3-5 m unless shot or alarmed.\r\n- **Vision arcs** per creature group (insects 210, beasts 190, brutes 210, bosses 300, sand worm 360; humans keep Apocasetter's SightCone).\r\n- **Dogs** (hounds, Grimhound, nightwalkers): new animations (idle, walk, run, lie down / rest / get up, bite, running bite); they hold only where the bite really reaches, commit to running bites you can sidestep, bite faster up close, and alternate standing and lying every 10-25 s when calm (bosses excepted).\r\n\r\nNot every feature has been verified in a long play session yet; feedback welcome.",
         "zip": {
-          "name": "NPCAI-1.2.1.zip",
-          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.2.1/NPCAI-1.2.1.zip",
-          "size": 104272,
-          "assetId": 622242314,
-          "updated": "2026-10-08T15:39:11Z",
-          "sha256": "a88381479a9cec70c9cfe777ef8e7b49ec039d742c8dcdabb8fa701c4bf32b54",
+          "name": "NPCAI-1.9.1.zip",
+          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.9.1/NPCAI-1.9.1.zip",
+          "size": 2369141,
+          "assetId": 623245750,
+          "updated": "2026-10-08T23:03:26Z",
+          "sha256": "ff2e2be67528520eb51b6eebb474af05c99ec2f93eb5ed349e3d88d4548a150e",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "NPCAI",
