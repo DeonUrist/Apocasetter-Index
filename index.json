@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-10T21:54:51Z",
+  "generated": "2026-10-10T22:08:03Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -286,19 +286,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.3.4",
-        "tag": "v2.3.4",
-        "title": "Apocaplayer 2.3.4",
-        "published": "2026-10-10T19:44:12Z",
-        "page": "https://github.com/DeonUrist/Apocaplayer/releases/tag/v2.3.4",
-        "notes": "Apocaplayer 2.3.4\r\n\r\n- **New setting `Toggle Observing`** (General, default off): off = hold the observing key (`RebindObserving`, Left Alt) to orbit the camera around the character; it returns behind the character when you let go. On = a press starts observing and the camera stays until the next press.\r\n- `EnableMMB` and the Debug `ToggleMiddleMouse` setting are removed (a ToggleMiddleMouse that was on carries over). The middle mouse button stays with the game for rotating held items.\r\n\r\n**Install:** extract the Apocaplayer folder into `BepInEx\\plugins\\` and replace the existing Apocaplayer folder. Restart the game.",
+        "version": "2.3.6",
+        "tag": "v2.3.6",
+        "title": "Apocaplayer 2.3.6",
+        "published": "2026-10-10T22:05:31Z",
+        "page": "https://github.com/DeonUrist/Apocaplayer/releases/tag/v2.3.6",
+        "notes": "Apocaplayer 2.3.6\r\n\r\n- **Fixed: the world flashing / looking unloaded for a moment while driving in third person.** The vehicle physics moves the whole world back to the origin every 1000 m; with the dynamic crosshair on, the camera could be drawn for one frame from where the car was before that shift. The view now follows the shift.\r\n- Includes 2.3.5: settings regrouped - camera culling on/off, in vehicles, opacity and radius in their own Occlusion section; the first-person body / driving camera sliders and the climbing sliders moved to Debug (saved values carried over).\r\n\r\n**Install:** extract the Apocaplayer folder into `BepInEx\\plugins\\` and replace the existing Apocaplayer folder. Restart the game.",
         "zip": {
-          "name": "Apocaplayer-2.3.4.zip",
-          "url": "https://github.com/DeonUrist/Apocaplayer/releases/download/v2.3.4/Apocaplayer-2.3.4.zip",
-          "size": 31373927,
-          "assetId": 629031402,
-          "updated": "2026-10-10T21:26:04Z",
-          "sha256": "09b7435d10c0c15f7a9a5e45912e7fb5ef2bd3f8c3c69db3d9d08df318ed2475",
+          "name": "Apocaplayer-2.3.6.zip",
+          "url": "https://github.com/DeonUrist/Apocaplayer/releases/download/v2.3.6/Apocaplayer-2.3.6.zip",
+          "size": 31374518,
+          "assetId": 629108998,
+          "updated": "2026-10-10T22:07:27Z",
+          "sha256": "ab90ebe648a27aa52e68d8d898c723690eaacedcf19c8c038eff321a557991a3",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "Apocaplayer",
@@ -446,7 +446,7 @@
         "title": "Apocasaver 2.0.1",
         "published": "2026-10-10T19:01:10Z",
         "page": "https://github.com/DeonUrist/Apocasaver/releases/tag/v2.0.1",
-        "notes": "Fixes 2.0.0's false startup **\"Save recovery/bindings failed: Save participant is still loading: …apocapatrol\"** error.\n\nThe game can destroy a plugin's original Unity component while its managed wrapper, static configuration and persistent runner remain valid. Apocasaver mistook Unity's destroyed-component null result for an unconstructed plugin and permanently blocked saving/loading.\n\n- Resolve loaded companion integrations using managed reference identity, which remains valid after Unity destroys their components.\n- Retry genuinely pending plugin initialization without treating it as a permanent recovery failure.\n- Distinguish incompatible integration bindings from actual backup-recovery failures in logs and warnings.\n- Add native regressions that destroy the Apocapatrol/Apocapocket components before initialization and simulate a pending instance.\n\n**Install:** exit the game and replace `BepInEx/plugins/Apocasaver.dll` from the ZIP, then restart. Existing saves and settings require no changes. All 2.0.0 save rebuilding, history preservation and optional CleanSaves features remain included; CleanSaves is still off by default.\n\n**Validation:** clean Release build; 91 automated checks; 27 native Unity fixture checks without companions and 39 with Apocapatrol 2.7.0 / Apocapocket 2.0.7. The companion run reproduces the reported destroyed-component condition and verifies successful saves, rollback, pocket mapping and patrol cleanup afterward. Full interactive and long-session validation remains pending.\n",
+        "notes": "The saving system now saves on new slot the same way as on old slot, without preserving unneeded data and definitely preserving what's needed.\r\n\r\nNew feature (off by default) Clean Saves that removes data not immediately close to the player.\r\n",
         "zip": {
           "name": "Apocasaver-2.0.1.zip",
           "url": "https://github.com/DeonUrist/Apocasaver/releases/download/v2.0.1/Apocasaver-2.0.1.zip",
