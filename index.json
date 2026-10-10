@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-10T21:26:26Z",
+  "generated": "2026-10-10T21:53:31Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -897,7 +897,7 @@
     },
     {
       "guid": "com.denis.apocalypter.npcai",
-      "name": "NPCAI",
+      "name": "NPC Overhaul",
       "author": "DeonUrist",
       "repo": "DeonUrist/NPCAI",
       "summary": "NPCs that see, hear, search and pursue, find their way through camps and buildings, and aim within their weapon's reach. Part of what was Apocaraider.",
@@ -924,31 +924,13 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.9.3",
-        "tag": "v1.9.3",
-        "title": "NPCAI 1.9.3",
-        "published": "2026-10-08T23:49:06Z",
-        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.9.3",
-        "notes": "## NPCAI 1.9.3\r\n\r\n**Lying quadrupeds keep the chest out of the ground.** While hounds, Grimhound and nightwalkers lie down, rest or get up, the front half (chest, front legs, head) is tilted up at the waist until the shoulders stand over the hips as they do standing. A front paw still below the ground is lifted at the shoulder (1.9.2). `[Behaviour] DogLieFrontLift` (m, default 0) adds to or takes from the height.\r\n\r\n**ApocaDustStorm support** (only when that mod is loaded). Its dust storms dim NPC sight and hearing like the game's sandstorms (`[Senses] StormSight` / `StormHearing`) wherever the dust is thick enough to hurt the player. The game's storms that ApocaDustStorm switches off (invisible, parked) no longer count as storms, and their tornado funnels no longer make nearby NPCs forget their target.\r\n\r\nInstall: extract into `BepInEx/plugins/` (folder `NPCAI/` with `NPCAI.dll` and `Models/npcai_dogs.bundle`).\r\n",
-        "zip": {
-          "name": "NPCAI-1.9.3.zip",
-          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.9.3/NPCAI-1.9.3.zip",
-          "size": 2372451,
-          "assetId": 623334102,
-          "updated": "2026-10-08T23:49:37Z",
-          "sha256": "2d8d987badf982a4bf165020bc2a494b1e6311bdaac92537c14e0a9b6ae8f7b3",
-          "extractTo": "plugins",
-          "stripPrefix": "",
-          "topFolder": "NPCAI",
-          "dlls": [
-            "NPCAI/NPCAI.dll"
-          ],
-          "guidDll": "NPCAI/NPCAI.dll",
-          "skip": [
-            "README.md"
-          ],
-          "icon": null
-        }
+        "version": "1.9.4",
+        "tag": "v1.9.4",
+        "title": "NPC Overhaul 1.9.4",
+        "published": "2026-10-10T21:52:19Z",
+        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.9.4",
+        "notes": "## NPC Overhaul 1.9.4\n\n**Renamed: NPCAI is now NPC Overhaul** (as shown in Apocasetter and the BepInEx log). The GUID `com.denis.apocalypter.npcai`, `NPCAI.dll`, the `NPCAI/` plugin folder and the config file are unchanged, so it updates over an existing install and keeps your settings.\n\n**No more `[Behaviour]` settings.** Burrowing, dog bites and animations, ambush, spider nests and pouncing are always on with their tuned values (dogs stand / lie every 10-25 s, no extra chest lift, no jump attack). The old entries are removed from an existing config file at the first start.\n\nInstall: extract into `BepInEx/plugins/` (folder `NPCAI/` with `NPCAI.dll` and `Models/npcai_dogs.bundle`).\n",
+        "zip": null
       },
       "error": null
     },
