@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-10T19:31:13Z",
+  "generated": "2026-10-10T19:32:50Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -291,7 +291,7 @@
         "title": "Apocaplayer 2.3.3",
         "published": "2026-10-10T19:24:08Z",
         "page": "https://github.com/DeonUrist/Apocaplayer/releases/tag/v2.3.3",
-        "notes": "Apocaplayer 2.3.3\n\n- **Smooth first-person arms and weapon when turning:** the arms and weapon swing behind the view the same way at every frame rate, so turning no longer makes them jerk. No performance cost.\n- **Clearer settings:** the character setting is now just \"Model selection\", the camera culling descriptions are corrected, and setting descriptions no longer say \"her\" (the mod has female and male characters).\n\n**Install:** extract the Apocaplayer folder into `BepInEx\\plugins\\` and replace the existing Apocaplayer folder. Restart the game.",
+        "notes": "Apocaplayer 2.3.3\r\n\r\n- **Smooth first-person arms and weapon when turning:** the arms and weapon swing behind the view the same way at every frame rate, so turning no longer makes them jerk. No performance cost.\r\n- **Clearer settings:** the character setting is now just \"Model selection\", the camera culling descriptions are corrected, and setting descriptions no longer say \"her\" (the mod has female and male characters).\r\n\r\n**Install:** extract the Apocaplayer folder into `BepInEx\\plugins\\` and replace the existing Apocaplayer folder. Restart the game.",
         "zip": null
       },
       "error": null
