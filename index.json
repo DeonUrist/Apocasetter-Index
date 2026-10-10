@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-10T21:53:31Z",
+  "generated": "2026-10-10T21:54:51Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -929,8 +929,26 @@
         "title": "NPC Overhaul 1.9.4",
         "published": "2026-10-10T21:52:19Z",
         "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.9.4",
-        "notes": "## NPC Overhaul 1.9.4\n\n**Renamed: NPCAI is now NPC Overhaul** (as shown in Apocasetter and the BepInEx log). The GUID `com.denis.apocalypter.npcai`, `NPCAI.dll`, the `NPCAI/` plugin folder and the config file are unchanged, so it updates over an existing install and keeps your settings.\n\n**No more `[Behaviour]` settings.** Burrowing, dog bites and animations, ambush, spider nests and pouncing are always on with their tuned values (dogs stand / lie every 10-25 s, no extra chest lift, no jump attack). The old entries are removed from an existing config file at the first start.\n\nInstall: extract into `BepInEx/plugins/` (folder `NPCAI/` with `NPCAI.dll` and `Models/npcai_dogs.bundle`).\n",
-        "zip": null
+        "notes": "## NPC Overhaul 1.9.4\r\n\r\n**Renamed: NPCAI is now NPC Overhaul** (as shown in Apocasetter and the BepInEx log). The GUID `com.denis.apocalypter.npcai`, `NPCAI.dll`, the `NPCAI/` plugin folder and the config file are unchanged, so it updates over an existing install and keeps your settings.\r\n\r\n**No more `[Behaviour]` settings.** Burrowing, dog bites and animations, ambush, spider nests and pouncing are always on with their tuned values (dogs stand / lie every 10-25 s, no extra chest lift, no jump attack). The old entries are removed from an existing config file at the first start.\r\n\r\nInstall: extract into `BepInEx/plugins/` (folder `NPCAI/` with `NPCAI.dll` and `Models/npcai_dogs.bundle`).\r\n",
+        "zip": {
+          "name": "NPCOverhaul-1.9.4.zip",
+          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.9.4/NPCOverhaul-1.9.4.zip",
+          "size": 2375150,
+          "assetId": 629083281,
+          "updated": "2026-10-10T21:54:12Z",
+          "sha256": "495205f39772f650023c5e88c6d06e4004e6e462e39e1be50768850787d7e485",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "NPCAI",
+          "dlls": [
+            "NPCAI/NPCAI.dll"
+          ],
+          "guidDll": "NPCAI/NPCAI.dll",
+          "skip": [
+            "README.md"
+          ],
+          "icon": null
+        }
       },
       "error": null
     },
