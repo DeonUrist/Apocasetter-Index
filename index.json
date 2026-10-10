@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-09T15:56:48Z",
+  "generated": "2026-10-10T18:33:00Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -35,14 +35,14 @@
         "title": "ApocaDustStorm 0.1.29",
         "published": "2026-10-09T09:07:27Z",
         "page": "https://github.com/Jaime-Wolf/Dust-storms/releases/tag/v0.1.29",
-        "notes": "Adds storm shelter support for covered boat POI hulls. Open decks remain exposed. Existing storm effects and hazard settings are unchanged.\r\n\r\nRequires BepInEx 5 x64 and Apocasetter. Copy the ZIP’s ApocaDustStorm folder into BepInEx/plugins, replacing the previous version.\r\n\r\n729 automated checks passed; live boat coverage needs testing. Known issue: the optional NPCAI movement adapter has a layout mismatch with the installed version used for testing, also present in 0.1.28.",
+        "notes": "Adds storm shelter support for covered boat POI hulls. Open decks remain exposed. Existing storm effects and hazard settings are unchanged.\r\n\r\nRequires BepInEx 5 x64 and Apocasetter. Copy the ZIP’s ApocaDustStorm folder into BepInEx/plugins, replacing the previous version.\r\n\r\n729 automated checks passed; live boat coverage needs testing. Known issue: the optional NPCAI movement adapter has a layout mismatch with the installed version used for testing, also present in 0.1.28.\r\n\r\nPackaging refresh: includes the in-game MODS menu icon. Gameplay code and version remain unchanged.",
         "zip": {
           "name": "ApocaDustStorm-0.1.29.zip",
           "url": "https://github.com/Jaime-Wolf/Dust-storms/releases/download/v0.1.29/ApocaDustStorm-0.1.29.zip",
-          "size": 57120,
-          "assetId": 624451874,
-          "updated": "2026-10-09T09:07:19Z",
-          "sha256": "82b895bc6efd2f186a7481c021d2f9b6bdea37640fa00f9710858091af62d40a",
+          "size": 528448,
+          "assetId": 628596392,
+          "updated": "2026-10-10T17:45:02Z",
+          "sha256": "7d619ed22a737c7ea2d3c50b9eb50a97f735f24cfbaaabe8007783fb52f881cc",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "ApocaDustStorm",
