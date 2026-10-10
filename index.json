@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-10T20:08:22Z",
+  "generated": "2026-10-10T21:24:34Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -291,7 +291,7 @@
         "title": "Apocaplayer 2.3.4",
         "published": "2026-10-10T19:44:12Z",
         "page": "https://github.com/DeonUrist/Apocaplayer/releases/tag/v2.3.4",
-        "notes": "Apocaplayer 2.3.4\n\n- **New setting `Toggle Observing`** (General, default off): off = hold the observing key (`RebindObserving`, Left Alt) to orbit the camera around the character; it returns behind the character when you let go. On = a press starts observing and the camera stays until the next press.\n- `EnableMMB` and the Debug `ToggleMiddleMouse` setting are removed (a ToggleMiddleMouse that was on carries over). The middle mouse button stays with the game for rotating held items.\n\n**Install:** extract the Apocaplayer folder into `BepInEx\\plugins\\` and replace the existing Apocaplayer folder. Restart the game.",
+        "notes": "Apocaplayer 2.3.4\r\n\r\n- **New setting `Toggle Observing`** (General, default off): off = hold the observing key (`RebindObserving`, Left Alt) to orbit the camera around the character; it returns behind the character when you let go. On = a press starts observing and the camera stays until the next press.\r\n- `EnableMMB` and the Debug `ToggleMiddleMouse` setting are removed (a ToggleMiddleMouse that was on carries over). The middle mouse button stays with the game for rotating held items.\r\n\r\n**Install:** extract the Apocaplayer folder into `BepInEx\\plugins\\` and replace the existing Apocaplayer folder. Restart the game.",
         "zip": null
       },
       "error": null
