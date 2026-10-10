@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-10T18:33:00Z",
+  "generated": "2026-10-10T18:52:23Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -441,27 +441,34 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "1.9.1",
-        "tag": "v1.9.1",
-        "title": "Apocasaver 1.9.1",
-        "published": "2026-10-05T11:51:56Z",
-        "page": "https://github.com/DeonUrist/Apocasaver/releases/tag/v1.9.1",
-        "notes": "# 1.9.1\n\n- Add optional Apocapocket inventory compatibility. Wait for inventory operations and pocket load restoration before saving.\n- Verify physical hand parenting before treating GrabItem's cached `Item` reference as held.\n- Protect pocket-owned objects in every slot, including the last item stored and objects temporarily moved into the world\n  by Apocapocket's save normalization. Release stale native grab references without executing drop actions on stored items.\n- Wait for pocket normalization to finish before completing autosave; queued re-equip operations do not block resuming.\n- Preserve Apocapocket's own vehicle-part restart flags when an item transfers from the hand into its custody.\n\nValidation: clean Release build; 76 simulated transaction/compatibility checks; native hook targets and installed\nApocapocket inventory bindings verified. Interactive confirmation of the reported last-stored-item case is pending.\n\nInstall: replace `BepInEx\\plugins\\Apocasaver.dll` with the DLL in `Apocasaver-1.9.1.zip`, then restart the game. No Apocapocket\nreplacement is required; compatibility bindings were checked against Apocapocket 2.0.4.\n",
+        "version": "2.0.0",
+        "tag": "v2.0.0",
+        "title": "Apocasaver 2.0.0",
+        "published": "2026-10-10T18:51:41Z",
+        "page": "https://github.com/DeonUrist/Apocasaver/releases/tag/v2.0.0",
+        "notes": "Saving repeatedly in one slot can retain obsolete object and vehicle-position records. Apocasaver 2.0.0 rebuilds supported manual saves and autosaves from a fresh cache while carrying useful history from the current playthrough into both occupied and empty slots.\n\n- Back up occupied slots before replacement, verify the saved records, and restore the previous save and slot label on failure. Persistent recovery journals also cover interrupted saves; three successful pre-save backups are retained per slot.\n- Preserve location spawn, visited and resource state, including sites that unload or are reused by terrain generation. Keep opaque mod data and avoid importing the destination slot's previous world.\n- Save vehicle-hinge rotations under stable reference keys to prevent movement from accumulating old position records.\n- Add **CleanSaves**, **off by default**. When enabled, remove audited disposable remains/packs and, with Apocapatrol loaded, abandoned unclaimed patrol vehicles, crew, cargo, parts and generated detached items over 1 km away for 10 minutes. Protect owned, handled, stored, merchant/unique and referenced objects. Objects are destroyed only after successful save verification.\n- Coordinate Apocapatrol 2.7.0 sidecars and Apocapocket 2.0.7 inventory mappings. Preserve file-only ES3 writes and cancel delayed writes after a failed save.\n\n**Install:** exit the game and extract the ZIP into the game directory, replacing `BepInEx/plugins/Apocasaver.dll`. Companion mods do not need replacement. To enable optional cleanup, set `[Saving] CleanSaves = true` in `BepInEx/config/com.denis.apocalypter.apocasaver.cfg` after launching the upgraded mod once.\n\n**Validation:** Release build with zero warnings/errors; 91 automated checks; 27 native Unity fixture checks without companion mods and 36 with them. Full interactive and long-session gameplay validation remains pending. See the included verification report for the test scope and remaining limits.\n",
         "zip": {
-          "name": "Apocasaver-1.9.1.zip",
-          "url": "https://github.com/DeonUrist/Apocasaver/releases/download/v1.9.1/Apocasaver-1.9.1.zip",
-          "size": 26281,
-          "assetId": 612427581,
-          "updated": "2026-10-05T11:51:43Z",
-          "sha256": "439ed6ac2f834a6aeca36f30c13fc2d0967f2e775c402984355777ce6bd4eaa0",
+          "name": "Apocasaver-2.0.0.zip",
+          "url": "https://github.com/DeonUrist/Apocasaver/releases/download/v2.0.0/Apocasaver-2.0.0.zip",
+          "size": 67438,
+          "assetId": 628734327,
+          "updated": "2026-10-10T18:51:41Z",
+          "sha256": "3d5fc8a40fb9641fcb43226466fa31b4f20cb3db6870f34ab031007ab357859a",
           "extractTo": "plugins",
-          "stripPrefix": "",
+          "stripPrefix": "BepInEx/plugins/",
           "topFolder": null,
           "dlls": [
             "Apocasaver.dll"
           ],
           "guidDll": "Apocasaver.dll",
-          "skip": [],
+          "skip": [
+            "README.md",
+            "CHANGELOG.md",
+            "2.0.0-verification.md",
+            "SAVE_UPGRADE_DESIGN.md",
+            "native-vanilla-report.txt",
+            "native-companions-report.txt"
+          ],
           "icon": null
         }
       },
