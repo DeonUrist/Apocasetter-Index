@@ -1,0 +1,18 @@
+{
+  "guid": "com.denis.apocalypter.cavedarkness",
+  "name": "CaveDarkness",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/CaveDarkness",
+  "summary": "BepInEx 5 plugin for Apocalypter: caves are dark places instead of the whole world dimming when you walk into one.",
+  "tags": [
+    "vehicles",
+    "npcs",
+    "ui",
+    "items"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": "CaveDarkness",
+  "trust": "official",
+  "blocked": false
+}
