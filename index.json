@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-11T22:40:32Z",
+  "generated": "2026-10-11T23:04:04Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -35,10 +35,10 @@
         "zip": {
           "name": "ApocaChaseCamera-0.2.5.zip",
           "url": "https://github.com/Jaime-Wolf/ApocaChaseCamera/releases/download/v0.2.5/ApocaChaseCamera-0.2.5.zip",
-          "size": 470749,
-          "assetId": 631945987,
-          "updated": "2026-10-11T22:14:53Z",
-          "sha256": "dfd284798d01231babcd430d35063305a4a03e397024c91cecb340e147ec90b7",
+          "size": 46470,
+          "assetId": 632007236,
+          "updated": "2026-10-11T22:46:26Z",
+          "sha256": "4aada60feb70c490c149a7abbd0f4935342fd5efd3be6a713af48e75062e5029",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "ApocaChaseCamera",
@@ -88,10 +88,10 @@
         "zip": {
           "name": "ApocaDustStorm-0.1.29.zip",
           "url": "https://github.com/Jaime-Wolf/Dust-storms/releases/download/v0.1.29/ApocaDustStorm-0.1.29.zip",
-          "size": 528448,
-          "assetId": 628596392,
-          "updated": "2026-10-10T17:45:02Z",
-          "sha256": "7d619ed22a737c7ea2d3c50b9eb50a97f735f24cfbaaabe8007783fb52f881cc",
+          "size": 67651,
+          "assetId": 632001766,
+          "updated": "2026-10-11T22:44:12Z",
+          "sha256": "a79ea7b6137a953b488a7e518477d11057e164d93b08331f7e464a5093fe1139",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "ApocaDustStorm",
@@ -390,19 +390,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.0.7",
-        "tag": "v2.0.7",
-        "title": "Apocapocket 2.0.7",
-        "published": "2026-10-09T03:20:32Z",
-        "page": "https://github.com/DeonUrist/Apocapocket/releases/tag/v2.0.7",
-        "notes": "**Apocapocket 2.0.7**\r\n\r\n- Fixed: getting stuck with the weapon hints (Grenade / Drop / Unequip) on screen, nothing in your hands and no way to change weapon. A new watchdog notices this and puts your weapon back (or holsters it) within about 3-5 seconds. It checks once a second, so there's no performance cost, and it never acts in vehicles, menus, during saves or while you're switching slots.\r\n- Slot 4-6 keys now work in vehicles too (first and third person), like slots 1-3.\r\n\r\nInstall: extract into `BepInEx\\plugins\\` (replace the old Apocapocket folder).",
+        "version": "2.0.8",
+        "tag": "v2.0.8",
+        "title": "Apocapocket 2.0.8",
+        "published": "2026-10-11T23:03:38Z",
+        "page": "https://github.com/DeonUrist/Apocapocket/releases/tag/v2.0.8",
+        "notes": "# Apocapocket 2.0.8\n\n- New games no longer read the previous character's inventory mapping.\n- An explicit load button identifies the selected save even while the default ES3 path is stale. A save without inventory data does not inherit another slot's mapping.\n- Missing native objects are retried for up to five seconds after the first restoration attempt. Inventory input waits until restoration finishes. A truly missing item still produces one diagnostic with the slot and save filename.\n- Lookup accepts physical child colliders and holstered native weapons without root physics, while keeping stripped icon copies excluded. Exact names, saved positions and ambiguity checks remain in use.\n- Existing save keys, mapping version, GUID and configuration are unchanged.\n\nVerified with production-code inventory regressions and native save integration. A replay of the reporting player's save is still needed to establish whether their items were delayed, misidentified, or actually absent from the saved world.\n",
         "zip": {
-          "name": "Apocapocket-2.0.7.zip",
-          "url": "https://github.com/DeonUrist/Apocapocket/releases/download/v2.0.7/Apocapocket-2.0.7.zip",
-          "size": 38372,
-          "assetId": 623763284,
-          "updated": "2026-10-09T03:21:46Z",
-          "sha256": "14649bacae63bd2a503a5aa7b444e21a58b19d024f0fb685c5505c7f3bc5e46e",
+          "name": "Apocapocket-2.0.8.zip",
+          "url": "https://github.com/DeonUrist/Apocapocket/releases/download/v2.0.8/Apocapocket-2.0.8.zip",
+          "size": 43293,
+          "assetId": 632037894,
+          "updated": "2026-10-11T23:03:38Z",
+          "sha256": "300b2e2b5c83d72c7adf6fb9a5936a0957287a304bd84c0873513a7674c9fec7",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "Apocapocket",
@@ -410,7 +410,11 @@
             "Apocapocket/Apocapocket.dll"
           ],
           "guidDll": "Apocapocket/Apocapocket.dll",
-          "skip": [],
+          "skip": [
+            "README.md",
+            "CHANGELOG.md",
+            "2.0.8-release-notes.md"
+          ],
           "icon": null
         }
       },
@@ -491,19 +495,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.0.2",
-        "tag": "v2.0.2",
-        "title": "Apocasaver 2.0.2",
-        "published": "2026-10-11T00:03:40Z",
-        "page": "https://github.com/DeonUrist/Apocasaver/releases/tag/v2.0.2",
-        "notes": "Apocasaver 2.0.2 restores the intended save policy: saving is not rejected because an optional feature or a completeness\ncheck is uncertain. Missing native confirmations, unexpected FSM states, companion compatibility problems and cleanup\nuncertainty are log warnings. Prior useful records are retained; uncertain cleanup is skipped.\n\nWhen rebuilding cannot initialize, the game saves normally without deleting the destination. If a completion confirmation\nis missing, available save data is written instead of being rejected after 60 seconds. Actual disk persistence failures\nstill restore the previous save from backup and show a failure warning.\n\nCleanSaves remains off by default and includes abandoned Apocapatrol vehicles/items when supported. A candidate that becomes\nprotected during saving is kept in both the game world and the saved registration arrays.\n\nIncludes the 2.0.1 destroyed-plugin-component startup fix. Update Apocasaver and restart the game; no companion update is\nrequired for the installed versions tested. Full interactive/long-session validation remains pending.\n",
+        "version": "2.0.3",
+        "tag": "v2.0.3",
+        "title": "Apocasaver 2.0.3",
+        "published": "2026-10-11T23:03:26Z",
+        "page": "https://github.com/DeonUrist/Apocasaver/releases/tag/v2.0.3",
+        "notes": "# Apocasaver 2.0.3\n\nSuccessful manual saves show \"Game saved\" even when optional diagnostics were logged. Temporary autosave deferrals remain in the log. Disk-write failures and backup recovery still produce on-screen notices; the autosave countdown and first-save reminder remain.\n\nFixes save-time PlayMaker warning spam caused by inspecting actions on uninitialized load-menu FSMs during CleanSaves. Those actions are left untouched; unknown external references still protect cleanup candidates.\n\nWrite-confirmation diagnostics now match native event eligibility: inactive visual vehicle parts, disabled components and finished FSMs do not need to write. Prior useful records are retained. An active object's missing write remains a warning; disk failures retain the existing rollback behavior.\n\nThe other player's log included a turbo and wheel with unconfirmed writes. Their exact runtime hierarchy is unavailable, so these fixes cover the demonstrated code defects without claiming to have replayed that player's session. Missing DustStorm compatibility lookups, duplicate Rigidbody messages and Mods-window click diagnostics come from other paths and are not suppressed by this update.\n\nCompanion inventory fixes are packaged separately as Apocapocket 2.0.8.\n",
         "zip": {
-          "name": "Apocasaver-2.0.2.zip",
-          "url": "https://github.com/DeonUrist/Apocasaver/releases/download/v2.0.2/Apocasaver-2.0.2.zip",
-          "size": 71375,
-          "assetId": 629309806,
-          "updated": "2026-10-11T00:04:08Z",
-          "sha256": "50ee15573ff3115867b7d7a39ea5962bfca78e706dbb1ecbf9de651798a78e0e",
+          "name": "Apocasaver-2.0.3.zip",
+          "url": "https://github.com/DeonUrist/Apocasaver/releases/download/v2.0.3/Apocasaver-2.0.3.zip",
+          "size": 61143,
+          "assetId": 632037568,
+          "updated": "2026-10-11T23:03:26Z",
+          "sha256": "3c25462816d0a573c657936bea8cceebd1bb76c2b6478179809a8a0b891c3df4",
           "extractTo": "plugins",
           "stripPrefix": "BepInEx/plugins/",
           "topFolder": null,
@@ -512,11 +516,10 @@
           ],
           "guidDll": "Apocasaver.dll",
           "skip": [
-            "2.0.2-release-notes.md",
-            "2.0.2-verification.md",
-            "CHANGELOG.md",
             "README.md",
-            "SAVE_UPGRADE_DESIGN.md"
+            "CHANGELOG.md",
+            "2.0.3-release-notes.md",
+            "2.0.3-verification.md"
           ],
           "icon": null
         }
