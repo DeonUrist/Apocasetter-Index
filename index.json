@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-11T23:10:25Z",
+  "generated": "2026-10-11T23:52:18Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1024,19 +1024,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.9.4",
-        "tag": "v1.9.4",
-        "title": "NPC Overhaul 1.9.4",
-        "published": "2026-10-10T21:52:19Z",
-        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.9.4",
-        "notes": "## NPC Overhaul 1.9.4\r\n\r\n**Renamed: NPCAI is now NPC Overhaul** (as shown in Apocasetter and the BepInEx log). The GUID `com.denis.apocalypter.npcai`, `NPCAI.dll`, the `NPCAI/` plugin folder and the config file are unchanged, so it updates over an existing install and keeps your settings.\r\n\r\n**No more `[Behaviour]` settings.** Burrowing, dog bites and animations, ambush, spider nests and pouncing are always on with their tuned values (dogs stand / lie every 10-25 s, no extra chest lift, no jump attack). The old entries are removed from an existing config file at the first start.\r\n\r\nInstall: extract into `BepInEx/plugins/` (folder `NPCAI/` with `NPCAI.dll` and `Models/npcai_dogs.bundle`).\r\n",
+        "version": "1.9.10",
+        "tag": "v1.9.10",
+        "title": "NPC Overhaul 1.9.10",
+        "published": "2026-10-11T23:50:31Z",
+        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.9.10",
+        "notes": "NPC Overhaul now automatically supports FlyingKlick's Dog Companion (tested with 1.2.0). The companion uses Overhaul's idle, walk, run, sneak and bite animations, with corrected ground placement and a lower sitting position in vehicles. Dog Companion remains optional; no separate compatibility DLL is needed.\n\n- Close and committed running bites share Overhaul's contact timing. Damage applies once only if the same living target is still in reach and unobstructed. Dog Companion's configured bite damage is preserved.\n- Crouching or crawling selects low idle/walk animations. Moving sneak has corrected hind-leg contact, and acquiring an enemy immediately restores combat movement and exits the sneak pose.\n- Car sitting retains the original torso and head shape without neck bending. The whole dog sits lower, with a forward placement adjustment; Dog Companion's seat settings still apply.\n- Overhaul-managed enemies bypass Dog Companion's sticky aggro redirect. Engaged hostile humans within 3 m of the dog retreat to available cover for up to 4 seconds, ending earlier beyond 6 m. A cooldown prevents permanent retreat loops. Bosses are excluded; without suitable cover, enemies keep fighting.\n\nFollow, fetch, target selection, tool props, bark and dismiss/recall remain managed by Dog Companion. The cover response requires NPC Overhaul detection and pathfinding to be enabled.\n\nInstall: extract `NPCOverhaul-1.9.10.zip` into `BepInEx/plugins/`, replacing both `NPCAI/NPCAI.dll` and `NPCAI/Models/npcai_dogs.bundle`, then restart the game. Existing NPC Overhaul settings carry over. Dog Companion is not bundled.\n\nValidation: release and animation bundle builds succeeded, and 12 focused native Unity checks passed. These checks explicitly advance animation clocks and use isolated fixtures; normal terrain/vehicle visuals and retreat navigation still need gameplay review.\n",
         "zip": {
-          "name": "NPCOverhaul-1.9.4.zip",
-          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.9.4/NPCOverhaul-1.9.4.zip",
-          "size": 2375150,
-          "assetId": 629083281,
-          "updated": "2026-10-10T21:54:12Z",
-          "sha256": "495205f39772f650023c5e88c6d06e4004e6e462e39e1be50768850787d7e485",
+          "name": "NPCOverhaul-1.9.10.zip",
+          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.9.10/NPCOverhaul-1.9.10.zip",
+          "size": 2884951,
+          "assetId": 632119975,
+          "updated": "2026-10-11T23:50:31Z",
+          "sha256": "f51db1b9c3a25c4d72af782dd8087d8ce26698cf5e1b3ab07356c406da33654c",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "NPCAI",
