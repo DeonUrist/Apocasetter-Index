@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-10T22:08:03Z",
+  "generated": "2026-10-11T00:04:31Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -441,19 +441,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.0.1",
-        "tag": "v2.0.1",
-        "title": "Apocasaver 2.0.1",
-        "published": "2026-10-10T19:01:10Z",
-        "page": "https://github.com/DeonUrist/Apocasaver/releases/tag/v2.0.1",
-        "notes": "The saving system now saves on new slot the same way as on old slot, without preserving unneeded data and definitely preserving what's needed.\r\n\r\nNew feature (off by default) Clean Saves that removes data not immediately close to the player.\r\n",
+        "version": "2.0.2",
+        "tag": "v2.0.2",
+        "title": "Apocasaver 2.0.2",
+        "published": "2026-10-11T00:03:40Z",
+        "page": "https://github.com/DeonUrist/Apocasaver/releases/tag/v2.0.2",
+        "notes": "Apocasaver 2.0.2 restores the intended save policy: saving is not rejected because an optional feature or a completeness\ncheck is uncertain. Missing native confirmations, unexpected FSM states, companion compatibility problems and cleanup\nuncertainty are log warnings. Prior useful records are retained; uncertain cleanup is skipped.\n\nWhen rebuilding cannot initialize, the game saves normally without deleting the destination. If a completion confirmation\nis missing, available save data is written instead of being rejected after 60 seconds. Actual disk persistence failures\nstill restore the previous save from backup and show a failure warning.\n\nCleanSaves remains off by default and includes abandoned Apocapatrol vehicles/items when supported. A candidate that becomes\nprotected during saving is kept in both the game world and the saved registration arrays.\n\nIncludes the 2.0.1 destroyed-plugin-component startup fix. Update Apocasaver and restart the game; no companion update is\nrequired for the installed versions tested. Full interactive/long-session validation remains pending.\n",
         "zip": {
-          "name": "Apocasaver-2.0.1.zip",
-          "url": "https://github.com/DeonUrist/Apocasaver/releases/download/v2.0.1/Apocasaver-2.0.1.zip",
-          "size": 57535,
-          "assetId": 628753970,
-          "updated": "2026-10-10T19:01:10Z",
-          "sha256": "68bf89616695eafb366f9cd9efd7d1802beda3c3d7d80fe65c18a512f311c469",
+          "name": "Apocasaver-2.0.2.zip",
+          "url": "https://github.com/DeonUrist/Apocasaver/releases/download/v2.0.2/Apocasaver-2.0.2.zip",
+          "size": 71375,
+          "assetId": 629309806,
+          "updated": "2026-10-11T00:04:08Z",
+          "sha256": "50ee15573ff3115867b7d7a39ea5962bfca78e706dbb1ecbf9de651798a78e0e",
           "extractTo": "plugins",
           "stripPrefix": "BepInEx/plugins/",
           "topFolder": null,
@@ -462,11 +462,11 @@
           ],
           "guidDll": "Apocasaver.dll",
           "skip": [
-            "README.md",
+            "2.0.2-release-notes.md",
+            "2.0.2-verification.md",
             "CHANGELOG.md",
-            "2.0.1-verification.md",
-            "native-vanilla-report.txt",
-            "native-companions-report.txt"
+            "README.md",
+            "SAVE_UPGRADE_DESIGN.md"
           ],
           "icon": null
         }
