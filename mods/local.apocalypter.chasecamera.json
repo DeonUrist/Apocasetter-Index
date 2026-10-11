@@ -1,0 +1,18 @@
+{
+  "guid": "local.apocalypter.chasecamera",
+  "name": "ApocaChaseCamera",
+  "author": "Jaime-Wolf",
+  "repo": "Jaime-Wolf/ApocaChaseCamera",
+  "summary": "Mad Max (2015) inspired driving camera and instrument HUD for Apocalypter. Source for compatibility development and releases.",
+  "tags": [
+    "vehicles",
+    "weapons",
+    "ui",
+    "items"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": "ApocaChaseCamera",
+  "trust": "community",
+  "blocked": false
+}
