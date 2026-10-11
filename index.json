@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-11T13:07:52Z",
+  "generated": "2026-10-11T13:55:05Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -244,7 +244,7 @@
         "title": "Apocapatrol 2.7.5",
         "published": "2026-10-11T13:07:29Z",
         "page": "https://github.com/DeonUrist/Apocapatrol/releases/tag/v2.7.5",
-        "notes": "Exploded cars now use their original collider friction and Rigidbody drag after losing their wheels.\n\nRemoved the temporary grip material, extra drag, and 15-second settling/reset coroutine. No replacement friction override or settling behavior is added.\n\nWarRig remains a soft runtime dependency. Apocasetter downloads it with ApocaPatrol; the game can run with it disabled or absent.\n\nValidation: Release build passed with zero warnings or errors. Release ZIP and Apocasetter package checks passed. No in-game testing or game launch.\n\nInstall: unzip the Apocapatrol folder into BepInEx/plugins, or update through Apocasetter.\r\n",
+        "notes": "Exploded cars now use their original collider friction and Rigidbody drag after losing their wheels.\r\n\r\nRemoved the temporary grip material, extra drag, and 15-second settling/reset coroutine. No replacement friction override or settling behavior is added.\r\n\r\nWarRig remains a soft runtime dependency. Apocasetter downloads it with ApocaPatrol; the game can run with it disabled or absent.\r\n\r\n\r\nInstall: unzip the Apocapatrol folder into BepInEx/plugins, or update through Apocasetter.\r\n",
         "zip": {
           "name": "Apocapatrol-2.7.5.zip",
           "url": "https://github.com/DeonUrist/Apocapatrol/releases/download/v2.7.5/Apocapatrol-2.7.5.zip",
@@ -287,19 +287,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.3.6",
-        "tag": "v2.3.6",
-        "title": "Apocaplayer 2.3.6",
-        "published": "2026-10-10T22:05:31Z",
-        "page": "https://github.com/DeonUrist/Apocaplayer/releases/tag/v2.3.6",
-        "notes": "Apocaplayer 2.3.6\r\n\r\n- **Fixed: the world flashing / looking unloaded for a moment while driving in third person.** The vehicle physics moves the whole world back to the origin every 1000 m; with the dynamic crosshair on, the camera could be drawn for one frame from where the car was before that shift. The view now follows the shift.\r\n- Includes 2.3.5: settings regrouped - camera culling on/off, in vehicles, opacity and radius in their own Occlusion section; the first-person body / driving camera sliders and the climbing sliders moved to Debug (saved values carried over).\r\n\r\n**Install:** extract the Apocaplayer folder into `BepInEx\\plugins\\` and replace the existing Apocaplayer folder. Restart the game.",
+        "version": "2.3.8",
+        "tag": "v2.3.8",
+        "title": "Apocaplayer 2.3.8",
+        "published": "2026-10-11T13:54:38Z",
+        "page": "https://github.com/DeonUrist/Apocaplayer/releases/tag/v2.3.8",
+        "notes": "First-person jumps now ease raised knees down and back, keeping them below the hips while preserving the shin and foot animation. Third-person jumps keep their existing pose.\n\n- Includes the cleaned Mad Max character model from the game installation.\n- Includes the 2.3.7 crosshair improvement: with empty hands, the crosshair stays centred and the third-person camera turns toward the aim point. Drawing or holstering a weapon eases the transition over 0.2 seconds.\n\nValidated with the real character rig and animation bundle, including Max, all jump clips, look angles, 30/60/144 FPS transitions, pausing and switching views.\n\n**Install:** extract the `Apocaplayer` folder into `BepInEx\\plugins\\`, replacing the existing Apocaplayer folder. Restart the game.\n",
         "zip": {
-          "name": "Apocaplayer-2.3.6.zip",
-          "url": "https://github.com/DeonUrist/Apocaplayer/releases/download/v2.3.6/Apocaplayer-2.3.6.zip",
-          "size": 31374518,
-          "assetId": 629108998,
-          "updated": "2026-10-10T22:07:27Z",
-          "sha256": "ab90ebe648a27aa52e68d8d898c723690eaacedcf19c8c038eff321a557991a3",
+          "name": "Apocaplayer-2.3.8.zip",
+          "url": "https://github.com/DeonUrist/Apocaplayer/releases/download/v2.3.8/Apocaplayer-2.3.8.zip",
+          "size": 31372567,
+          "assetId": 630880339,
+          "updated": "2026-10-11T13:54:38Z",
+          "sha256": "00cc3c0b847f65a8d90c6d4eec6e9c39292baf697be3386f834809cc8de7683a",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "Apocaplayer",
