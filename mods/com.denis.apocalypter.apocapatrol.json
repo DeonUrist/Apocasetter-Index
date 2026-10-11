@@ -11,7 +11,8 @@
   ],
   "requires": [
     "com.denis.apocalypter.apocaplayer",
-    "com.denis.apocalypter.partadjustment"
+    "com.denis.apocalypter.partadjustment",
+    "com.denis.apocalypter.warrig"
   ],
   "optional": [
     "com.denis.apocalypter.apocatremors"
