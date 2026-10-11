@@ -1,8 +1,57 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-11T13:55:05Z",
+  "generated": "2026-10-11T22:20:07Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
+    {
+      "guid": "local.apocalypter.chasecamera",
+      "name": "ApocaChaseCamera",
+      "author": "Jaime-Wolf",
+      "repo": "Jaime-Wolf/ApocaChaseCamera",
+      "summary": "Mad Max (2015) inspired driving camera and instrument HUD for Apocalypter. Source for compatibility development and releases.",
+      "tags": [
+        "vehicles",
+        "weapons",
+        "ui",
+        "items"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": "ApocaChaseCamera",
+      "trust": "community",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
+      "latest": {
+        "version": "0.2.5",
+        "tag": "v0.2.5",
+        "title": "ApocaChaseCamera 0.2.5",
+        "published": "2026-10-11T22:15:00Z",
+        "page": "https://github.com/Jaime-Wolf/ApocaChaseCamera/releases/tag/v0.2.5",
+        "notes": "Fixes camera jumps into the void when the game shifts world coordinates during long drives. Preserves smoothing, zoom and orbit, and synchronizes the optional Apocaplayer camera/crosshair transition caches. Confirmed working in game.\r\n\r\nRequires BepInEx 5 and Apocasetter. Apocaplayer remains optional. Copy the ZIP’s ApocaChaseCamera folder into BepInEx/plugins, replacing the previous version. Existing settings are retained.",
+        "zip": {
+          "name": "ApocaChaseCamera-0.2.5.zip",
+          "url": "https://github.com/Jaime-Wolf/ApocaChaseCamera/releases/download/v0.2.5/ApocaChaseCamera-0.2.5.zip",
+          "size": 470749,
+          "assetId": 631945987,
+          "updated": "2026-10-11T22:14:53Z",
+          "sha256": "dfd284798d01231babcd430d35063305a4a03e397024c91cecb340e147ec90b7",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "ApocaChaseCamera",
+          "dlls": [
+            "ApocaChaseCamera/ApocaChaseCamera.dll"
+          ],
+          "guidDll": "ApocaChaseCamera/ApocaChaseCamera.dll",
+          "skip": [],
+          "icon": null
+        }
+      },
+      "error": null
+    },
     {
       "guid": "local.apocalypter.duststorm",
       "name": "ApocaDustStorm",
