@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-11T23:04:04Z",
+  "generated": "2026-10-11T23:10:25Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -912,19 +912,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.2.1",
-        "tag": "v1.2.1",
-        "title": "gunplayhud 1.2.1",
-        "published": "2026-10-05T21:02:11Z",
-        "page": "https://github.com/DeonUrist/GunplayHUD/releases/tag/v1.2.1",
-        "notes": "## gunplayhud 1.2.1\r\n\r\n- gunplay 1.0.1: Car passenger support.",
+        "version": "1.2.2",
+        "tag": "v1.2.2",
+        "title": "GunplayHUD 1.2.2",
+        "published": "2026-10-11T23:10:00Z",
+        "page": "https://github.com/DeonUrist/GunplayHUD/releases/tag/v1.2.2",
+        "notes": "Fixes missing textures and sound in the 1.2.1 release download.\n\n- Includes both crosshair textures and `Sounds/headshot.mp3` alongside the plugin DLL.\n- Adds a release packaging script that checks required assets and verifies every ZIP entry against its source.\n\nInstallation: copy the complete `GunplayHUD` folder from the ZIP into `BepInEx/plugins/`, replacing the previous DLL and including the `Textures` and `Sounds` folders.\n\nValidation: Release build completed with zero warnings/errors; all 37 managed checks passed; all five ZIP files verified. Gameplay was not executed.\n",
         "zip": {
-          "name": "GunplayHUD-1.2.1.zip",
-          "url": "https://github.com/DeonUrist/GunplayHUD/releases/download/v1.2.1/GunplayHUD-1.2.1.zip",
-          "size": 16964,
-          "assetId": 616243565,
-          "updated": "2026-10-06T17:56:36Z",
-          "sha256": "29ece8e757bca628627efb4203bc28817d2649966bf7030ea07840a28001b26e",
+          "name": "GunplayHUD-1.2.2.zip",
+          "url": "https://github.com/DeonUrist/GunplayHUD/releases/download/v1.2.2/GunplayHUD-1.2.2.zip",
+          "size": 42111,
+          "assetId": 632048552,
+          "updated": "2026-10-11T23:10:00Z",
+          "sha256": "db7b242c04256d4dc129b99bec78552661a1c761c876c5509dcbfb213bd67edb",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "GunplayHUD",
@@ -932,9 +932,7 @@
             "GunplayHUD/GunplayHUD.dll"
           ],
           "guidDll": "GunplayHUD/GunplayHUD.dll",
-          "skip": [
-            "README.md"
-          ],
+          "skip": [],
           "icon": null
         }
       },
