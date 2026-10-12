@@ -1,0 +1,20 @@
+{
+  "guid": "com.burner.apocalypter.sigmamod",
+  "name": "SigmaMod (Alpha)",
+  "author": "Wad67",
+  "repo": "Wad67/Apocalypter-sigmamod",
+  "summary": "> ⚠ Very early. This is a 0.2 that has barely been driven in game. Expect things to break, > saves to get weird, templates to load wrong and the log to scream at you.",
+  "tags": [
+    "vehicles",
+    "sound",
+    "combat",
+    "items"
+  ],
+  "requires": [],
+  "optional": [
+    "com.denis.apocalypter.apocaspawner"
+  ],
+  "pluginFolder": "SigmaMod",
+  "trust": "community",
+  "blocked": false
+}
