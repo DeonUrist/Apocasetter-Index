@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-11T23:52:18Z",
+  "generated": "2026-10-12T00:26:34Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1029,7 +1029,7 @@
         "title": "NPC Overhaul 1.9.10",
         "published": "2026-10-11T23:50:31Z",
         "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.9.10",
-        "notes": "NPC Overhaul now automatically supports FlyingKlick's Dog Companion (tested with 1.2.0). The companion uses Overhaul's idle, walk, run, sneak and bite animations, with corrected ground placement and a lower sitting position in vehicles. Dog Companion remains optional; no separate compatibility DLL is needed.\n\n- Close and committed running bites share Overhaul's contact timing. Damage applies once only if the same living target is still in reach and unobstructed. Dog Companion's configured bite damage is preserved.\n- Crouching or crawling selects low idle/walk animations. Moving sneak has corrected hind-leg contact, and acquiring an enemy immediately restores combat movement and exits the sneak pose.\n- Car sitting retains the original torso and head shape without neck bending. The whole dog sits lower, with a forward placement adjustment; Dog Companion's seat settings still apply.\n- Overhaul-managed enemies bypass Dog Companion's sticky aggro redirect. Engaged hostile humans within 3 m of the dog retreat to available cover for up to 4 seconds, ending earlier beyond 6 m. A cooldown prevents permanent retreat loops. Bosses are excluded; without suitable cover, enemies keep fighting.\n\nFollow, fetch, target selection, tool props, bark and dismiss/recall remain managed by Dog Companion. The cover response requires NPC Overhaul detection and pathfinding to be enabled.\n\nInstall: extract `NPCOverhaul-1.9.10.zip` into `BepInEx/plugins/`, replacing both `NPCAI/NPCAI.dll` and `NPCAI/Models/npcai_dogs.bundle`, then restart the game. Existing NPC Overhaul settings carry over. Dog Companion is not bundled.\n\nValidation: release and animation bundle builds succeeded, and 12 focused native Unity checks passed. These checks explicitly advance animation clocks and use isolated fixtures; normal terrain/vehicle visuals and retreat navigation still need gameplay review.\n",
+        "notes": "NPC Overhaul now automatically supports FlyingKlick's Dog Companion (tested with 1.2.0). The companion uses a combination of animations (reuses NPC Overhaul's dog animations from Labrador pack), with corrected ground placement and a lower sitting position in vehicles. Dog Companion remains optional; no separate compatibility DLL is needed.\r\n\r\nFollow, fetch, target selection, tool props, bark and dismiss/recall remain managed by Dog Companion. The cover response requires NPC Overhaul detection and pathfinding to be enabled.\r\n",
         "zip": {
           "name": "NPCOverhaul-1.9.10.zip",
           "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.9.10/NPCOverhaul-1.9.10.zip",
@@ -1130,19 +1130,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "1.1.1",
-        "tag": "v1.1.1",
-        "title": "War Rig 1.1.1",
-        "published": "2026-10-11T22:29:36Z",
-        "page": "https://github.com/DeonUrist/WarRig/releases/tag/v1.1.1",
-        "notes": "Adds conservative ground recovery for War Rig and its connected truck after a confirmed fall through solid terrain.\n\n- Requires a recent safe above-ground position and an actual downward crossing of a solid terrain collider.\n- Recovers only after the complete connected vehicle bodies remain at least 3 m below solid, loaded terrain for 0.4 seconds.\n- Moves the truck, trailer, attached parts, cargo and occupants together above the recent safe location, preserving hitch connections and spacing.\n- Clears linear and angular velocity for 0.2 seconds, following vanilla item recovery behavior.\n- Excludes normal jumps, brief clipping, terrain holes, missing terrain, floating-origin shifts and underground objects without crossing evidence.\n- Normal mass, suspension, joints and collision settings remain unchanged. No new settings.\n\nThis is a conservative recovery safeguard; it does not guarantee recovery from every possible world-physics failure. Each recovery is logged.\n\n## Installation\n\nClose Apocalypter and extract the `WarRig` folder from `WarRig-1.1.1.zip` into `BepInEx/plugins`, replacing the previous installation. Requires BepInEx 5. Existing spawn settings and saves are preserved.\n\n## Validation\n\n109 Unity release checks passed, including recovery of the connected assembly, attachment/occupant placement, false-positive exclusions, the velocity hold, spawn weighting, save/load and storm protection. Live gameplay verification of the reported fall remains pending.",
+        "version": "1.1.2",
+        "tag": "v1.1.2",
+        "title": "War Rig 1.1.2",
+        "published": "2026-10-12T00:22:30Z",
+        "page": "https://github.com/DeonUrist/WarRig/releases/tag/v1.1.2",
+        "notes": "Ground recovery is now optional and **off by default**.\n\n- **War Rig → Recovery → Enabled** lets players opt in after a witnessed fall, then turn recovery off after rescue.\n- When disabled, recovery never moves vehicles or changes velocities. Turning it off immediately cancels an active velocity hold.\n- A passive 5 Hz observer retains recent fall evidence so enabling after a fall can work. Confirmed solid-terrain crossing and a safe position from the last 30 seconds are still required; it cannot safely rescue a vehicle loaded already underground or after the evidence expires.\n- Normal collision, mass and suspension settings remain unchanged. Config descriptions stay brief.\n\nThe cause of reported driving collisions remains unconfirmed. Recovery adds no colliders; this update makes its vehicle-moving behavior opt-in.\n\n## Installation\n\nClose Apocalypter and extract the `WarRig` folder from `WarRig-1.1.2.zip` into `BepInEx/plugins`, replacing the previous installation. Requires BepInEx 5. The new `[Recovery] Enabled = false` setting is added automatically on upgrade.\n\n## Validation\n\n113 Unity release checks passed, including default-off behavior, enabling after a witnessed fall, cancelling the velocity hold, connected assembly recovery, false-positive exclusions, spawn weighting, save/load and storm protection. Live gameplay verification remains pending.",
         "zip": {
-          "name": "WarRig-1.1.1.zip",
-          "url": "https://github.com/DeonUrist/WarRig/releases/download/v1.1.1/WarRig-1.1.1.zip",
-          "size": 20006970,
-          "assetId": 631975131,
-          "updated": "2026-10-11T22:29:35Z",
-          "sha256": "aa5446676cb50ac5730d614eb07c678497e02c228d753064fb7f026ce7ee1134",
+          "name": "WarRig-1.1.2.zip",
+          "url": "https://github.com/DeonUrist/WarRig/releases/download/v1.1.2/WarRig-1.1.2.zip",
+          "size": 20007335,
+          "assetId": 632178033,
+          "updated": "2026-10-12T00:22:30Z",
+          "sha256": "e088e879feae76dd2d748b0ac6113454c120e0ca70ccc0bf4c17b0371eba3a4c",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WarRig",
