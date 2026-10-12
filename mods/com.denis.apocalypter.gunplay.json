@@ -3,7 +3,7 @@
   "name": "Gunplay",
   "author": "DeonUrist",
   "repo": "DeonUrist/Gunplay",
-  "summary": "Real bullets, tracers, range falloff, headshots and vehicle damage. Hold Reload to unload; preserve backpack overflow and separate magazines for identical guns. Replaces Apocaunloader.",
+  "summary": "Real bullets, tracers, falloff, headshots and vehicle damage. Hold Reload to unload; preserve ammo overflow and per-gun magazines. Armor overflow returns plates. Replaces Apocaunloader.",
   "tags": [
     "combat",
     "weapons",
