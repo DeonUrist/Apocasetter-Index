@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T01:19:54Z",
+  "generated": "2026-10-12T02:10:41Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -390,21 +390,21 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.0.8",
-        "tag": "v2.0.8",
-        "title": "Apocapocket 2.0.8",
-        "published": "2026-10-11T23:03:38Z",
-        "page": "https://github.com/DeonUrist/Apocapocket/releases/tag/v2.0.8",
-        "notes": "# Apocapocket 2.0.8\n\n- New games no longer read the previous character's inventory mapping.\n- An explicit load button identifies the selected save even while the default ES3 path is stale. A save without inventory data does not inherit another slot's mapping.\n- Missing native objects are retried for up to five seconds after the first restoration attempt. Inventory input waits until restoration finishes. A truly missing item still produces one diagnostic with the slot and save filename.\n- Lookup accepts physical child colliders and holstered native weapons without root physics, while keeping stripped icon copies excluded. Exact names, saved positions and ambiguity checks remain in use.\n- Existing save keys, mapping version, GUID and configuration are unchanged.\n\nVerified with production-code inventory regressions and native save integration. A replay of the reporting player's save is still needed to establish whether their items were delayed, misidentified, or actually absent from the saved world.\n",
+        "version": "2.0.9",
+        "tag": "v2.0.9",
+        "title": "Apocapocket 2.0.9",
+        "published": "2026-10-12T02:04:55Z",
+        "page": "https://github.com/DeonUrist/Apocapocket/releases/tag/v2.0.9",
+        "notes": "# Apocapocket 2.0.9\n\nConservative recovery for weapons remaining unavailable after weed or other item use.\n\nThe watchdog waits until native item animations are idle/completed, checks for a recent weapon request or smoking completion,\nand gives the game's re-equip delay time to finish. It then repairs a stale item animation flag or stalled useAid through the\nnative holster and existing weapon-selection transaction. Extra-slot weapons and displaced native-slot items are preserved.\n\nSmoking, burn rate, held Smoke input, weed effects and item consumption remain under native game control. The watchdog does\nnot replay smoking End, reset its scale, clear another system's pause flag or change save keys/format. Recovery is skipped\nwhile active aids, held items, another mod's hand object, pauses, menus, vehicles or save/load operations make it unsafe.\n\nInstall the single DLL under BepInEx/plugins/Apocapocket and restart the game. Keep a copy of the previous DLL outside\nBepInEx/plugins for rollback. Do not keep both versions in plugins. Existing configuration and key bindings are retained.\n\nVerified: 115 production-code checks, Unity Mono compilation against the installed game, plugin metadata/lifecycle checks\nand all four Harmony patches. The report is from another player's mod combination; their reproduction still needs testing.\nIf the issue persists, capture BepInEx/LogOutput.log after a failed weapon draw. A recovery writes a Weapon watchdog diagnostic.\n",
         "zip": {
-          "name": "Apocapocket-2.0.8.zip",
-          "url": "https://github.com/DeonUrist/Apocapocket/releases/download/v2.0.8/Apocapocket-2.0.8.zip",
-          "size": 43293,
-          "assetId": 632037894,
-          "updated": "2026-10-11T23:03:38Z",
-          "sha256": "300b2e2b5c83d72c7adf6fb9a5936a0957287a304bd84c0873513a7674c9fec7",
+          "name": "Apocapocket-2.0.9.zip",
+          "url": "https://github.com/DeonUrist/Apocapocket/releases/download/v2.0.9/Apocapocket-2.0.9.zip",
+          "size": 45511,
+          "assetId": 632375590,
+          "updated": "2026-10-12T02:04:54Z",
+          "sha256": "e976dcb19521ed68e94336cf0eb9c2d33d330530f90b90df24f6ac487a968433",
           "extractTo": "plugins",
-          "stripPrefix": "",
+          "stripPrefix": "BepInEx/plugins/",
           "topFolder": "Apocapocket",
           "dlls": [
             "Apocapocket/Apocapocket.dll"
@@ -412,8 +412,7 @@
           "guidDll": "Apocapocket/Apocapocket.dll",
           "skip": [
             "README.md",
-            "CHANGELOG.md",
-            "2.0.8-release-notes.md"
+            "VALIDATION.md"
           ],
           "icon": null
         }
