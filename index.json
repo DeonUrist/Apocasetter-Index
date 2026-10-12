@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T15:17:37Z",
+  "generated": "2026-10-12T16:31:37Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1065,7 +1065,7 @@
       "guid": "com.denis.apocalypter.partadjustment",
       "name": "Part Adjuster Tools",
       "author": "DeonUrist",
-      "repo": "DeonUrist/PartAdjusterTools",
+      "repo": "DeonUrist/Ultimatetools",
       "summary": "The Part Adjustment tool can also select the suspension: widen or narrow both axles and raise or lower the suspension (numpad 4/6/2/8, 0 resets), saved per car.",
       "tags": [
         "vehicles",
@@ -1073,7 +1073,7 @@
       ],
       "requires": [],
       "optional": [],
-      "pluginFolder": "PartAdjustment",
+      "pluginFolder": "UltimateTools",
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
@@ -1082,29 +1082,29 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "1.6.1",
-        "tag": "v1.6.1",
-        "title": "Part Adjuster Tools 1.6.1",
-        "published": "2026-10-09T13:07:57Z",
-        "page": "https://github.com/DeonUrist/PartAdjusterTools/releases/tag/v1.6.1",
-        "notes": "- Attach lights anywhere, for real: while you hold a headlight or tail light with the Part Adjustment tool, nothing else gets adjusted. Engine, exhaust, radiator and suspension wrenches hidden behind the car body no longer grab the F press, so lights attach wherever you aim on the body. Removing a light with F works the same way.\r\n- In-game guide: with the Part Adjustment tool in hand, green text at the top left tells you what you can do right now and which keys to press (adjust a part, move/rotate with E, attach or remove lights, put the tool away). Holding a headlight or tail light without the tool shows a hint to grab it. Turn it off with the ShowGuide setting.\r\n\r\nInstall: extract PartAdjustment-1.6.1.zip into BepInEx/plugins (creates BepInEx/plugins/PartAdjustment/).",
+        "version": "2.3.0",
+        "tag": "v2.3.0",
+        "title": "Ultimate Tools 2.3.0",
+        "published": "2026-10-12T16:15:35Z",
+        "page": "https://github.com/DeonUrist/Ultimatetools/releases/tag/v2.3.0",
+        "notes": "- Visible gismos showing where to attach the parts you are holding.\r\n- Switch between a wrench and a screwdriver on the go to switch between attach/detach and move/rotate feature.\r\n- When you detach items, they remain held by you (do not fall).\r\n- Screwdriver is a replacement for Part Attachment adjuster that allows you to fine-tune rotation of attachable items.\r\n- You also can attach headlights anywhere, and the mod adds red tail lights.\r\n- Suspension can be widened, raised and rolled (change front/side suspension raise ratio).\r\n- Ability to drop the tool by pressing X (configurable).\r\n\r\nInstallation: extract the attached ZIP into BepInEx/plugins and restart. Remove older PartAdjustment.dll installations to avoid a duplicate plugin.\r\n",
         "zip": {
-          "name": "PartAdjustment-1.6.1.zip",
-          "url": "https://github.com/DeonUrist/PartAdjusterTools/releases/download/v1.6.1/PartAdjustment-1.6.1.zip",
-          "size": 47824,
-          "assetId": 625044665,
-          "updated": "2026-10-09T13:24:13Z",
-          "sha256": "e13371ed061715e67bf837da05cb37e44142ee5a6574605705dd050ac3b79b2e",
+          "name": "UltimateTools-2.3.0.zip",
+          "url": "https://github.com/DeonUrist/Ultimatetools/releases/download/v2.3.0/UltimateTools-2.3.0.zip",
+          "size": 56423,
+          "assetId": 634294518,
+          "updated": "2026-10-12T16:15:34Z",
+          "sha256": "e86c25f98a63339128960b5921046028cb4f474af19662e97b985116ade88455",
           "extractTo": "plugins",
           "stripPrefix": "",
-          "topFolder": "PartAdjustment",
+          "topFolder": "UltimateTools",
           "dlls": [
-            "PartAdjustment/PartAdjustment.dll"
+            "UltimateTools/UltimateTools.dll"
           ],
-          "guidDll": "PartAdjustment/PartAdjustment.dll",
+          "guidDll": "UltimateTools/UltimateTools.dll",
           "skip": [],
           "icon": {
-            "path": "PartAdjustment/icon.png",
+            "path": "UltimateTools/icon.png",
             "size": [
               64,
               64
