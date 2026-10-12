@@ -11,5 +11,10 @@
   "optional": [],
   "pluginFolder": null,
   "trust": "official",
-  "blocked": false
+  "blocked": false,
+  "deprecated": true,
+  "deprecatedReason": "Gunplay 1.2.0 includes unloading, backpack ammo overflow protection and separate per-gun magazines. Update Gunplay and disable Apocaunloader; existing magazine saves carry over.",
+  "replacedBy": [
+    "com.denis.apocalypter.gunplay"
+  ]
 }

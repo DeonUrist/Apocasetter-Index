@@ -3,7 +3,7 @@
   "name": "Gunplay",
   "author": "DeonUrist",
   "repo": "DeonUrist/Gunplay",
-  "summary": "Real bullets: travel time, tracers, range falloff, headshots, shotgun pellets, vehicle and wheel damage. Part of what was Apocaraider.",
+  "summary": "Real bullets, tracers, range falloff, headshots and vehicle damage. Hold Reload to unload; preserve backpack overflow and separate magazines for identical guns. Replaces Apocaunloader.",
   "tags": [
     "combat",
     "weapons",
@@ -19,6 +19,7 @@
   "trust": "official",
   "blocked": false,
   "replaces": [
-    "com.denis.apocalypter.apocaraider"
+    "com.denis.apocalypter.apocaraider",
+    "com.denis.apocalypter.apocaunloader"
   ]
 }

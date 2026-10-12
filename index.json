@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T17:41:41Z",
+  "generated": "2026-10-12T18:07:01Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -698,9 +698,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "Gunplay 1.2.0 includes unloading, backpack ammo overflow protection and separate per-gun magazines. Update Gunplay and disable Apocaunloader; existing magazine saves carry over.",
+      "replacedBy": [
+        "com.denis.apocalypter.gunplay"
+      ],
       "replaces": [],
       "latest": {
         "version": "1.2.0",
@@ -844,7 +846,7 @@
       "name": "Gunplay",
       "author": "DeonUrist",
       "repo": "DeonUrist/Gunplay",
-      "summary": "Real bullets: travel time, tracers, range falloff, headshots, shotgun pellets, vehicle and wheel damage. Part of what was Apocaraider.",
+      "summary": "Real bullets, tracers, range falloff, headshots and vehicle damage. Hold Reload to unload; preserve backpack overflow and separate magazines for identical guns. Replaces Apocaunloader.",
       "tags": [
         "combat",
         "weapons",
@@ -864,22 +866,23 @@
       "deprecatedReason": "",
       "replacedBy": [],
       "replaces": [
-        "com.denis.apocalypter.apocaraider"
+        "com.denis.apocalypter.apocaraider",
+        "com.denis.apocalypter.apocaunloader"
       ],
       "latest": {
-        "version": "1.1.0",
-        "tag": "v1.1.0",
-        "title": "gunplay 1.1.0",
-        "published": "2026-10-06T00:15:21Z",
-        "page": "https://github.com/DeonUrist/Gunplay/releases/tag/v1.1.0",
-        "notes": "## gunplay 1.1.0\r\n\r\n- Gunplay 1.1.0: monster projectiles stop at walls",
+        "version": "1.2.0",
+        "tag": "v1.2.0",
+        "title": "Gunplay 1.2.0: unloading and ammo preservation",
+        "published": "2026-10-12T18:06:23Z",
+        "page": "https://github.com/DeonUrist/Gunplay/releases/tag/v1.2.0",
+        "notes": "# Gunplay 1.2.0\n\nGunplay now includes unloading and ammo preservation from Apocaunloader.\n\n- Hold Reload to unload the current gun; a short press reloads on release.\n- Rounds return to the backpack, with overflow dropped as a save-compatible ammo item.\n- Changing/removing backpacks preserves excess ammo. Failed drops retain the rounds and retry.\n- Identical guns keep separate magazines and hammer/chamber state across switching and saving/loading.\n- Apocaunloader 1.3.0 magazine saves carry over unchanged; its settings migrate into Gunplay's new Ammo section.\n- Native weapon switching and Apocapocket's extra slots are supported.\n- Gunplay takes ownership if standalone Apocaunloader is still installed, preventing duplicate ammo processing.\n\nApocaunloader is deprecated: update Gunplay and disable the standalone mod. Gunplay HUD remains a separate optional mod.\nThe existing EnableGunplay switch controls projectile simulation. Ammo settings have separate unloading/overflow switches;\nper-gun magazines stay tracked while Gunplay is installed to protect loaded rounds.\n",
         "zip": {
-          "name": "Gunplay-1.1.0.zip",
-          "url": "https://github.com/DeonUrist/Gunplay/releases/download/v1.1.0/Gunplay-1.1.0.zip",
-          "size": 282719,
-          "assetId": 614051466,
-          "updated": "2026-10-06T00:59:55Z",
-          "sha256": "d414a17dd7c53698e0fd1f1b70c336309545734f974a5fbf6b5f027d0c8f4973",
+          "name": "Gunplay-1.2.0.zip",
+          "url": "https://github.com/DeonUrist/Gunplay/releases/download/v1.2.0/Gunplay-1.2.0.zip",
+          "size": 298243,
+          "assetId": 634561023,
+          "updated": "2026-10-12T18:06:22Z",
+          "sha256": "c9c2ef129e8b50e5bcaf4deaee08d99e5ca1181e6904a565ff6b1285231e5c32",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "Gunplay",
@@ -887,7 +890,10 @@
             "Gunplay/Gunplay.dll"
           ],
           "guidDll": "Gunplay/Gunplay.dll",
-          "skip": [],
+          "skip": [
+            "README.md",
+            "1.2.0-release-notes.md"
+          ],
           "icon": null
         }
       },

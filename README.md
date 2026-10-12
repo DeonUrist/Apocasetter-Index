@@ -25,7 +25,8 @@ so players never run into GitHub's API limits. A GitHub Action rebuilds `index.j
 | [Apocasetter](https://github.com/DeonUrist/Apocasetter) | The in-game Mods menu itself |
 | [Apocaspawner](https://github.com/DeonUrist/Apocaspawner) | Item, vehicle and trailer spawner |
 | [Apocatremors](https://github.com/DeonUrist/Apocatremors) | Desert ambushes while you drive |
-| [Apocaunloader](https://github.com/DeonUrist/Apocaunloader) | Hold R to unload your gun |
+| [Gunplay](https://github.com/DeonUrist/Gunplay) | Projectile simulation, unloading, ammo overflow protection and per-gun magazines |
+| [Apocaunloader](https://github.com/DeonUrist/Apocaunloader) | Deprecated; its ammo features are included in Gunplay 1.2.0 |
 
 ## For mod makers: getting your mod listed
 
