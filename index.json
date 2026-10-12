@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T00:26:34Z",
+  "generated": "2026-10-12T01:19:54Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1024,19 +1024,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.9.10",
-        "tag": "v1.9.10",
-        "title": "NPC Overhaul 1.9.10",
-        "published": "2026-10-11T23:50:31Z",
-        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.9.10",
-        "notes": "NPC Overhaul now automatically supports FlyingKlick's Dog Companion (tested with 1.2.0). The companion uses a combination of animations (reuses NPC Overhaul's dog animations from Labrador pack), with corrected ground placement and a lower sitting position in vehicles. Dog Companion remains optional; no separate compatibility DLL is needed.\r\n\r\nFollow, fetch, target selection, tool props, bark and dismiss/recall remain managed by Dog Companion. The cover response requires NPC Overhaul detection and pathfinding to be enabled.\r\n",
+        "version": "1.9.12",
+        "tag": "v1.9.12",
+        "title": "NPC Overhaul 1.9.12",
+        "published": "2026-10-12T01:18:51Z",
+        "page": "https://github.com/DeonUrist/NPCAI/releases/tag/v1.9.12",
+        "notes": "Wild Hound NPCs now use their original offsets independently of the personal Dog Companion. Yard Hound, Grimhound, Nightwalker and Alpha Nightwalker retain their restored original positions. The personal dog's support-height, sitting, sneaking and vehicle alignment are preserved.\r\n\r\nThe animation builder now resets the donor pose before measuring each creature, preventing offsets from the preceding sitting/crouching pose from carrying over.\r\n",
         "zip": {
-          "name": "NPCOverhaul-1.9.10.zip",
-          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.9.10/NPCOverhaul-1.9.10.zip",
-          "size": 2884951,
-          "assetId": 632119975,
-          "updated": "2026-10-11T23:50:31Z",
-          "sha256": "f51db1b9c3a25c4d72af782dd8087d8ce26698cf5e1b3ab07356c406da33654c",
+          "name": "NPCOverhaul-1.9.12.zip",
+          "url": "https://github.com/DeonUrist/NPCAI/releases/download/v1.9.12/NPCOverhaul-1.9.12.zip",
+          "size": 3286632,
+          "assetId": 632281931,
+          "updated": "2026-10-12T01:18:50Z",
+          "sha256": "9f3233895e9d31aec9e040f13e372ae6993a7dc09568e3efa2b7211e179b1c72",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "NPCAI",
@@ -1045,7 +1045,9 @@
           ],
           "guidDll": "NPCAI/NPCAI.dll",
           "skip": [
-            "README.md"
+            "INSTALL.md",
+            "README.md",
+            "SHA256SUMS.txt"
           ],
           "icon": null
         }
