@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T22:56:08Z",
+  "generated": "2026-10-12T22:56:25Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1145,7 +1145,7 @@
         "title": "Ultimate Tools 2.3.2 — Part removal and turbo mounts",
         "published": "2026-10-12T22:48:21Z",
         "page": "https://github.com/DeonUrist/Ultimatetools/releases/tag/v2.3.2",
-        "notes": "Ultimate Tools 2.3.2 fixes wrench removal of mounted steering wheels, turbos and superchargers. Native attached trigger colliders are accepted. Parts such as gear levers that disable their pickup collider while mounted receive temporary tool-only selection shapes using the original collider dimensions. Cassettes remain hand-only.\n\nAimed removable parts now take priority over an overlapping Drive (F) trigger and display the correct tool hint. Normal vehicle entry and exit still use native controls when no part is targeted.\n\nHolding a turbo highlights compatible empty mounts on nearby engines at the turbo's native mounting pose. Superchargers use their own pose. Both use the game's type-specific attachment recipes; occupied nested hinges are excluded. Native forced-induction cleanup still runs when removing a turbo or supercharger.\n\nValidation: clean Release build and 13 focused picking/input/attachment-policy checks passed. The offline audit inspected 206 native removable-part collider layouts and 361 native attachment FSMs, including 16 forced-induction sockets. No game launch or interruption was performed; live behavior requires player confirmation after updating.\n\nInstallation: extract UltimateTools-2.3.2.zip into BepInEx/plugins, replacing the existing UltimateTools folder, then restart. Remove older PartAdjustment.dll installations to avoid a duplicate plugin. Existing settings and saves remain compatible.\r\n",
+        "notes": "Ultimate Tools 2.3.2 fixes wrench removal of mounted steering wheels, turbos and superchargers. Native attached trigger colliders are accepted. Parts such as gear levers that disable their pickup collider while mounted receive temporary tool-only selection shapes using the original collider dimensions. Cassettes remain hand-only.\r\n\r\nAimed removable parts now take priority over an overlapping Drive (F) trigger and display the correct tool hint. Normal vehicle entry and exit still use native controls when no part is targeted.\r\n\r\nHolding a turbo highlights compatible empty mounts on nearby engines at the turbo's native mounting pose. Superchargers use their own pose. Both use the game's type-specific attachment recipes; occupied nested hinges are excluded. Native forced-induction cleanup still runs when removing a turbo or supercharger.\r\n\r\nInstallation: extract UltimateTools-2.3.2.zip into BepInEx/plugins, replacing the existing UltimateTools folder, then restart. Remove older PartAdjustment.dll installations to avoid a duplicate plugin. Existing settings and saves remain compatible.\r\n",
         "zip": {
           "name": "UltimateTools-2.3.2.zip",
           "url": "https://github.com/DeonUrist/Ultimatetools/releases/download/v2.3.2/UltimateTools-2.3.2.zip",
