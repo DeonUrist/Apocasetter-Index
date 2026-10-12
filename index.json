@@ -1063,10 +1063,10 @@
     },
     {
       "guid": "com.denis.apocalypter.partadjustment",
-      "name": "Part Adjuster Tools",
+      "name": "Ultimate Tools",
       "author": "DeonUrist",
       "repo": "DeonUrist/Ultimatetools",
-      "summary": "The Part Adjustment tool can also select the suspension: widen or narrow both axles and raise or lower the suspension (numpad 4/6/2/8, 0 resets), saved per car.",
+      "summary": "See connection gismos, adjust attached car objects, modify suspension.",
       "tags": [
         "vehicles",
         "tools"
