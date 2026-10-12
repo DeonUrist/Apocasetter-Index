@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T16:36:01Z",
+  "generated": "2026-10-12T17:41:41Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1056,6 +1056,58 @@
             "README.md",
             "SHA256SUMS.txt"
           ],
+          "icon": null
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "com.burner.apocalypter.sigmamod",
+      "name": "SigmaMod (Alpha)",
+      "author": "Wad67",
+      "repo": "Wad67/Apocalypter-sigmamod",
+      "summary": "> ⚠ Very early. This is a 0.2 that has barely been driven in game. Expect things to break, > saves to get weird, templates to load wrong and the log to scream at you.",
+      "tags": [
+        "vehicles",
+        "sound",
+        "combat",
+        "items"
+      ],
+      "requires": [],
+      "optional": [
+        "com.denis.apocalypter.apocaspawner"
+      ],
+      "pluginFolder": "SigmaMod",
+      "trust": "community",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
+      "latest": {
+        "version": "0.3.2",
+        "tag": "v0.3.2",
+        "title": "SigmaMod 0.3.2",
+        "published": "2026-10-12T13:52:56Z",
+        "page": "https://github.com/Wad67/Apocalypter-sigmamod/releases/tag/v0.3.2",
+        "notes": "# SigmaMod 0.3.2\n\n## Test rig\n\n- The from-scratch test rig (`sigma_chassis_test`) is installed with the mod now, in `sigma_assets` beside the\n  Sigma and the Astron, so it shows up in Apocaspawner straight away. Up to 0.3.1 it sat in `examples/` and had to be\n  copied over by hand.\n- Its belt, couplings and flywheel drag are Engine Sim's. Without Engine Sim the rig still spawns and the engine\n  runs, but nothing drives the wheels; the log names the parts it left out.\n",
+        "zip": {
+          "name": "SigmaMod-0.3.2.zip",
+          "url": "https://github.com/Wad67/Apocalypter-sigmamod/releases/download/v0.3.2/SigmaMod-0.3.2.zip",
+          "size": 802252,
+          "assetId": 633931801,
+          "updated": "2026-10-12T13:52:58Z",
+          "sha256": "4e2ccc0cb952d50eab050c16fde62a024c2449ee638788c12cac7b6d970136ed",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "SigmaMod",
+          "dlls": [
+            "SigmaMod/tools/GltfTest/GltfTest.dll",
+            "SigmaMod/SigmaMod.dll"
+          ],
+          "guidDll": "SigmaMod/SigmaMod.dll",
+          "skip": [],
           "icon": null
         }
       },
