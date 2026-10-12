@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-12T16:31:37Z",
+  "generated": "2026-10-12T16:33:53Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1063,10 +1063,10 @@
     },
     {
       "guid": "com.denis.apocalypter.partadjustment",
-      "name": "Ultimate Tools",
+      "name": "Part Adjuster Tools",
       "author": "DeonUrist",
       "repo": "DeonUrist/Ultimatetools",
-      "summary": "See connection gismos, adjust attached car objects, modify suspension.",
+      "summary": "The Part Adjustment tool can also select the suspension: widen or narrow both axles and raise or lower the suspension (numpad 4/6/2/8, 0 resets), saved per car.",
       "tags": [
         "vehicles",
         "tools"
