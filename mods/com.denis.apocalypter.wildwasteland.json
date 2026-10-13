@@ -1,0 +1,35 @@
+{
+  "guid": "com.denis.apocalypter.wildwasteland",
+  "name": "Wild Wasteland",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/WildWasteland",
+  "summary": "Gameplay overhaul in one mod: player body, smarter NPCs, real gunplay + HUD, raider patrols, traffic, merchants and the War Rig. Every feature switchable; all tools in F7.",
+  "tags": [
+    "overhaul",
+    "combat",
+    "raiders",
+    "vehicles",
+    "ai"
+  ],
+  "requires": [],
+  "optional": [
+    "com.denis.apocalypter.apocasetter",
+    "com.denis.apocalypter.apocasaver",
+    "com.denis.apocalypter.apocapocket",
+    "com.denis.apocalypter.partadjustment"
+  ],
+  "pluginFolder": "WildWasteland",
+  "trust": "official",
+  "blocked": false,
+  "replaces": [
+    "com.denis.apocalypter.apocaplayer",
+    "com.denis.apocalypter.apocaclimber",
+    "com.denis.apocalypter.npcai",
+    "com.denis.apocalypter.gunplay",
+    "com.denis.apocalypter.apocaunloader",
+    "com.denis.apocalypter.gunplayhud",
+    "com.denis.apocalypter.apocapatrol",
+    "com.denis.apocalypter.warrig",
+    "com.denis.apocalypter.merchantspotter"
+  ]
+}
