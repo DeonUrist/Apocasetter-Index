@@ -3,7 +3,7 @@
   "name": "SigmaMod (Alpha)",
   "author": "Wad67",
   "repo": "Wad67/Apocalypter-sigmamod",
-  "summary": "> ⚠ Very early. This is a 0.2 that has barely been driven in game. Expect things to break, > saves to get weird, templates to load wrong and the log to scream at you.",
+  "summary": "Cram your own 3D stuff into Apocalypter without installing the bloated Unity editor. Ships with a 1981 Mitsubishi Sigma and its Astron 2000 engine.",
   "tags": [
     "vehicles",
     "sound",
