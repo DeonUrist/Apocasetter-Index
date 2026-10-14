@@ -1,0 +1,20 @@
+{
+  "guid": "com.burner.apocalypter.apocair",
+  "name": "Apoc-Air",
+  "author": "Wad67",
+  "repo": "Wad67/Apoca-Air",
+  "summary": "A BepInEx 5 plugin for Apocalypter: aircraft. It has a flyable gyroplane in the style of the one in Mad Max 2; a small bush plane is planned.",
+  "tags": [
+    "vehicles",
+    "tools"
+  ],
+  "requires": [
+    "com.burner.apocalypter.sigmamod"
+  ],
+  "optional": [
+    "com.burner.apocalypter.enginesim"
+  ],
+  "pluginFolder": "ApocAir",
+  "trust": "community",
+  "blocked": false
+}
