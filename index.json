@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-14T03:57:25Z",
+  "generated": "2026-10-14T11:33:10Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -804,19 +804,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "1.6.0",
-        "tag": "v1.6.0",
-        "title": "Engine Sim 1.6.0",
-        "published": "2026-10-13T10:55:04Z",
-        "page": "https://github.com/Wad67/Apocalypter-enginesim/releases/tag/v1.6.0",
-        "notes": "# Engine Sim 1.6.0\n\n## Exhaust smoke\n\n- **The same from every side.** A smoke particle is a flat card turned to the camera, and the game's smoke material\n  lit it as a flat surface: the same smoke was fullbright with the sun behind you and dull from the other side.\n  Smoke is now drawn unlit, coloured by the scene's own light: the ambient light plus half the sun's, as far as the\n  sun is up. It looks the same whichever way you see it, and still darkens at night.\n- If the game has no unlit particle shader, the game's material is kept and each puff is lit as a ball instead of a\n  card.\n\n## Backfires\n\n- **A proper bang.** The backfire puff used to be a tiny ball: its size went through the running smoke's growth\n  curve, which shrank it. A backfire now throws:\n  - a short jet of flame out of the pipe, half a metre to a metre long, gone in a few hundredths of a second;\n  - a slug of dark, fuel-rich smoke that leaves fast, slows in the air and billows into a cloud bigger than the\n    running smoke;\n  - the orange flash at the outlet, now reaching 1.5 m.\n- **The game's own fire.** The flame is the tin can light's fire effect, copied onto each outlet with its look kept.\n  If the can light isn't loaded, a plain glowing flame stands in.\n\n## Burning oil\n\n- An engine burning oil spits burning drops of it with each backfire, more the oilier it is.\n- An engine burning a lot of oil (over half its worst), worked hard, blows burning drops out of the pipe as it runs,\n  up to a few a second.\n- The drops have weight, fall, land on whatever is below and burn out there over a few seconds.\n\n## Diagnostics\n\n- With `Debug.VerboseLog` on, the log says which smoke shader the game uses and what was used instead, and whether\n  the can light's fire was found.\n",
+        "version": "1.7.0",
+        "tag": "v1.7.0",
+        "title": "Engine Sim 1.7.0",
+        "published": "2026-10-14T07:55:10Z",
+        "page": "https://github.com/Wad67/Apocalypter-enginesim/releases/tag/v1.7.0",
+        "notes": "# Engine Sim 1.7.0\n\n## Engine Tuning Toolkit\n\n- **A new item** (needs SigmaMod): a toolbox of its own, found where repair boxes are. Use it to take the tools\n  out, X to put them away. Left click an engine, fitted or loose, and its tune opens in a Windows 95 window.\n- **What it sets:** ignition timing and advance springs, intake and exhaust cam timing, duration and lift, the\n  mixture screw, air filter, throttle linkage, idle speed, rev limit and limiter cut. With a turbo fitted, the\n  wastegate; with a supercharger, its pulley and relief valve.\n- **Variable timing:** the intake cams phased while running, up to 30° advanced low down under load and 10°\n  retarded near the limit. 20 - 30 % more torque below the midrange, the top end as it was.\n- **Try it in place:** the window's own ignition key, a starter to hold and a throttle slider.\n- **Simulate Pull:** the window's tune on a dyno, applied or not, with the vehicle's exhaust, machines and\n  condition. Torque, power and boost from 1000 rpm to the limit in a second window, the last pull faded behind.\n  The points run side by side on half the cores: a few seconds a pull.\n- Tunes are kept per engine and per save slot in `BepInEx/config/EngineSim.tunes.cfg`.\n\n## Forced induction\n\n- **Boost follows the engine.** The machines read the engine's draw from one gas sub-step in each physics step,\n  4 - 8 times too little: every turbo and supercharger looked oversized and sat at its wastegate or relief valve\n  from idle up. Measured over the whole step now.\n- **Superchargers build with rpm.** The leak back past a Roots blower's rotors is now Eaton's measured figure, a\n  large share of the flow at low speed: boost rises with revs until the relief valve.\n- **Turbos have a threshold.** The turbines ran on each exhaust pulse at the gas temperature engine-sim gives,\n  hotter than a flame (it loses no heat to the walls). They now see the manifold's flow over a cycle, at a\n  temperature from the heat the engine released (40 % of it to the exhaust). A turbo matched to its engine comes\n  in around 1500 - 2000 rpm; a big one on a small engine lags.\n- **Real set pressures.** The default wastegate and relief pressures were the game's power figures turned into\n  psi (0.45 psi for the smallest). They are now what such hardware is set to: wastegates 7 - 15 psi, relief valves\n  6 - 14 psi. `EngineSim.induction.cfg` is replaced with the new defaults; the old one is kept as `.old`.\n\n## Fixes\n\n- **A loose engine carried on a vehicle** was taken for its engine: the vehicle drove and sounded as the one in\n  its bed. Only parts the game has fitted count now.\n- **Exhaust effects after a restart:** applying a tune (or anything else that restarts an engine) could leave it\n  with no smoke, flames or backfires.\n\n## Performance\n\n- **When the simulation can't keep up** (its sound running dry), a notice says so on screen. With `AutoQuality`\n  (on by default) quality goes down a step until the game restarts or `SimQuality` is changed.\n- **`SimQuality` applies at once** to the running engines, without restarting them.\n",
         "zip": {
-          "name": "EngineSim-1.6.0.zip",
-          "url": "https://github.com/Wad67/Apocalypter-enginesim/releases/download/v1.6.0/EngineSim-1.6.0.zip",
-          "size": 641363,
-          "assetId": 636741026,
-          "updated": "2026-10-13T10:55:05Z",
-          "sha256": "d0e78d43aee53075eb4fee0e891848573350d812a702aad71d3b61ec18886d4a",
+          "name": "EngineSim-1.7.0.zip",
+          "url": "https://github.com/Wad67/Apocalypter-enginesim/releases/download/v1.7.0/EngineSim-1.7.0.zip",
+          "size": 662227,
+          "assetId": 639665064,
+          "updated": "2026-10-14T07:55:11Z",
+          "sha256": "7c522e3ffd091014fcea18e6bcaf95302b1fd34361e4437e2b7040fb71bbc7b2",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "EngineSim",
@@ -1072,7 +1072,7 @@
       "name": "SigmaMod (Alpha)",
       "author": "Wad67",
       "repo": "Wad67/Apocalypter-sigmamod",
-      "summary": "> ⚠ Very early. This is a 0.2 that has barely been driven in game. Expect things to break, > saves to get weird, templates to load wrong and the log to scream at you.",
+      "summary": "Cram your own 3D stuff into Apocalypter without installing the bloated Unity editor. Ships with a 1981 Mitsubishi Sigma and its Astron 2000 engine.",
       "tags": [
         "vehicles",
         "sound",
