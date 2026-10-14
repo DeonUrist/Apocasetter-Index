@@ -1,0 +1,19 @@
+{
+  "guid": "com.burner.apocalypter.burnersutilities",
+  "name": "Burner's Utilities",
+  "author": "Wad67",
+  "repo": "Wad67/Apocalypter-burnersutilities",
+  "summary": "Framework: A BepInEx 5 plugin for Apocalypter: small things in one mod, each switched on and off on its own in the settings.",
+  "tags": [
+    "vehicles",
+    "items",
+    "tools"
+  ],
+  "requires": [],
+  "optional": [
+    "com.burner.apocalypter.sigmamod"
+  ],
+  "pluginFolder": "BurnersUtilities",
+  "trust": "community",
+  "blocked": false
+}
