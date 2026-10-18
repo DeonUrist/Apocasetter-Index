@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-18T04:27:32Z",
+  "generated": "2026-10-18T09:34:26Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1198,27 +1198,27 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.3.0",
-        "tag": "v2.3.0",
-        "title": "SigmaMod 2.3.0",
-        "published": "2026-10-17T14:52:16Z",
-        "page": "https://github.com/Wad67/Apocalypter-sigmamod/releases/tag/v2.3.0",
-        "notes": "# SigmaMod 2.3.0\n\n## Colliders from the mesh\n\n- **`tools/colliders.sh`: convex colliders made from an object's own mesh, written into the `.glb`.** A body that\n  collides as it looks needs convex colliders, and drawing seventy of them round a car body by hand is the slowest part\n  of making one. The tool cuts the mesh into convex pieces where it is concave (approximate convex decomposition,\n  CoACD) until no piece is further than a tolerance from it:\n\n  ```\n  python3 -m venv tools/.venv && tools/.venv/bin/pip install coacd numpy     # once\n  tools/colliders.sh my_car.glb \"Body\" [tolerance] [--into \"Body Colliders\"]\n  ```\n\n- **One number for how close.** The tolerance is relative to the object's size. On a car body the default 0.05 gives\n  about seventy pieces; 0.1 about thirty, coarse enough that pieces bridge the window and door openings; 0.03 about\n  130, nearly exact.\n- **Symmetric bodies stay symmetric.** A mesh that mirrors itself across X = 0 (every corner has a twin within 1 mm)\n  is cut one half at a time and the pieces mirrored, so the left and right sides collide the same.\n- **The pieces are Blender objects.** Each is written as a child of the object, or of the `--into` object (an empty\n  that holds them), marked as a convex mesh collider the way exports carry the game's colliders. SigmaMod builds them\n  as the object's colliders; in Blender they can be looked at, moved or deleted.\n- **Run it again freely.** The pieces it made before are replaced; colliders you made yourself stay.\n- Pieces have at most 128 corners, under Unity's 255-face limit for a convex collider.\n\n## Attachable items\n\n- **Attachables work without Apocapocket.** `parts.attachable` switched its item's `Attach` FSM on with the game's\n  `EnableFSM`, whose default is to undo itself when its state is left: a frame after spawning, `Attach` was off again,\n  and Use against a vehicle gave no prompt. Apocapocket switches a held item's `Attach` back on, so with it installed\n  the item worked. `parts.attachable` now leaves `Attach` as it sets it, as the game's own attachables do. Assets that\n  use `parts.attachable` are fixed by this release without changes of their own.\n- The metal plate example (`examples/metal_plate.lua`) is gone.\n\n## Driving\n\n- **`parts.car_input(g, o)`: the game's own driver controls.** The INPUT FSMs of the game's cars, as a Lua library\n  (`sigma/car_input.lua`): throttle, brakes, clutch and steering from the game's axes, the shift keys and the\n  H-shifter, mouse steering, cruise control and the horn, with the game's driving settings (automatic gearbox,\n  H-shifter, auto clutch, smoothed input, steering speed) applied as they change. Live while someone sits in the seat\n  (`parts.driver_seat` with `input = \"DriveTrigger\"`).\n  - `handbrake`: the handbrake key pulls and releases the vehicle's `toggle_lever`, with its sound.\n  - `headlights`: the headlight key works the vehicle's `headlights` switch, with its sound and events.\n  - `horn_at`: where the horn sounds.\n  - Cruise control holds a throttle of its own, and the throttle is the larger of the pedal and it. The game's cruise\n    control writes its throttle every frame against the axis writing the pedal's, and wins only when it happens to\n    run after; this doesn't depend on the order FSMs run in.\n- **`parts.pedal(g, name, o)`: pedals that move with their input**, from where they rest to where they are pressed\n  along `travel` (the game's gas 9.3 cm, brake 10.4, clutch 10.2), as the game's do.\n- **`SigmaMod.Parts.SeatedModel`: the driver as others see them.** A seated player model shown while someone sits in\n  the seat and the camera isn't at their head: it shows in third person and is out of the way in first, whichever\n  camera does the third person.\n- `ToggleLever.Pulled` and `Switch.On` work a lever or switch from code or an FSM as a click would, sounds and events\n  included.\n- `tools/car_input.py` regenerates `sigma/car_input.lua` from a car's exported FSMs.\n\n## Building\n\n- **`copy",
+        "version": "2.4.0",
+        "tag": "v2.4.0",
+        "title": "SigmaMod 2.4.0",
+        "published": "2026-10-18T04:41:42Z",
+        "page": "https://github.com/Wad67/Apocalypter-sigmamod/releases/tag/v2.4.0",
+        "notes": "# SigmaMod 2.4.0\n\n## The Sigma, rebuilt\n\n- **The 1981 Mitsubishi Sigma is built from scratch now**, not as a game car's working parts under the Sigma's body.\n  Its own body, interior, dashboard and gauges slot, ignition key with a lamp for each state, headlight switch,\n  pedals that move, a handbrake you pull, a gear lever, an interior lamp, a tow hitch, toolsets, lock volumes, and\n  slots for the game's seats, doors, hood, trunk lid, bumpers, roof rack, radio, windshield, headlights and lift kits.\n  Same id (`sigma_chassis`), same name, same spawns (where the Outrider and the Poloska do) and the same starter kit.\n- **Its .glb is 15 MB.** The game's materials on it keep the game's ids, so it uses the game's own textures instead\n  of carrying them (the export it came from was 128 MB).\n- Sigmas in existing saves load as the new one. Parts fitted to an old Sigma may not find their place on the new one:\n  check them after loading.\n- **Its script is the kit the Blender add-on builds cars from.** `sigma_assets/apocasigma.lua` is in sections, one\n  per thing a car can have (engine bay, exhaust, wheels and suspension, fuel tank, dashboard and ignition, driver's\n  seat and controls, gear lever, headlights, seats, doors and body panels, interior light, tow hitch, lock volumes,\n  toolsets), each with the objects it is made of, what each one is and where it goes. The car it builds is the same\n  as before the sections, line for line.\n\n## Colliders from the mesh\n\n- **Flat meshes work.** A plane, a floor or any other mesh with no inside crashed the decomposition. It is now given\n  2 cm of thickness first (its faces on both sides, walls round its edges), so it becomes a thin slab; Unity can't\n  make a flat convex collider either.\n- **Symmetric meshes without a centre loop are cut whole.** A mesh that mirrors itself across X = 0 is still cut one\n  half at a time and mirrored, but only when it has an edge loop down its middle. Without one (a plain cube), faces\n  across the middle were lost from both halves and the colliders came out as slivers. Meshes with a centre loop give\n  exactly the colliders they gave before.\n\n## Textures\n\n- **`tools/strip_textures.py --ids-from <other.glb>`:** game materials lose the game's id when a material is appended\n  or copied in Blender, and then every game texture goes into the file. This gives them back the id of the\n  same-named material in another file (an Export All file, or an earlier export) before stripping.\n\n## The Blender add-on\n\nReleased on its own, as `sigmamod_blender-2.4.0.zip`: a guide in Blender that takes an asset from nothing to the\ngame, the tools behind its buttons. See its release.\n\n## Install\n\nUnzip into `Apocalypter/BepInEx/plugins`, replacing the `SigmaMod` folder.\n",
         "zip": {
-          "name": "SigmaMod-2.3.0.zip",
-          "url": "https://github.com/Wad67/Apocalypter-sigmamod/releases/download/v2.3.0/SigmaMod-2.3.0.zip",
-          "size": 1038796,
-          "assetId": 650733904,
-          "updated": "2026-10-17T14:52:17Z",
-          "sha256": "db5d647384efaa2e4db2b911994e37c426e66ac6066d7045e26c2c3ddf881ef2",
+          "name": "SigmaMod-2.4.0.zip",
+          "url": "https://github.com/Wad67/Apocalypter-sigmamod/releases/download/v2.4.0/SigmaMod-2.4.0.zip",
+          "size": 14700834,
+          "assetId": 652492496,
+          "updated": "2026-10-18T04:41:46Z",
+          "sha256": "8a14b05711c778197ca32840f25e5612ae9b521ad993cfb87bca962e87487893",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "SigmaMod",
           "dlls": [
-            "SigmaMod/SigmaMod.dll",
-            "SigmaMod/MoonSharp.Interpreter.dll",
+            "SigmaMod/tools/GltfTest/GltfTest.dll",
             "SigmaMod/live/SigmaParts.dll",
-            "SigmaMod/tools/GltfTest/GltfTest.dll"
+            "SigmaMod/MoonSharp.Interpreter.dll",
+            "SigmaMod/SigmaMod.dll"
           ],
           "guidDll": "SigmaMod/SigmaMod.dll",
           "skip": [],
