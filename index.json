@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T13:40:35Z",
+  "generated": "2026-10-19T13:42:19Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -610,19 +610,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.1.1",
-        "tag": "v2.1.1",
-        "title": "Apocasetter 2.1.1",
-        "published": "2026-10-10T20:07:31Z",
-        "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.1.1",
-        "notes": "### 2.1.1\r\n- Numpad keys (and a few others with different names: ` / Windows / Menu / Print Screen / Num Lock) can now be bound to mod settings that use KeyCode, e.g. Apocaplayer's volume keys. Before, the old key stayed.\r\n\r\n### 2.1.0\r\n- Mouse buttons (right, middle, back, forward) can be bound in the Mods window to settings that take them. The left button stays reserved for the window.\r\n\r\nInstall: unzip into the game folder, or update from the in-game Mods window.",
+        "version": "2.1.2",
+        "tag": "v2.1.2",
+        "title": "Apocasetter 2.1.2",
+        "published": "2026-10-19T13:42:04Z",
+        "page": "https://github.com/DeonUrist/Apocasetter/releases/tag/v2.1.2",
+        "notes": "Wild Wasteland now appears **first among uninstalled mods** in the ON GITHUB list. Other available mods remain alphabetical. Installed/disabled groups, search and Official/Community filters keep their existing behavior.\r\n\r\nIncludes the user-selected Wild Wasteland emblem as an icon fallback. The live Index also supplies that icon to existing clients after CHECK FOR UPDATES; the ordering change requires Apocasetter2.1.2.\r\n\r\nThis release also includes the previously committed menu/input, trust-filter, scrollbar styling and preloader-patcher management improvements. Unrelated pending numeric-field formatting work is excluded.\r\n\r\nInstall/update the complete ZIP with the game closed. It contains BepInEx plugin and preloader-patcher paths; extract manually into the **game folder**. The in-game installer handles those destinations automatically. Settings and saves are not bundled or changed. Installer version2.0.1 is included. No documentation is bundled.\r\n\r\nBoth plugin and installer built with **zero warnings/errors** from an isolated committed source snapshot plus this change. In-game verification of the ordering remains pending.\r\n\r\nZIP SHA256: `578d518a26cf021f8d7498eb33f85a3726456d5a62d4210caade87b2d2394bda`\r\n",
         "zip": {
-          "name": "Apocasetter-2.1.1.zip",
-          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v2.1.1/Apocasetter-2.1.1.zip",
-          "size": 329722,
-          "assetId": 628885440,
-          "updated": "2026-10-10T20:07:55Z",
-          "sha256": "b173440136999423756982ec6e068fefc17198270c31649a839f880e2e894a8c",
+          "name": "Apocasetter-2.1.2.zip",
+          "url": "https://github.com/DeonUrist/Apocasetter/releases/download/v2.1.2/Apocasetter-2.1.2.zip",
+          "size": 348814,
+          "assetId": 656393098,
+          "updated": "2026-10-19T13:41:57Z",
+          "sha256": "578d518a26cf021f8d7498eb33f85a3726456d5a62d4210caade87b2d2394bda",
           "extractTo": "BepInEx",
           "stripPrefix": "BepInEx/",
           "topFolder": null,
@@ -631,9 +631,7 @@
             "patchers/Apocasetter.Installer.dll"
           ],
           "guidDll": "plugins/Apocasetter/Apocasetter.dll",
-          "skip": [
-            "README.md"
-          ],
+          "skip": [],
           "icon": null
         }
       },
@@ -1499,19 +1497,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "0.1.39",
-        "tag": "v0.1.39",
-        "title": "Wild Wasteland MP RC3 (0.1.39)",
-        "published": "2026-10-19T13:30:41Z",
-        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.39",
-        "notes": "# Wild Wasteland MP RC3 (0.1.39)\n\n- Wild Wasteland MP now has its own plugin ID: `com.denis.apocalypter.wildwastelandmp`. Apocasetter can identify it separately from single-player Wild Wasteland and offer the correct updates.\n- The plugin declares incompatibility with single-player Wild Wasteland (`com.denis.apocalypter.wildwasteland`), preventing both overhauls from running together. Disable one before using the other.\n- Existing `WildWasteland` settings, module data, saves and namespaces remain unchanged. On first startup, a missing MP top-level config is copied from the previous plugin config; the original is retained and existing MP config is never overwritten.\n- Includes RC2's host-near bodyless spawning and host Recall controls, with all previous assets.\n\nInstall the full ZIP into `BepInEx/plugins`. Requires separately installed **BepInEx 5 (Windows x64)** and **Apocalypter Multiplayer 0.4.1** from [Nexus Mods](https://www.nexusmods.com/apocalypter/mods/10). All players must restart with **0.1.39**, the same Multiplayer version and matching other mods. Handshake remains24; the strict mod manifest rejects older plugin identities/builds.\n\nRC3 is the official Apocasetter-index distribution. Its RC label still indicates ongoing gameplay testing; Windows compilation/package checks do not verify networking, save recovery or performance. No game or gameplay harness was launched.\n\nWindows Release: zero warnings/errors. Built/staged DLL MD5: `3236E4F6B1D08928FA76AC595C93D745`. Not deployed locally because the current single-player installation has neither MP assets nor the separate Multiplayer dependency.\n\nManual checks: upgrade an existing MP installation and confirm F3 key/debug settings, module settings and saves remain; verify Apocasetter shows separate Wild Wasteland and Wild Wasteland MP rows and switching variants queues the other for disabling without removing configs. With both manually present, BepInEx must reject the incompatible MP plugin. Restart all peers and check host/guest join, bodyless spawn, Recall and save/reload.\n",
+        "version": "0.1.40",
+        "tag": "v0.1.40",
+        "title": "Wild Wasteland MP RC4 (0.1.40)",
+        "published": "2026-10-19T13:41:58Z",
+        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.40",
+        "notes": "# Wild Wasteland MP RC4 (0.1.40)\n\nWhen Apocalypter Multiplayer is missing or disabled, the main menu now shows **REQUIRED MOD MISSING** and a **Download Apocalypter Multiplayer** button linking to [the original Nexus page](https://www.nexusmods.com/apocalypter/mods/10).\n\nThe notice uses the existing recommended-mods/conflict warning panel, font, colors and scrolling. It remains visible when optional recommended mods are turned off. Existing conflict warnings and optional recommendations follow below it. It stays hidden during loading, settings and menu modals; when the required plugin is loaded, this dependency notice is absent.\n\nThe Multiplayer DLL remains a separate download. The existing official Apocasetter entry retains its dependency requirement, distinct MP plugin identity and mutual exclusion with single-player Wild Wasteland. Existing settings, saves, handshake24 and RC3 gameplay are unchanged; all peers must restart with matching builds.\n\nRequires **BepInEx 5 (Windows x64)** and **Apocalypter Multiplayer 0.4.1**. Extract the full ZIP into `BepInEx/plugins` with single-player Wild Wasteland disabled. This is an official release candidate; in-game layout, interaction, networking, saves and performance remain Testing. No game or gameplay harness was launched.\n\nWindows Release: zero warnings/errors. Built/staged DLL MD5: `14499795E93C67EC859202B9573E47DD`. Local RC3 has a removal queued in Apocasetter; that operation was preserved and RC4 was not deployed over it.\n\nManual check: with the dependency absent/disabled and Recommended mods off, start at the title menu and verify the notice and download link. Repeat with recommendations on and a replaced standalone conflict present; all sections should remain readable/scrollable. Open settings/MULTIPLAYER and check the panel yields, then return. Install/enable Apocalypter Multiplayer and restart: the missing-mod notice should disappear.\n",
         "zip": {
-          "name": "WildWastelandMP-0.1.39-RC3.zip",
-          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.39/WildWastelandMP-0.1.39-RC3.zip",
-          "size": 237024914,
-          "assetId": 656362972,
-          "updated": "2026-10-19T13:30:14Z",
-          "sha256": "f4b5ce3958951b4fe5c6922518598455fec04783d8c69bca6e05b4076a6ea682",
+          "name": "WildWastelandMP-0.1.40-RC4.zip",
+          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.40/WildWastelandMP-0.1.40-RC4.zip",
+          "size": 237026428,
+          "assetId": 656391606,
+          "updated": "2026-10-19T13:41:33Z",
+          "sha256": "1b3a48e8566c3789e3bc795c328045c6983a13e9b50ad9ab4d9991b0d8e4e192",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWastelandMP",
