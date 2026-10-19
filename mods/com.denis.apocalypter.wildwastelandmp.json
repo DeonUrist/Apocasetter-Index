@@ -3,7 +3,7 @@
   "name": "Wild Wasteland MP",
   "author": "DeonUrist",
   "repo": "DeonUrist/WildWastelandMP",
-  "summary": "Multiplayer overhaul with shared worlds, vehicles, quests, host saves, sleepers and Recall. Requires BepInEx 5 and Nexus Apocalypter Multiplayer 0.4.1. Use instead of single-player Wild Wasteland.",
+  "summary": "Multiplayer overhaul with shared worlds, vehicles, quests and host saves. Offline saves work without Multiplayer; hosting/joining requires Nexus Apocalypter Multiplayer 0.4.1. Use instead of SP WW.",
   "tags": [
     "multiplayer",
     "gameplay",
@@ -11,10 +11,9 @@
     "quests",
     "saves"
   ],
-  "requires": [
-    "ApocalypterMP"
-  ],
+  "requires": [],
   "optional": [
+    "ApocalypterMP",
     "com.denis.apocalypter.apocasetter",
     "com.burner.apocalypter.enginesim",
     "local.apocalypter.chasecamera",
