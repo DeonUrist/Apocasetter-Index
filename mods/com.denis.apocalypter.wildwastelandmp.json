@@ -1,0 +1,53 @@
+{
+  "guid": "com.denis.apocalypter.wildwastelandmp",
+  "name": "Wild Wasteland MP",
+  "author": "DeonUrist",
+  "repo": "DeonUrist/WildWastelandMP",
+  "summary": "Multiplayer overhaul with shared worlds, vehicles, quests, host saves, sleepers and Recall. Requires BepInEx 5 and Nexus Apocalypter Multiplayer 0.4.1. Use instead of single-player Wild Wasteland.",
+  "tags": [
+    "multiplayer",
+    "gameplay",
+    "vehicles",
+    "quests",
+    "saves"
+  ],
+  "requires": [
+    "ApocalypterMP"
+  ],
+  "optional": [
+    "com.denis.apocalypter.apocasetter",
+    "com.burner.apocalypter.enginesim",
+    "local.apocalypter.chasecamera",
+    "com.denis.apocalypter.apocapocket",
+    "com.example.apocalypter.talk",
+    "com.denis.apocalypter.apocalanguage",
+    "apocalypter.worldamp",
+    "apocalypter.dogcompanion",
+    "com.denis.apocalypter.apocaspawner",
+    "com.denis.apocalypter.partadjustment"
+  ],
+  "pluginFolder": "WildWastelandMP",
+  "trust": "official",
+  "blocked": false,
+  "replaces": [
+    "com.denis.apocalypter.wildwasteland",
+    "com.denis.apocalypter.apocaplayer",
+    "com.denis.apocalypter.apocaclimber",
+    "com.denis.apocalypter.npcai",
+    "com.denis.apocalypter.womenofwasteland",
+    "com.denis.apocalypter.gunplay",
+    "com.denis.apocalypter.apocaunloader",
+    "com.denis.apocalypter.gunplayhud",
+    "com.denis.apocalypter.healthstacks",
+    "com.denis.apocalypter.cleanhud",
+    "local.immersivemap",
+    "com.denis.apocalypter.apocapatrol",
+    "com.denis.apocalypter.warrig",
+    "com.denis.apocalypter.merchantspotter",
+    "local.apocalypterquests",
+    "com.denis.apocalypter.stewpot",
+    "com.denis.apocalypter.apocasaver",
+    "com.denis.apocalypter.itweenguard",
+    "com.denis.apocalypter.apocaraider"
+  ]
+}

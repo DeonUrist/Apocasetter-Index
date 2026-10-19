@@ -16,6 +16,8 @@ so players never run into GitHub's API limits. A GitHub Action rebuilds `index.j
 
 | Mod | What it does |
 |---|---|
+| [Wild Wasteland](https://github.com/DeonUrist/WildWasteland) | Official single-player overhaul |
+| [Wild Wasteland MP](https://github.com/DeonUrist/WildWastelandMP) | Official multiplayer variant; requires Nexus Apocalypter Multiplayer 0.4.1; mutually exclusive with single-player Wild Wasteland |
 | [ApocaHUD43](https://github.com/DeonUrist/ApocaHUD43) | Keeps the HUD on the screen edges at any aspect ratio |
 | [ApocaLanguage](https://github.com/DeonUrist/ApocaLanguage) | Translates every text the game shows |
 | [Apocapatrol](https://github.com/DeonUrist/Apocapatrol) | Raider gangs in cars, trucks and bikes roam the wasteland |
