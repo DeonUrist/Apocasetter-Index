@@ -4,10 +4,20 @@
   "author": "DeonUrist",
   "repo": "DeonUrist/WarRig",
   "summary": "A six-wheel tanker semi-trailer with a climbable hatch ladder and furnished interior. Hitches to Rustchief trucks.",
-  "tags": ["vehicles", "trailers"],
+  "tags": [
+    "vehicles",
+    "trailers"
+  ],
   "requires": [],
-  "optional": ["com.denis.apocalypter.apocaspawner"],
+  "optional": [
+    "com.denis.apocalypter.apocaspawner"
+  ],
   "pluginFolder": "WarRig",
   "trust": "official",
-  "blocked": false
+  "blocked": false,
+  "deprecated": true,
+  "deprecatedReason": "War Rig is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+  "replacedBy": [
+    "com.denis.apocalypter.wildwasteland"
+  ]
 }

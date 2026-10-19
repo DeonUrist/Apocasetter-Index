@@ -13,8 +13,8 @@
   "trust": "official",
   "blocked": false,
   "deprecated": true,
-  "deprecatedReason": "Gunplay 1.2.0 includes unloading, backpack ammo overflow protection and separate per-gun magazines. Update Gunplay and disable Apocaunloader; existing magazine saves carry over.",
+  "deprecatedReason": "Apocaunloader is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
   "replacedBy": [
-    "com.denis.apocalypter.gunplay"
+    "com.denis.apocalypter.wildwasteland"
   ]
 }

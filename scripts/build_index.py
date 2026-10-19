@@ -30,7 +30,7 @@ def zip_info(entry, asset, prev_latest):
     if old.get("assetId") == asset["id"] and old.get("updated") == asset.get("updated_at") and old.get("sha256") and "icon" in old:
         return old, None
     if asset.get("size", 0) > MAX_ZIP:
-        return None, "%s is larger than 200 MB" % asset["name"]
+        return None, "%s is larger than %d MiB" % (asset["name"], MAX_ZIP // (1024 * 1024))
     data = http(asset["browser_download_url"], raw=True, accept="application/octet-stream")
     z = analyze_zip(data, entry["guid"])
     if z["unsafe"]:

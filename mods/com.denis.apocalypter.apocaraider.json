@@ -17,11 +17,8 @@
   "trust": "official",
   "blocked": false,
   "deprecated": true,
-  "deprecatedReason": "Apocaraider has been split into four mods you can pick separately. Install the ones you want and disable Apocaraider: running it together with them applies the same features twice.",
+  "deprecatedReason": "Apocaraider is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
   "replacedBy": [
-    "com.denis.apocalypter.gunplay",
-    "com.denis.apocalypter.gunplayhud",
-    "com.denis.apocalypter.npcai",
-    "com.denis.apocalypter.womenofwasteland"
+    "com.denis.apocalypter.wildwasteland"
   ]
 }

@@ -22,7 +22,7 @@ GUID_RE = re.compile(r"^[A-Za-z0-9_.\-]{3,100}$")
 REPO_RE = re.compile(r"^[A-Za-z0-9\-]{1,39}/[A-Za-z0-9._\-]{1,100}$")
 FOLDER_RE = re.compile(r"^[A-Za-z0-9_.\- ]{1,64}$")
 TRUST = ("official", "community")
-MAX_ZIP = 200 * 1024 * 1024
+MAX_ZIP = 256 * 1024 * 1024
 MAX_ICON = 48 * 1024        # bytes; the icon travels inside index.json as base64
 MAX_ICON_SIDE = 256
 
@@ -268,7 +268,7 @@ def online_check(e):
         warns.append("release %s has no .zip attached, so Apocasetter can only link to it" % rel.get("tag_name"))
         return errs, warns, details
     if asset.get("size", 0) > MAX_ZIP:
-        errs.append("%s is larger than 200 MB" % asset["name"])
+        errs.append("%s is larger than %d MiB" % (asset["name"], MAX_ZIP // (1024 * 1024)))
         return errs, warns, details
     try:
         data = http(asset["browser_download_url"], raw=True, accept="application/octet-stream")

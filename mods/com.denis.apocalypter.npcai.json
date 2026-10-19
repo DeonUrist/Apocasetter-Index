@@ -21,5 +21,10 @@
   "blocked": false,
   "replaces": [
     "com.denis.apocalypter.apocaraider"
+  ],
+  "deprecated": true,
+  "deprecatedReason": "NPC Overhaul is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+  "replacedBy": [
+    "com.denis.apocalypter.wildwasteland"
   ]
 }
