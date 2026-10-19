@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T19:45:23Z",
+  "generated": "2026-10-19T23:37:21Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1496,19 +1496,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "0.1.44",
-        "tag": "v0.1.44",
-        "title": "Wild Wasteland MP RC8 (0.1.44)",
-        "published": "2026-10-19T19:37:31Z",
-        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.44",
-        "notes": "# Wild Wasteland MP RC8 (0.1.44) — Save reliability\n\nOffline and host saves wait for queued terrain generation/application before starting their transaction, then hold terrain streaming through publication. MapMagic.Update continued running while game time was paused; moving terrain during serialization triggered the consistency guard and disabled subsequent saves. The guard remains, with streaming coordinated at the save boundary. This is shared WW save behavior, independent of Towns.\n\nLocation discovery sidecars and journal publication use a same-directory Windows replacement rename instead of Mono File.Replace, avoiding the reported Win32 error 1175 path. Verified staging and rollback remain. Save buttons stay visible with existing availability/status checks. Preparation timeout/cancellation releases streaming, input and pause without starting a write transaction; host cleanup also releases local pause if sending the unfreeze message throws. Actual write errors remain reported and protected. New named saves remain separate files; only explicit overwrite targets an existing named save.\n\nNo new settings, save formats, identities or protocol changes; handshake24 remains. Hosting/joining requires separately installed Apocalypter Multiplayer0.4.1 and matching WWMP versions on every peer. Offline play retains its dependency-free mode. The ZIP contains runtime assets and launchers, excluding documentation, personal configs/saves and dependency DLLs.\n\nWindows Release/Deploy=false passed with zero warnings/errors. Built/staged DLL MD5 **2363D05F619F616A1E87D5E67B466964**, stage `V:/Repos/Apocalypter/_releases/WildWastelandMP_0.1.44-RC8a.dll`. Not deployed to the current standard-WW game installation: WW and WWMP conflict, and that installation lacks the MP dependency/assets. No game launch, automation or harness; status remains Testing.\n\nManual checks: offline, request a new save while terrain loads, create another named save, overwrite from the menu, then check autosave/save-and-exit and reload world/markers. Repeat as host with a guest: save during streaming, verify both peers resume and reconnect/load the resulting world. Also check cancellation/disconnection during preparation resumes the host. Startup logs `[System] Terrain save barrier ready`; saves log `[System] Terrain settled; streaming held for world save` followed by normal completion, without terrain-moved or 1175 errors. A preparation timeout should permit another attempt without a write transaction. Runtime behavior awaits Denis's verification.\n\nRuntime-only ZIP: 287 files, 236,668,911 bytes; SHA256 **ac36a1f7edabc4e39b8de85ba07ec6a820dd4da54292e34da1464837a65cb63d**. Package checks passed for CRC, unique/safe paths, exact source bytes, 156 unchanged baseline assets, 18 loading screens and single plugin DLL; dependency DLLs, documentation and personal data are excluded.\n",
+        "version": "0.1.45",
+        "tag": "v0.1.45",
+        "title": "Wild Wasteland MP RC9 (0.1.45)",
+        "published": "2026-10-19T22:43:50Z",
+        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.45",
+        "notes": "# Wild Wasteland MP RC9 (0.1.45) — Guest coyote quests\n\nFixes the built-in Talk prompt missing for guests approaching friendly coyotes. Multiplayer disables NPC simulation FSMs on clients, which removed them from the list used by quest targeting. The quest cache now includes their disabled Health components through existing network spawn notifications and the existing scene walk, keeping NPC AI disabled and quest decisions on the host.\n\nGuests can use the existing conversation requests to ask for work and accept quests. The four-metre targeting range and viewing cone are unchanged; a small collider was not the cause. Existing host validation, shared quest book and rewards remain in place. This fixes WW's built-in interaction cache; optional Apocatalker still owns its own targeting when installed.\n\nNo new settings, save formats or protocol changes; handshake 24 remains. Install the full ZIP into `BepInEx/plugins`, with standard Wild Wasteland disabled. Hosting/joining requires separately installed BepInEx 5 x64 and [Apocalypter Multiplayer 0.4.1](https://www.nexusmods.com/apocalypter/mods/10). All peers must restart with matching WWMP builds. Offline play retains its dependency-free mode.\n\nManual check: as a guest, approach a living friendly camp coyote within four metres, face its torso, press the configured Quests talk key (default F), ask for work and accept. Expect the Talk prompt, conversation choices and matching party journal updates. Repeat for newly spawned NPCs, after reconnecting, and on the host. Runtime acceptance remains Testing; no game or harness was launched.\n\nWindows Release/Deploy=false passed with zero warnings/errors. Built/staged DLL MD5 **04BC690174D31569EDC8F6C2F90C580B**; exact stage `V:/Repos/Apocalypter/_releases/WildWastelandMP_0.1.45-RC9a.dll`. No deployment to the current standard-WW installation, which lacks the MP assets/dependency.\n\nRuntime-only ZIP: 287 files, 236,668,535 bytes; SHA256 **81651e13d3088a516f543edede08e7c27165cf67dd72af2b9ac8ce459a7cb9cf**. CRC, unique/safe paths, exact source bytes, 156 unchanged baseline assets, 18 loading screens and single plugin DLL checked. Documentation, dependency DLLs and personal runtime data are excluded.\n",
         "zip": {
-          "name": "WildWastelandMP-0.1.44-RC8.zip",
-          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.44/WildWastelandMP-0.1.44-RC8.zip",
-          "size": 236668911,
-          "assetId": 657234322,
-          "updated": "2026-10-19T19:37:30Z",
-          "sha256": "ac36a1f7edabc4e39b8de85ba07ec6a820dd4da54292e34da1464837a65cb63d",
+          "name": "WildWastelandMP-0.1.45-RC9.zip",
+          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.45/WildWastelandMP-0.1.45-RC9.zip",
+          "size": 236668535,
+          "assetId": 657639399,
+          "updated": "2026-10-19T22:43:40Z",
+          "sha256": "81651e13d3088a516f543edede08e7c27165cf67dd72af2b9ac8ce459a7cb9cf",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWastelandMP",
