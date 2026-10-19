@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-18T13:59:34Z",
+  "generated": "2026-10-19T13:06:01Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -344,9 +344,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "Apocapatrol is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+      "replacedBy": [
+        "com.denis.apocalypter.wildwasteland"
+      ],
       "replaces": [],
       "latest": {
         "version": "2.7.5",
@@ -392,9 +394,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "Apocaplayer is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+      "replacedBy": [
+        "com.denis.apocalypter.wildwasteland"
+      ],
       "replaces": [],
       "latest": {
         "version": "2.3.9",
@@ -500,12 +504,9 @@
       "blocked": false,
       "blockedReason": "",
       "deprecated": true,
-      "deprecatedReason": "Apocaraider has been split into four mods you can pick separately. Install the ones you want and disable Apocaraider: running it together with them applies the same features twice.",
+      "deprecatedReason": "Apocaraider is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
       "replacedBy": [
-        "com.denis.apocalypter.gunplay",
-        "com.denis.apocalypter.gunplayhud",
-        "com.denis.apocalypter.npcai",
-        "com.denis.apocalypter.womenofwasteland"
+        "com.denis.apocalypter.wildwasteland"
       ],
       "replaces": [],
       "latest": {
@@ -550,9 +551,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "Apocasaver is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+      "replacedBy": [
+        "com.denis.apocalypter.wildwasteland"
+      ],
       "replaces": [],
       "latest": {
         "version": "2.0.4",
@@ -752,9 +755,9 @@
       "blocked": false,
       "blockedReason": "",
       "deprecated": true,
-      "deprecatedReason": "Gunplay 1.2.0 includes unloading, backpack ammo overflow protection and separate per-gun magazines. Update Gunplay and disable Apocaunloader; existing magazine saves carry over.",
+      "deprecatedReason": "Apocaunloader is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
       "replacedBy": [
-        "com.denis.apocalypter.gunplay"
+        "com.denis.apocalypter.wildwasteland"
       ],
       "replaces": [],
       "latest": {
@@ -968,9 +971,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "Gunplay is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+      "replacedBy": [
+        "com.denis.apocalypter.wildwasteland"
+      ],
       "replaces": [
         "com.denis.apocalypter.apocaraider",
         "com.denis.apocalypter.apocaunloader"
@@ -1024,9 +1029,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "Gunplay HUD is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+      "replacedBy": [
+        "com.denis.apocalypter.wildwasteland"
+      ],
       "replaces": [
         "com.denis.apocalypter.apocaraider"
       ],
@@ -1073,9 +1080,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "HealthStacks is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+      "replacedBy": [
+        "com.denis.apocalypter.wildwasteland"
+      ],
       "replaces": [],
       "latest": {
         "version": "1.0.0",
@@ -1136,9 +1145,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "NPC Overhaul is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+      "replacedBy": [
+        "com.denis.apocalypter.wildwasteland"
+      ],
       "replaces": [
         "com.denis.apocalypter.apocaraider"
       ],
@@ -1198,19 +1209,19 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.4.0",
-        "tag": "v2.4.0",
-        "title": "SigmaMod 2.4.0",
-        "published": "2026-10-18T04:41:42Z",
-        "page": "https://github.com/Wad67/Apocalypter-sigmamod/releases/tag/v2.4.0",
-        "notes": "# SigmaMod 2.4.0\n\n## The Sigma, rebuilt\n\n- **The 1981 Mitsubishi Sigma is built from scratch now**, not as a game car's working parts under the Sigma's body.\n  Its own body, interior, dashboard and gauges slot, ignition key with a lamp for each state, headlight switch,\n  pedals that move, a handbrake you pull, a gear lever, an interior lamp, a tow hitch, toolsets, lock volumes, and\n  slots for the game's seats, doors, hood, trunk lid, bumpers, roof rack, radio, windshield, headlights and lift kits.\n  Same id (`sigma_chassis`), same name, same spawns (where the Outrider and the Poloska do) and the same starter kit.\n- **Its .glb is 15 MB.** The game's materials on it keep the game's ids, so it uses the game's own textures instead\n  of carrying them (the export it came from was 128 MB).\n- Sigmas in existing saves load as the new one. Parts fitted to an old Sigma may not find their place on the new one:\n  check them after loading.\n- **Its script is the kit the Blender add-on builds cars from.** `sigma_assets/apocasigma.lua` is in sections, one\n  per thing a car can have (engine bay, exhaust, wheels and suspension, fuel tank, dashboard and ignition, driver's\n  seat and controls, gear lever, headlights, seats, doors and body panels, interior light, tow hitch, lock volumes,\n  toolsets), each with the objects it is made of, what each one is and where it goes. The car it builds is the same\n  as before the sections, line for line.\n\n## Colliders from the mesh\n\n- **Flat meshes work.** A plane, a floor or any other mesh with no inside crashed the decomposition. It is now given\n  2 cm of thickness first (its faces on both sides, walls round its edges), so it becomes a thin slab; Unity can't\n  make a flat convex collider either.\n- **Symmetric meshes without a centre loop are cut whole.** A mesh that mirrors itself across X = 0 is still cut one\n  half at a time and mirrored, but only when it has an edge loop down its middle. Without one (a plain cube), faces\n  across the middle were lost from both halves and the colliders came out as slivers. Meshes with a centre loop give\n  exactly the colliders they gave before.\n\n## Textures\n\n- **`tools/strip_textures.py --ids-from <other.glb>`:** game materials lose the game's id when a material is appended\n  or copied in Blender, and then every game texture goes into the file. This gives them back the id of the\n  same-named material in another file (an Export All file, or an earlier export) before stripping.\n\n## The Blender add-on\n\nReleased on its own, as `sigmamod_blender-2.4.0.zip`: a guide in Blender that takes an asset from nothing to the\ngame, the tools behind its buttons. See its release.\n\n## Install\n\nUnzip into `Apocalypter/BepInEx/plugins`, replacing the `SigmaMod` folder.\n",
+        "version": "2.6.1",
+        "tag": "v2.6.1",
+        "title": "SigmaMod 2.6.1",
+        "published": "2026-10-19T09:59:32Z",
+        "page": "https://github.com/Wad67/Apocalypter-sigmamod/releases/tag/v2.6.1",
+        "notes": "# SigmaMod 2.6.1\n\nNo changes to the plugin: released alongside the Blender add-on 2.6.1 (`sigmamod_blender-2.6.1.zip`).\n\n## Install\n\nUnzip into `Apocalypter/BepInEx/plugins`, replacing the `SigmaMod` folder.\n",
         "zip": {
-          "name": "SigmaMod-2.4.0.zip",
-          "url": "https://github.com/Wad67/Apocalypter-sigmamod/releases/download/v2.4.0/SigmaMod-2.4.0.zip",
-          "size": 14700834,
-          "assetId": 652492496,
-          "updated": "2026-10-18T04:41:46Z",
-          "sha256": "8a14b05711c778197ca32840f25e5612ae9b521ad993cfb87bca962e87487893",
+          "name": "SigmaMod-2.6.1.zip",
+          "url": "https://github.com/Wad67/Apocalypter-sigmamod/releases/download/v2.6.1/SigmaMod-2.6.1.zip",
+          "size": 14705967,
+          "assetId": 655890332,
+          "updated": "2026-10-19T09:59:36Z",
+          "sha256": "45ded3254c5ef31ec292a4d25029a441787d6994e972076c131a4f5a75e01f16",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "SigmaMod",
@@ -1300,9 +1311,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "War Rig is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+      "replacedBy": [
+        "com.denis.apocalypter.wildwasteland"
+      ],
       "replaces": [],
       "latest": {
         "version": "1.1.3",
@@ -1340,6 +1353,87 @@
       "error": null
     },
     {
+      "guid": "com.denis.apocalypter.wildwasteland",
+      "name": "Wild Wasteland",
+      "author": "DeonUrist",
+      "repo": "DeonUrist/WildWasteland",
+      "summary": "Single-player overhaul with a visible body, smarter NPCs, vehicle patrols, combat, quests, survival, clean UI and named saves with autosave recovery.",
+      "tags": [
+        "gameplay",
+        "overhaul",
+        "combat",
+        "vehicles",
+        "quests",
+        "saves"
+      ],
+      "requires": [],
+      "optional": [
+        "com.denis.apocalypter.apocasetter",
+        "com.burner.apocalypter.enginesim",
+        "local.apocalypter.chasecamera",
+        "com.denis.apocalypter.apocapocket",
+        "com.example.apocalypter.talk",
+        "com.denis.apocalypter.apocalanguage",
+        "apocalypter.worldamp",
+        "apocalypter.dogcompanion",
+        "com.denis.apocalypter.apocaspawner",
+        "com.denis.apocalypter.partadjustment"
+      ],
+      "pluginFolder": "WildWasteland",
+      "trust": "official",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [
+        "com.denis.apocalypter.apocaplayer",
+        "com.denis.apocalypter.apocaclimber",
+        "com.denis.apocalypter.npcai",
+        "com.denis.apocalypter.womenofwasteland",
+        "com.denis.apocalypter.gunplay",
+        "com.denis.apocalypter.apocaunloader",
+        "com.denis.apocalypter.gunplayhud",
+        "com.denis.apocalypter.healthstacks",
+        "com.denis.apocalypter.cleanhud",
+        "local.immersivemap",
+        "com.denis.apocalypter.apocapatrol",
+        "com.denis.apocalypter.warrig",
+        "com.denis.apocalypter.merchantspotter",
+        "local.apocalypterquests",
+        "com.denis.apocalypter.stewpot",
+        "com.denis.apocalypter.apocasaver",
+        "com.denis.apocalypter.itweenguard",
+        "com.denis.apocalypter.apocaraider"
+      ],
+      "latest": {
+        "version": "1.0",
+        "tag": "v1.0",
+        "title": "Wild Wasteland 1.0",
+        "published": "2026-10-19T12:54:10Z",
+        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0",
+        "notes": "Wild Wasteland 1.0 combines the single-player gameplay modules with the recent shared improvements and the final seated fists/body/camera changes.\r\n\r\n## Included\r\n\r\n- **Player body and movement:** eight playable appearances with matching portraits, first/third-person body options, climbing, Low Crawl, steering-wheel hands and motorcycle grips.\r\n- **Combat from vehicles:** seated punches blend from resting hands, with torso/body turning and corrected first-person fit. Melee weapons remain visible; blast lances and grenades animate through their throws.\r\n- **Save management:** named screenshot snapshots, search, manual/autosave/backup views, confirmed overwrite/delete/load/restore, complete companion files, interrupted-write recovery and legacy save loading.\r\n- **Autosaves and vehicle saves:** visible countdown, combat deferral, separate retention, manual/exit saving while seated and optional driving autosaves. Seated loads park the vehicle and restore an upright on-foot player and camera, including the final camera-parent rotation fix.\r\n- **Inventory:** quantity sliders for dropping ammo, grenades, batteries, Nuts, Bandages and First Aid.\r\n- **Presentation:** all 18 current loading illustrations and tips, animated transitions, updated title background, compass labels and consolidated map-fog controls.\r\n- **Shared improvements:** stew pot handles/body rendering, landed-bolt visuals, head/arm poses, crawl guards, weather/haze and targeting fixes.\r\n- **Tuned SP defaults:** current compatible settings and profiles; existing saved choices and migrations retain precedence. Ignition defaults to I.\r\n\r\nIncludes the existing NPC perception/search/cover systems, persistent traffic and faction battles, motorcycles and War Rig, physical gunplay, quests/followers, CleanHUD and survival modules. Multiplayer-specific systems are outside this release.\r\n\r\n## Install\r\n\r\nRequires BepInEx 5. Extract **WildWasteland-1.0.zip** into `BepInEx/plugins/`. Back up saves and preserve custom external assets when updating. Disable the replaced standalone plugins listed in the [README](https://github.com/DeonUrist/WildWasteland#standalone-mods-included-or-replaced), including Apocasaver; Apocasetter remains supported. Open Wild Wasteland from the menu or F3 to configure modules and settings.\r\n\r\nThe ZIP contains the plugin and runtime assets, with the required weather license notice. README, release history, documentation, personal configs and live saves are excluded. GitHub also generates its own source archives; those are separate from the install ZIP.\r\n\r\n## Validation\r\n\r\nWindows Release build: **zero warnings, zero errors**. The final seated implementation matches the current shared MP behavior. Gameplay, save-recovery, visuals and performance remain **Testing**; this publication does not mark those features Verified. Quest voice playback remains temporarily disabled.\r\n\r\nDLL MD5: `8E14EC54659A074EC2CDC1F3AAC70E8E`  \r\nZIP SHA256: `c81217b21acf80b96ce54c68d2abce39a7501b37cd7a5a43c61abf96d3adc945`\r\n",
+        "zip": {
+          "name": "WildWasteland-1.0.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0/WildWasteland-1.0.zip",
+          "size": 218473303,
+          "assetId": 656275431,
+          "updated": "2026-10-19T12:53:55Z",
+          "sha256": "c81217b21acf80b96ce54c68d2abce39a7501b37cd7a5a43c61abf96d3adc945",
+          "extractTo": "plugins",
+          "stripPrefix": "",
+          "topFolder": "WildWasteland",
+          "dlls": [
+            "WildWasteland/WildWasteland.dll"
+          ],
+          "guidDll": "WildWasteland/WildWasteland.dll",
+          "skip": [],
+          "icon": null
+        }
+      },
+      "error": null
+    },
+    {
       "guid": "com.denis.apocalypter.womenofwasteland",
       "name": "Women of Wasteland",
       "author": "DeonUrist",
@@ -1355,9 +1449,11 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
-      "replacedBy": [],
+      "deprecated": true,
+      "deprecatedReason": "Women of Wasteland is included in Wild Wasteland 1.0. Install Wild Wasteland and disable this standalone plugin to avoid duplicate features. Keep existing configuration and data files for migration.",
+      "replacedBy": [
+        "com.denis.apocalypter.wildwasteland"
+      ],
       "replaces": [
         "com.denis.apocalypter.apocaraider"
       ],
