@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T14:02:17Z",
+  "generated": "2026-10-19T14:51:19Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1445,7 +1445,7 @@
       "name": "Wild Wasteland MP",
       "author": "DeonUrist",
       "repo": "DeonUrist/WildWastelandMP",
-      "summary": "Multiplayer overhaul with shared worlds, vehicles, quests, host saves, sleepers and Recall. Requires BepInEx 5 and Nexus Apocalypter Multiplayer 0.4.1. Use instead of single-player Wild Wasteland.",
+      "summary": "Multiplayer overhaul with shared worlds, vehicles, quests and host saves. Offline saves work without Multiplayer; hosting/joining requires Nexus Apocalypter Multiplayer 0.4.1. Use instead of SP WW.",
       "tags": [
         "multiplayer",
         "gameplay",
@@ -1453,10 +1453,9 @@
         "quests",
         "saves"
       ],
-      "requires": [
-        "ApocalypterMP"
-      ],
+      "requires": [],
       "optional": [
+        "ApocalypterMP",
         "com.denis.apocalypter.apocasetter",
         "com.burner.apocalypter.enginesim",
         "local.apocalypter.chasecamera",
@@ -1497,19 +1496,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "0.1.41",
-        "tag": "v0.1.41",
-        "title": "Wild Wasteland MP RC5 (0.1.41)",
-        "published": "2026-10-19T14:01:41Z",
-        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.41",
-        "notes": "Drivers with nothing equipped and fists lowered once again **grip and animate the steering wheel or motorcycle handlebars**. The seated-fists change had incorrectly sent the normal wheel pose to knee-rest.\r\n\r\nReadied fists and punches retain their animation. In MP, unarmed passengers continue resting their hands on their legs. Tools/free-hand grip, missing-wheel handling, seated weapons and camera fit retain their existing paths.\r\n\r\nRequires BepInEx5 x64 and [Apocalypter Multiplayer0.4.1](https://www.nexusmods.com/apocalypter/mods/10), installed separately. All players must restart with this same WWMP release. Single-player Wild Wasteland must be disabled. Handshake24, saves, settings and wheel profiles are unchanged.\r\n\r\nExtract the complete ZIP into `BepInEx/plugins/`. Preserve custom assets. Runtime assets and required license notices are included; documentation, historical notes, personal configs/saves and dependency DLLs are excluded.\r\n\r\nWindows Release build: **zero warnings/errors**. The correction is compiled and source-reviewed; visual fit, synchronization and performance remain **Testing**. Check lowered driver hands while steering, ready/punch/lower transitions, passenger rest and both camera modes.\r\n\r\nDLL MD5: `011EDF677A37ED4B96D61CF09CFABC49`  \r\nZIP SHA256: `40f44dc9461198069aef9511724b016462b3ab4631af32610abc76e5e52d3290`\r\n",
+        "version": "0.1.42",
+        "tag": "v0.1.42",
+        "title": "Wild Wasteland MP RC6 (0.1.42)",
+        "published": "2026-10-19T14:50:00Z",
+        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.42",
+        "notes": "The integrated save system now works by default during **offline play without Apocalypter Multiplayer installed**.\r\n\r\n- Named screenshot save library, search, backup/restore and separate autosaves.\r\n- Autosave countdown and combat deferral, native Continue/loading and save-and-quit.\r\n- Transaction recovery, companion files, world history, optional cleanup and vehicle-load placement/camera correction.\r\n- Apocasaver is suppressed only after the replacement save engine recovers successfully.\r\n\r\nUses native game adapters when the dependency is absent and retains the existing multiplayer path when present. Existing save identities, settings, sidecars, wheel profiles and handshake24 remain. Includes RC5's unarmed driver wheel-grip correction. Multiplayer supply drops are outside this change.\r\n\r\n## Install\r\n\r\nRequires **BepInEx5 x64**. Hosting/joining additionally requires [Apocalypter Multiplayer0.4.1](https://www.nexusmods.com/apocalypter/mods/10), installed separately. All multiplayer peers must use matching WWMP builds. Disable standard Wild Wasteland.\r\n\r\nExtract **WildWastelandMP-0.1.42-RC6.zip** into `BepInEx/plugins/`, preserving custom assets. Runtime assets and launchers are included; documentation/history, personal configs/saves and dependency DLLs are excluded. Required asset license notice is retained.\r\n\r\n## Validation\r\n\r\nWindows Release build: **zero warnings/errors**. Local test logs confirm save-engine initialization without the dependency. Gameplay, save integrity/recovery, network parity and performance remain **Testing**; this is not a Verified promotion.\r\n\r\nDLL MD5: `9DDE5C0ACBEDE1791848A91FD28C3E6B`  \r\nZIP SHA256: `5bfdcea7612cf539bfc628023d067fcfb63a0a9d2bfe73d2c73b588f8d047e5a`\r\n",
         "zip": {
-          "name": "WildWastelandMP-0.1.41-RC5.zip",
-          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.41/WildWastelandMP-0.1.41-RC5.zip",
-          "size": 236664955,
-          "assetId": 656441341,
-          "updated": "2026-10-19T14:01:19Z",
-          "sha256": "40f44dc9461198069aef9511724b016462b3ab4631af32610abc76e5e52d3290",
+          "name": "WildWastelandMP-0.1.42-RC6.zip",
+          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.42/WildWastelandMP-0.1.42-RC6.zip",
+          "size": 236668727,
+          "assetId": 656556725,
+          "updated": "2026-10-19T14:47:40Z",
+          "sha256": "5bfdcea7612cf539bfc628023d067fcfb63a0a9d2bfe73d2c73b588f8d047e5a",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWastelandMP",
