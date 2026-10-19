@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T13:48:48Z",
+  "generated": "2026-10-19T14:02:17Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1406,19 +1406,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "1.0.1",
-        "tag": "v1.0.1",
-        "title": "Wild Wasteland 1.0.1",
-        "published": "2026-10-19T13:08:29Z",
-        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.1",
-        "notes": "Fog of war now defaults to **1.0 opacity** so unexplored terrain is fully hidden. The previous release accidentally included a transparent tuning value.\r\n\r\nExisting opacity values matching the unintended **0.463468** default are corrected to1.0 on startup. Other customized opacity values are preserved. Exploration, the soft reveal edge and save data remain unchanged.\r\n\r\nIncludes all Wild Wasteland1.0 features and runtime assets. Extract **WildWasteland-1.0.1.zip** into `BepInEx/plugins/`, preserving your custom assets. Documentation and historical notes are excluded from the ZIP; the required asset license notice remains.\r\n\r\nAvailable as an **official** mod in [Apocasetter's Index](https://github.com/DeonUrist/Apocasetter-Index). Its 11 listed standalone replacements are deprecated in favor of Wild Wasteland.\r\n\r\nWindows Release build: **zero warnings/errors**. In-game verification remains Testing.\r\n\r\nDLL MD5: `053D2F60484D27487B809CA02FEA8807`  \r\nZIP SHA256: `936d68b11191849c70652fce1edf7b6017afede8c6d4ce31100797ee53e7cb8f`\r\n",
+        "version": "1.0.2",
+        "tag": "v1.0.2",
+        "title": "Wild Wasteland 1.0.2",
+        "published": "2026-10-19T14:01:41Z",
+        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.2",
+        "notes": "Drivers with nothing equipped and fists lowered once again **grip and animate the steering wheel or motorcycle handlebars**. The seated-fists change had incorrectly sent the normal wheel pose to knee-rest.\r\n\r\nReadied fists and punches retain their animation. In MP, unarmed passengers continue resting their hands on their legs. Tools/free-hand grip, missing-wheel handling, seated weapons and camera fit retain their existing paths.\r\n\r\nExtract the complete ZIP into `BepInEx/plugins/`. Preserve custom assets. Runtime assets and required license notices are included; documentation, historical notes, personal configs/saves and dependency DLLs are excluded.\r\n\r\nWindows Release build: **zero warnings/errors**. The correction is compiled and source-reviewed; visual fit, synchronization and performance remain **Testing**. Check lowered driver hands while steering, ready/punch/lower transitions, passenger rest and both camera modes.\r\n\r\nDLL MD5: `BB85DA11D20CF1D7FC3A4DF9FB50B9B7`  \r\nZIP SHA256: `c13866a35bc05f6489b78ce4ad31fe4d02e2c9f33b390eb5a70d6f846c29871a`\r\n",
         "zip": {
-          "name": "WildWasteland-1.0.1.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.1/WildWasteland-1.0.1.zip",
-          "size": 218473207,
-          "assetId": 656309019,
-          "updated": "2026-10-19T13:08:10Z",
-          "sha256": "936d68b11191849c70652fce1edf7b6017afede8c6d4ce31100797ee53e7cb8f",
+          "name": "WildWasteland-1.0.2.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.2/WildWasteland-1.0.2.zip",
+          "size": 218487076,
+          "assetId": 656441343,
+          "updated": "2026-10-19T14:01:16Z",
+          "sha256": "c13866a35bc05f6489b78ce4ad31fe4d02e2c9f33b390eb5a70d6f846c29871a",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland",
@@ -1428,7 +1428,7 @@
           "guidDll": "WildWasteland/WildWasteland.dll",
           "skip": [],
           "icon": {
-            "path": "repo:icon.png",
+            "path": "WildWasteland/icon.png",
             "size": [
               128,
               128
@@ -1497,19 +1497,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "0.1.40",
-        "tag": "v0.1.40",
-        "title": "Wild Wasteland MP RC4 (0.1.40)",
-        "published": "2026-10-19T13:41:58Z",
-        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.40",
-        "notes": "# Wild Wasteland MP RC4 (0.1.40)\n\nWhen Apocalypter Multiplayer is missing or disabled, the main menu now shows **REQUIRED MOD MISSING** and a **Download Apocalypter Multiplayer** button linking to [the original Nexus page](https://www.nexusmods.com/apocalypter/mods/10).\n\nThe notice uses the existing recommended-mods/conflict warning panel, font, colors and scrolling. It remains visible when optional recommended mods are turned off. Existing conflict warnings and optional recommendations follow below it. It stays hidden during loading, settings and menu modals; when the required plugin is loaded, this dependency notice is absent.\n\nThe Multiplayer DLL remains a separate download. The existing official Apocasetter entry retains its dependency requirement, distinct MP plugin identity and mutual exclusion with single-player Wild Wasteland. Existing settings, saves, handshake24 and RC3 gameplay are unchanged; all peers must restart with matching builds.\n\nRequires **BepInEx 5 (Windows x64)** and **Apocalypter Multiplayer 0.4.1**. Extract the full ZIP into `BepInEx/plugins` with single-player Wild Wasteland disabled. This is an official release candidate; in-game layout, interaction, networking, saves and performance remain Testing. No game or gameplay harness was launched.\n\nWindows Release: zero warnings/errors. Built/staged DLL MD5: `14499795E93C67EC859202B9573E47DD`. Local RC3 has a removal queued in Apocasetter; that operation was preserved and RC4 was not deployed over it.\n\nManual check: with the dependency absent/disabled and Recommended mods off, start at the title menu and verify the notice and download link. Repeat with recommendations on and a replaced standalone conflict present; all sections should remain readable/scrollable. Open settings/MULTIPLAYER and check the panel yields, then return. Install/enable Apocalypter Multiplayer and restart: the missing-mod notice should disappear.\n",
+        "version": "0.1.41",
+        "tag": "v0.1.41",
+        "title": "Wild Wasteland MP RC5 (0.1.41)",
+        "published": "2026-10-19T14:01:41Z",
+        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.41",
+        "notes": "Drivers with nothing equipped and fists lowered once again **grip and animate the steering wheel or motorcycle handlebars**. The seated-fists change had incorrectly sent the normal wheel pose to knee-rest.\r\n\r\nReadied fists and punches retain their animation. In MP, unarmed passengers continue resting their hands on their legs. Tools/free-hand grip, missing-wheel handling, seated weapons and camera fit retain their existing paths.\r\n\r\nRequires BepInEx5 x64 and [Apocalypter Multiplayer0.4.1](https://www.nexusmods.com/apocalypter/mods/10), installed separately. All players must restart with this same WWMP release. Single-player Wild Wasteland must be disabled. Handshake24, saves, settings and wheel profiles are unchanged.\r\n\r\nExtract the complete ZIP into `BepInEx/plugins/`. Preserve custom assets. Runtime assets and required license notices are included; documentation, historical notes, personal configs/saves and dependency DLLs are excluded.\r\n\r\nWindows Release build: **zero warnings/errors**. The correction is compiled and source-reviewed; visual fit, synchronization and performance remain **Testing**. Check lowered driver hands while steering, ready/punch/lower transitions, passenger rest and both camera modes.\r\n\r\nDLL MD5: `011EDF677A37ED4B96D61CF09CFABC49`  \r\nZIP SHA256: `40f44dc9461198069aef9511724b016462b3ab4631af32610abc76e5e52d3290`\r\n",
         "zip": {
-          "name": "WildWastelandMP-0.1.40-RC4.zip",
-          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.40/WildWastelandMP-0.1.40-RC4.zip",
-          "size": 237026428,
-          "assetId": 656391606,
-          "updated": "2026-10-19T13:41:33Z",
-          "sha256": "1b3a48e8566c3789e3bc795c328045c6983a13e9b50ad9ab4d9991b0d8e4e192",
+          "name": "WildWastelandMP-0.1.41-RC5.zip",
+          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.41/WildWastelandMP-0.1.41-RC5.zip",
+          "size": 236664955,
+          "assetId": 656441341,
+          "updated": "2026-10-19T14:01:19Z",
+          "sha256": "40f44dc9461198069aef9511724b016462b3ab4631af32610abc76e5e52d3290",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWastelandMP",
