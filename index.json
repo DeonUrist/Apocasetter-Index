@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T14:55:25Z",
+  "generated": "2026-10-19T16:58:29Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1406,19 +1406,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "1.0.2",
-        "tag": "v1.0.2",
-        "title": "Wild Wasteland 1.0.2",
-        "published": "2026-10-19T14:01:41Z",
-        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.2",
-        "notes": "Drivers with nothing equipped and fists lowered once again **grip and animate the steering wheel or motorcycle handlebars**. The seated-fists change had incorrectly sent the normal wheel pose to knee-rest.\r\n\r\nReadied fists and punches retain their animation. In MP, unarmed passengers continue resting their hands on their legs. Tools/free-hand grip, missing-wheel handling, seated weapons and camera fit retain their existing paths.\r\n\r\nExtract the complete ZIP into `BepInEx/plugins/`. Preserve custom assets. Runtime assets and required license notices are included; documentation, historical notes, personal configs/saves and dependency DLLs are excluded.\r\n\r\nWindows Release build: **zero warnings/errors**. The correction is compiled and source-reviewed; visual fit, synchronization and performance remain **Testing**. Check lowered driver hands while steering, ready/punch/lower transitions, passenger rest and both camera modes.\r\n\r\nDLL MD5: `BB85DA11D20CF1D7FC3A4DF9FB50B9B7`  \r\nZIP SHA256: `c13866a35bc05f6489b78ce4ad31fe4d02e2c9f33b390eb5a70d6f846c29871a`\r\n",
+        "version": "1.0.3",
+        "tag": "v1.0.3",
+        "title": "Wild Wasteland 1.0.3",
+        "published": "2026-10-19T16:57:51Z",
+        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.3",
+        "notes": "**Fog of war on/off is now in F3 → WORLD**, available with Debug disabled in standard single-player Wild Wasteland.\n\nReveal radius, edge fade and opacity remain under **Debug → CleanHUD → Map fog of war**. Existing settings, opacity values and exploration saves are preserved. This brings standard WW into line with the menu correction already released for WWMP.\n\n## Install\n\nRequires BepInEx5 Windows x64. Update Wild Wasteland and restart the game. Extract **WildWasteland-1.0.3.zip** into `BepInEx/plugins/`, preserving custom assets. The full runtime package retains all previous assets, loading screens and its catalog icon. Documentation and personal files are excluded; the required asset license is retained.\n\n## Validation\n\nWindows Release build: **zero warnings/errors**. In-game verification remains **Testing**. After restarting, leave Debug off and check **F3 → WORLD → Fog of war**; toggle it to hide/show unexplored map areas.\n\nDLL MD5: `DBB537EB66573DECF61DACE8D5FD4C13`  \nZIP SHA256: `2f627018b4c612e8f0d6a55c29e34b28f31eb2c1349d1831b740ba0707e1292d`\n",
         "zip": {
-          "name": "WildWasteland-1.0.2.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.2/WildWasteland-1.0.2.zip",
-          "size": 218487076,
-          "assetId": 656441343,
-          "updated": "2026-10-19T14:01:16Z",
-          "sha256": "c13866a35bc05f6489b78ce4ad31fe4d02e2c9f33b390eb5a70d6f846c29871a",
+          "name": "WildWasteland-1.0.3.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.3/WildWasteland-1.0.3.zip",
+          "size": 218487119,
+          "assetId": 656857132,
+          "updated": "2026-10-19T16:57:29Z",
+          "sha256": "2f627018b4c612e8f0d6a55c29e34b28f31eb2c1349d1831b740ba0707e1292d",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland",
