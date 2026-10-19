@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T13:06:01Z",
+  "generated": "2026-10-19T13:08:50Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1407,19 +1407,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "1.0",
-        "tag": "v1.0",
-        "title": "Wild Wasteland 1.0",
-        "published": "2026-10-19T12:54:10Z",
-        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0",
-        "notes": "Wild Wasteland 1.0 combines the single-player gameplay modules with the recent shared improvements and the final seated fists/body/camera changes.\r\n\r\n## Included\r\n\r\n- **Player body and movement:** eight playable appearances with matching portraits, first/third-person body options, climbing, Low Crawl, steering-wheel hands and motorcycle grips.\r\n- **Combat from vehicles:** seated punches blend from resting hands, with torso/body turning and corrected first-person fit. Melee weapons remain visible; blast lances and grenades animate through their throws.\r\n- **Save management:** named screenshot snapshots, search, manual/autosave/backup views, confirmed overwrite/delete/load/restore, complete companion files, interrupted-write recovery and legacy save loading.\r\n- **Autosaves and vehicle saves:** visible countdown, combat deferral, separate retention, manual/exit saving while seated and optional driving autosaves. Seated loads park the vehicle and restore an upright on-foot player and camera, including the final camera-parent rotation fix.\r\n- **Inventory:** quantity sliders for dropping ammo, grenades, batteries, Nuts, Bandages and First Aid.\r\n- **Presentation:** all 18 current loading illustrations and tips, animated transitions, updated title background, compass labels and consolidated map-fog controls.\r\n- **Shared improvements:** stew pot handles/body rendering, landed-bolt visuals, head/arm poses, crawl guards, weather/haze and targeting fixes.\r\n- **Tuned SP defaults:** current compatible settings and profiles; existing saved choices and migrations retain precedence. Ignition defaults to I.\r\n\r\nIncludes the existing NPC perception/search/cover systems, persistent traffic and faction battles, motorcycles and War Rig, physical gunplay, quests/followers, CleanHUD and survival modules. Multiplayer-specific systems are outside this release.\r\n\r\n## Install\r\n\r\nRequires BepInEx 5. Extract **WildWasteland-1.0.zip** into `BepInEx/plugins/`. Back up saves and preserve custom external assets when updating. Disable the replaced standalone plugins listed in the [README](https://github.com/DeonUrist/WildWasteland#standalone-mods-included-or-replaced), including Apocasaver; Apocasetter remains supported. Open Wild Wasteland from the menu or F3 to configure modules and settings.\r\n\r\nThe ZIP contains the plugin and runtime assets, with the required weather license notice. README, release history, documentation, personal configs and live saves are excluded. GitHub also generates its own source archives; those are separate from the install ZIP.\r\n\r\n## Validation\r\n\r\nWindows Release build: **zero warnings, zero errors**. The final seated implementation matches the current shared MP behavior. Gameplay, save-recovery, visuals and performance remain **Testing**; this publication does not mark those features Verified. Quest voice playback remains temporarily disabled.\r\n\r\nDLL MD5: `8E14EC54659A074EC2CDC1F3AAC70E8E`  \r\nZIP SHA256: `c81217b21acf80b96ce54c68d2abce39a7501b37cd7a5a43c61abf96d3adc945`\r\n",
+        "version": "1.0.1",
+        "tag": "v1.0.1",
+        "title": "Wild Wasteland 1.0.1",
+        "published": "2026-10-19T13:08:29Z",
+        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.1",
+        "notes": "Fog of war now defaults to **1.0 opacity** so unexplored terrain is fully hidden. The previous release accidentally included a transparent tuning value.\r\n\r\nExisting opacity values matching the unintended **0.463468** default are corrected to1.0 on startup. Other customized opacity values are preserved. Exploration, the soft reveal edge and save data remain unchanged.\r\n\r\nIncludes all Wild Wasteland1.0 features and runtime assets. Extract **WildWasteland-1.0.1.zip** into `BepInEx/plugins/`, preserving your custom assets. Documentation and historical notes are excluded from the ZIP; the required asset license notice remains.\r\n\r\nAvailable as an **official** mod in [Apocasetter's Index](https://github.com/DeonUrist/Apocasetter-Index). Its 11 listed standalone replacements are deprecated in favor of Wild Wasteland.\r\n\r\nWindows Release build: **zero warnings/errors**. In-game verification remains Testing.\r\n\r\nDLL MD5: `053D2F60484D27487B809CA02FEA8807`  \r\nZIP SHA256: `936d68b11191849c70652fce1edf7b6017afede8c6d4ce31100797ee53e7cb8f`\r\n",
         "zip": {
-          "name": "WildWasteland-1.0.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0/WildWasteland-1.0.zip",
-          "size": 218473303,
-          "assetId": 656275431,
-          "updated": "2026-10-19T12:53:55Z",
-          "sha256": "c81217b21acf80b96ce54c68d2abce39a7501b37cd7a5a43c61abf96d3adc945",
+          "name": "WildWasteland-1.0.1.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.1/WildWasteland-1.0.1.zip",
+          "size": 218473207,
+          "assetId": 656309019,
+          "updated": "2026-10-19T13:08:10Z",
+          "sha256": "936d68b11191849c70652fce1edf7b6017afede8c6d4ce31100797ee53e7cb8f",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland",
