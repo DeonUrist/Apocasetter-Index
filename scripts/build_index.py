@@ -10,7 +10,7 @@ import sys
 import urllib.error
 
 from index_lib import (API, INDEX_PATH, analyze_zip, check_entry, http, latest_release,
-                       load_entries, normalized, pick_zip, png_size, MAX_ICON, MAX_ICON_SIDE, MAX_ZIP)
+                       load_entries, normalized, pick_zip, png_size, catalog_icon, MAX_ICON, MAX_ICON_SIDE, MAX_ZIP)
 import base64
 import hashlib
 
@@ -27,7 +27,8 @@ def previous():
 def zip_info(entry, asset, prev_latest):
     old = (prev_latest or {}).get("zip") or {}
     # "icon" missing = indexed before icons were read from zips: download once more
-    if old.get("assetId") == asset["id"] and old.get("updated") == asset.get("updated_at") and old.get("sha256") and "icon" in old:
+    removed_override = ((old.get("icon") or {}).get("path") or "").startswith("catalog:") and not catalog_icon(entry["guid"])
+    if old.get("assetId") == asset["id"] and old.get("updated") == asset.get("updated_at") and old.get("sha256") and "icon" in old and not removed_override:
         return old, None
     if asset.get("size", 0) > MAX_ZIP:
         return None, "%s is larger than %d MiB" % (asset["name"], MAX_ZIP // (1024 * 1024))
@@ -88,6 +89,11 @@ def build():
             if rel:
                 asset = pick_zip(rel, e["repo"])
                 zinfo, zerr = (zip_info(e, asset, prev.get(e["guid"], {}).get("latest")) if asset else (None, None))
+                # Apply overrides after cached zip metadata: icon edits need no new mod release.
+                override = catalog_icon(e["guid"])
+                if zinfo and override:
+                    zinfo = dict(zinfo)
+                    zinfo["icon"] = override
                 if zinfo and not zinfo.get("icon"):
                     zinfo = dict(zinfo)   # zip_info may hand back the previous index's dict, which the change check compares against
                     zinfo["icon"] = repo_icon(e["repo"], rel.get("tag_name"))

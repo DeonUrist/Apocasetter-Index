@@ -5,7 +5,7 @@ on:
     - cron: "17 * * * *"   # hourly: picks up new releases of listed mods
   push:
     branches: [main]
-    paths: ["mods/**", "scripts/**"]
+    paths: ["mods/**", "scripts/**", "icons/**"]
   workflow_dispatch:
 
 permissions:

@@ -146,7 +146,28 @@ def check_entry(path, e):
         errs.append("pluginFolder must be a plain folder name (no slashes)")
     if e.get("trust", "community") not in TRUST:
         errs.append("trust must be 'official' or 'community'")
+    if GUID_RE.fullmatch(guid):
+        try:
+            catalog_icon(guid)
+        except (OSError, ValueError) as exc:
+            errs.append("catalog icon: " + str(exc))
     return errs
+
+
+def catalog_icon(guid):
+    """Maintainer-supplied icon, independent of a third-party repository or release."""
+    if not GUID_RE.fullmatch(guid):
+        raise ValueError("invalid plugin GUID")
+    path = os.path.join(ROOT, "icons", guid + ".png")
+    if not os.path.isfile(path):
+        return None
+    with open(path, "rb") as stream:
+        data = stream.read(MAX_ICON + 1)
+    size = png_size(data)
+    if not size or size[0] != size[1] or not 1 <= max(size) <= MAX_ICON_SIDE or len(data) > MAX_ICON:
+        raise ValueError("use a square PNG up to 256 x 256 and 48 KB")
+    return {"path": "catalog:icons/" + guid + ".png", "size": list(size),
+            "sha256": hashlib.sha256(data).hexdigest(), "png": base64.b64encode(data).decode("ascii")}
 
 
 def latest_release(repo):

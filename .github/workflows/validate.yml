@@ -2,10 +2,10 @@ name: Validate entries
 
 on:
   pull_request:
-    paths: ["mods/**", "scripts/**"]
+    paths: ["mods/**", "scripts/**", "icons/**"]
   push:
     branches: [main]
-    paths: ["mods/**", "scripts/**"]
+    paths: ["mods/**", "scripts/**", "icons/**"]
   workflow_dispatch:
 
 permissions:

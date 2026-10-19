@@ -107,6 +107,10 @@ shows it for mods that aren't installed yet).
 
 ## For the maintainer
 
+- **Catalog icons:** put a square PNG in `icons/<plugin GUID>.png` (64×64 recommended; at most 256×256 and 48 KB).
+  Mod Workshop's **Browse icon** selects these files. The index uses this icon ahead of the zip/repository icon,
+  including for third-party mods; no new mod release is needed. Commit/push the icon to rebuild the index.
+
 - **List a submission:** add the `approved` label to the issue (only the repository owner's label counts).
 - **Block a mod:** set `"blocked": true` and a `blockedReason` in its entry and push. It takes effect at the next index build.
 - **Deprecate a mod** (it still works, but you no longer develop it): add to its entry
