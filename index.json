@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-20T19:24:32Z",
+  "generated": "2026-10-20T20:41:57Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1406,19 +1406,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "1.0.5",
-        "tag": "v1.0.5",
-        "title": "Wild Wasteland 1.0.5",
-        "published": "2026-10-20T19:24:23Z",
-        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.5",
-        "notes": "# Wild Wasteland 1.0.5 — Towns, gas stations and ladders\n\n## What's new since 1.0.4\n\n- **Towns are included.** Settlements mix native buildings and camps, with faction populations, loot, perimeter walls, faction gates and editable town names. Coyote towns select a merchant camp when one is available. Town merchants are prepared with the town, without requiring entry into their small spawn trigger.\n- **Separate parking beside gas stations.** The town bus and visitors use an open concrete parking apron beside the station, with a two metre gap. The station and parking stay outside the town walls. Existing towns update their derived access paths and pad bounds when reloaded.\n- **Town laboratory doors are inactive.** Building_3 can still appear in towns, but its laboratory entrance remains solid scenery without an interaction prompt or teleport. Real POI laboratory entrances keep working. The underground exit on town copies remains usable for saves already inside.\n- **Roadside gas stations.** Stations can appear beside desert roads, with shop loot and a configurable chance. Their enemy spawners are disabled for now. The station dressing and latest navigation data are included.\n- **Player ladder climbing and sliding.** Climb with weapons stowed, slide down, and jump to let go. The shared animation follows ladder rungs and leaning ladders, with first-person placement corrections.\n- **NPC climbing and upper-floor navigation.** Human NPCs can use baked POI routes, ladders, climbs and drops. Melee enemies can follow a player on ladders, with spacing between climbers; ranged enemies can approach an end. The release includes baked navigation data and developer tools for editing POI navigation and static dressing.\n- **Footstep awareness.** A moving player within five metres can be detected regardless of facing when there is a clear line. The radius is configurable.\n- **Crew and loading improvements.** Stopped vehicle crews can respond to nearby attacks and return when the threat is gone. Merchant bus boarding uses its front door. Vehicle template preparation has a larger loading budget.\n- **Terrain and cloud fixes.** Towns can use published Vistas road hints and preserve their prepared ground after terrain edits. Town navigation cleanup no longer includes parking shells in the building overlay. Hurricane cloud banks share the body's transparency sorting queue.\n\n## Updating\n\nInstall the **complete ZIP** into `BepInEx/plugins/`. Runtime assets now live beside the DLL, with an `asset-index.tsv`; a DLL-only update from 1.0.4 is incomplete. Preserve customized external artwork, models, layouts and pose files. Personal configs and saves are not included.\n\nRemove the separate WildWastelandTowns plugin before using the integrated Towns module. Choose modules through F3 > Modules and town/world options through WORLD. Advanced POI navigation and dressing editors are under Developer.\n\nExisting town records remain readable by this version. After a town is saved with the updated paths, older builds that only accept path version 6 cannot read that town record.\n\n## Validation\n\nWindows Release build passed with zero errors and two existing NPC CS0649 warnings. The package contains the runtime assets and required license notice, with no documentation, personal settings or saves. Gameplay, visuals, navigation and performance remain **Testing**; a successful build is not in-game verification.\n\nAfter updating, reload a town and confirm the separate parking, merchant availability and inactive laboratory entrance. Test a real laboratory POI entrance and exit, then save/reload. Also check player/NPC ladder travel and return to menu/new world.\n",
+        "version": "1.0.6",
+        "tag": "v1.0.6",
+        "title": "Wild Wasteland 1.0.6",
+        "published": "2026-10-20T20:41:03Z",
+        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.6",
+        "notes": "# Wild Wasteland 1.0.6 — Towns on Vistas terrain\n\nWhen Vistas World Gen / World Amp is loaded, Towns and added POIs now leave terrain heights to Vistas. Towns no longer flatten pads, grade access tracks, restore earlier terrain snapshots or add parking pavement. Buildings, walls and dressing use existing ground heights. The separate added-POI system also stops inserting its flattening step into the native height output.\n\nTowns can appear without a road connection and use naturally flatter sites. This can produce fewer towns, even with Ensure selected towns enabled. Town bus/convoy visits that require access routes are unavailable in this mode. Roadside gas stations use stricter natural-ground checks. Loose object clearance remains, and normal terrain preparation is retained when Vistas is absent.\n\nExisting town names, horizontal layouts and spawner progress remain; vertical placement and derived access paths update on load. No new settings or save format. The save countdown/warning text is also smaller and has no background plate.\n\nInstall the complete ZIP into `BepInEx/plugins/`, preserving customized external files. This supersedes 1.0.5's post-grade town-pad restoration. The starting-square seam was traced to a starting tile at 600 m height scale beside 1,500 m neighbours; the exact startup cause is not yet established. This release removes WW's Towns/POI terrain-writing paths with Vistas, but seam resolution and natural-ground placement remain **Testing**. Read-only starting-tile diagnostics remain available in the log.\n\nAfter updating, start a Vistas world and check the starting tile's four borders in 3D. Visit a new town, check entrances/walls and absence of access tracks, then save/reload. Startup reports `[Towns] Vistas natural-terrain mode`. Check a world without Vistas retains its normal town pads. Compilation does not verify these gameplay results.\n",
         "zip": {
-          "name": "WildWasteland-1.0.5.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.5/WildWasteland-1.0.5.zip",
-          "size": 205915014,
-          "assetId": 660256463,
-          "updated": "2026-10-20T19:24:22Z",
-          "sha256": "4f16c32c215e3315ec2d0b6aa7eb90797f70073e6b8c08af7a72d350c935bacc",
+          "name": "WildWasteland-1.0.6.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.6/WildWasteland-1.0.6.zip",
+          "size": 205914488,
+          "assetId": 660429559,
+          "updated": "2026-10-20T20:41:03Z",
+          "sha256": "4d227a46b8837718206be59245f9481373b3cd0d7ad4595f28c08dff889d1c2d",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland",
