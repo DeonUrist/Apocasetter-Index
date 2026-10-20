@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-20T00:09:57Z",
+  "generated": "2026-10-20T00:56:17Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1496,19 +1496,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "0.1.47",
-        "tag": "v0.1.47",
-        "title": "Wild Wasteland MP RC11 (0.1.47)",
-        "published": "2026-10-19T23:52:33Z",
-        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.47",
-        "notes": "# Wild Wasteland MP RC11 (0.1.47) — Client crossbow tooltip\n\nFixes a client seeing **20 damage** when hovering over a crossbow while the host sees **50**. Apocalypter Multiplayer adds `MP_` to replicated item names; the tooltip's crossbow name check now recognizes that prefix. Applies to both ordinary hover text and the shop Buy tooltip.\n\nThis corrects the displayed number. The existing projectile calculation already recognizes replicated crossbows and applies the same 2.5× base-damage multiplier. Projectile damage, settings and save formats are unchanged. The tooltip correction remains conditional on Guns projectiles and player projectiles being enabled; disabling those retains vanilla text.\n\nIncludes the RC10 purchase-sync, occupant collision protection and autosave-warning fixes. Update and restart every peer with matching builds; handshake 24 remains. Extract the full ZIP into `BepInEx/plugins`, keeping standard Wild Wasteland disabled. Multiplayer requires separately installed **BepInEx 5 x64** and [Apocalypter Multiplayer 0.4.1](https://www.nexusmods.com/apocalypter/mods/10). No dependency DLLs are bundled.\n\nManual check: host and guest hover the same ordinary crossbow and an unpaid shop crossbow with player projectiles enabled; both should show 50. Repeat after purchase/drop and reconnect, and check another weapon's tooltip remains unchanged. With player projectiles disabled, confirm vanilla crossbow text remains 20. Runtime/visual acceptance remains **Testing**; no game or harness was launched.\n\nSource: `src/Modules/Guns/WeaponDamageText.cs` now checks the crossbow name immediately after an optional native `MP_` prefix, preserving case-insensitive matching, literal text checks and finalizer restoration. No new patch target, hook, job, packet or config key.\n\nWindows Release/Deploy=false passed with zero warnings/errors. Exact stage `V:/Repos/Apocalypter/_releases/WildWastelandMP_0.1.47-RC11a.dll`, built/staged DLL MD5 **F7B44D8615C47F652869847749272DE9**. Current standard-WW installation/running game retained; no MP folder/dependency, no deployment or live config/save edits.\n\nRuntime-only ZIP: 287 files, 236,668,234 bytes; SHA256 **f6cd3b783238b2b32ec022e3847a86902651ab3815ae7c0d424119016791b774**. CRC, exact source bytes, safe unique paths, single plugin DLL, 18 loading images and 156 retained baseline assets checked. Dependency DLLs, documentation and personal runtime data are excluded.\n",
+        "version": "0.1.48",
+        "tag": "v0.1.48",
+        "title": "Wild Wasteland MP RC12 (0.1.48)",
+        "published": "2026-10-20T00:55:55Z",
+        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.48",
+        "notes": "# Wild Wasteland MP RC12 (0.1.48) — Vehicle melee protection and dog reach\n\n- **Protection while riding:** animal contact attacks and enemy melee can damage seated player drivers/passengers only when their vehicle is **stationary and its engine is off**. Applies to host and clients, including guest-driven cars and bikes. Moving with the engine off and idling while stopped both protect occupants. A small motion tolerance ignores suspension jitter. On-foot damage, gunfire, ranged creature projectiles, explosions and vehicle-part damage retain their existing rules; the collision-damage switch is separate.\n- **Dog bite reach:** fixes a disabled seated-player collider producing a false zero-distance bite check. Dogs now use the player's actual position when that collider is disabled. Host logs from the reported incident show repeated creature hits matching Nightwalker bite damage; the exact backward placement on downing remains unresolved and is not claimed fixed by this release.\n- **Remote shout voices:** remote shouting now follows the speaker's selected character, rather than the listener's. Female, Gungirl and Shoota use the existing female shout clip; other characters use the male clip. Existing volume, cooldown, hearing and native fallback remain.\n\nVehicle protection runs before native melee damage is forwarded to a guest. Cars owned elsewhere use replicated engine/motion state rather than the observing peer's kinematic Rigidbody. Unresolved seated vehicle state remains protected. Native melee, animated dog contact, spider pounce contact and optional Dog Companion contact use the same policy. Existing dog attack reach is still required when a parked, switched-off vehicle permits damage.\n\nAll peers must update and restart with matching builds. No new configuration keys, save format or network payload changes; handshake 24 remains. Extract the full ZIP into `BepInEx/plugins`, keeping standard Wild Wasteland disabled. Multiplayer requires separately installed **BepInEx 5 x64** and [Apocalypter Multiplayer 0.4.1](https://www.nexusmods.com/apocalypter/mods/10); dependency DLLs are not bundled.\n\nManual checks: as host and guest driver/passenger, try moving engine-on/off and stopped engine-on/off near dogs and human melee enemies. Only stopped engine-off occupants should take reachable contact damage. Confirm ordinary on-foot hits and gunfire still work, then test reconnect/ownership handoff and a nearby/far-away dog. Test opposite-character shout playback in host/guest and guest-to-guest directions. Gameplay, visual and performance acceptance remains **Testing**; no game or harness was launched by the agent.\n\nSource and extended checks: [vehicle melee policy](vehicle-melee-policy-2026-10-20.md), [dog reach and supplied log review](dog-seated-reach-2026-10-20.md), [speaker shout selection](speaker-shout-gender-2026-10-20.md).\n\nWindows Release/Deploy=false passed with zero warnings/errors. Exact stage `V:/Repos/Apocalypter/_releases/WildWastelandMP_0.1.48-RC12a.dll`, built/staged DLL MD5 **BED1583903BED8151A5581B608DC2940**. No deployment to the current standard-WW installation, which lacks the MP assets/dependency. No live config/save edits.\n\nRuntime-only ZIP: 287 files, 236,666,672 bytes; SHA256 **ce15004db24688086e5e64a25618689b6d9bd378760fe3a7076df95ba50a0d6e**. CRC, exact source bytes, safe unique paths, single plugin DLL, 18 loading screens and 156 retained baseline assets checked. Dependency DLLs, documentation and personal runtime data are excluded.\n",
         "zip": {
-          "name": "WildWastelandMP-0.1.47-RC11.zip",
-          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.47/WildWastelandMP-0.1.47-RC11.zip",
-          "size": 236668234,
-          "assetId": 657759646,
-          "updated": "2026-10-19T23:52:29Z",
-          "sha256": "f6cd3b783238b2b32ec022e3847a86902651ab3815ae7c0d424119016791b774",
+          "name": "WildWastelandMP-0.1.48-RC12.zip",
+          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.48/WildWastelandMP-0.1.48-RC12.zip",
+          "size": 236666672,
+          "assetId": 657869825,
+          "updated": "2026-10-20T00:55:52Z",
+          "sha256": "ce15004db24688086e5e64a25618689b6d9bd378760fe3a7076df95ba50a0d6e",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWastelandMP",
