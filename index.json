@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-19T23:37:21Z",
+  "generated": "2026-10-20T00:09:57Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1496,19 +1496,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "0.1.45",
-        "tag": "v0.1.45",
-        "title": "Wild Wasteland MP RC9 (0.1.45)",
-        "published": "2026-10-19T22:43:50Z",
-        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.45",
-        "notes": "# Wild Wasteland MP RC9 (0.1.45) — Guest coyote quests\n\nFixes the built-in Talk prompt missing for guests approaching friendly coyotes. Multiplayer disables NPC simulation FSMs on clients, which removed them from the list used by quest targeting. The quest cache now includes their disabled Health components through existing network spawn notifications and the existing scene walk, keeping NPC AI disabled and quest decisions on the host.\n\nGuests can use the existing conversation requests to ask for work and accept quests. The four-metre targeting range and viewing cone are unchanged; a small collider was not the cause. Existing host validation, shared quest book and rewards remain in place. This fixes WW's built-in interaction cache; optional Apocatalker still owns its own targeting when installed.\n\nNo new settings, save formats or protocol changes; handshake 24 remains. Install the full ZIP into `BepInEx/plugins`, with standard Wild Wasteland disabled. Hosting/joining requires separately installed BepInEx 5 x64 and [Apocalypter Multiplayer 0.4.1](https://www.nexusmods.com/apocalypter/mods/10). All peers must restart with matching WWMP builds. Offline play retains its dependency-free mode.\n\nManual check: as a guest, approach a living friendly camp coyote within four metres, face its torso, press the configured Quests talk key (default F), ask for work and accept. Expect the Talk prompt, conversation choices and matching party journal updates. Repeat for newly spawned NPCs, after reconnecting, and on the host. Runtime acceptance remains Testing; no game or harness was launched.\n\nWindows Release/Deploy=false passed with zero warnings/errors. Built/staged DLL MD5 **04BC690174D31569EDC8F6C2F90C580B**; exact stage `V:/Repos/Apocalypter/_releases/WildWastelandMP_0.1.45-RC9a.dll`. No deployment to the current standard-WW installation, which lacks the MP assets/dependency.\n\nRuntime-only ZIP: 287 files, 236,668,535 bytes; SHA256 **81651e13d3088a516f543edede08e7c27165cf67dd72af2b9ac8ce459a7cb9cf**. CRC, unique/safe paths, exact source bytes, 156 unchanged baseline assets, 18 loading screens and single plugin DLL checked. Documentation, dependency DLLs and personal runtime data are excluded.\n",
+        "version": "0.1.47",
+        "tag": "v0.1.47",
+        "title": "Wild Wasteland MP RC11 (0.1.47)",
+        "published": "2026-10-19T23:52:33Z",
+        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.47",
+        "notes": "# Wild Wasteland MP RC11 (0.1.47) — Client crossbow tooltip\n\nFixes a client seeing **20 damage** when hovering over a crossbow while the host sees **50**. Apocalypter Multiplayer adds `MP_` to replicated item names; the tooltip's crossbow name check now recognizes that prefix. Applies to both ordinary hover text and the shop Buy tooltip.\n\nThis corrects the displayed number. The existing projectile calculation already recognizes replicated crossbows and applies the same 2.5× base-damage multiplier. Projectile damage, settings and save formats are unchanged. The tooltip correction remains conditional on Guns projectiles and player projectiles being enabled; disabling those retains vanilla text.\n\nIncludes the RC10 purchase-sync, occupant collision protection and autosave-warning fixes. Update and restart every peer with matching builds; handshake 24 remains. Extract the full ZIP into `BepInEx/plugins`, keeping standard Wild Wasteland disabled. Multiplayer requires separately installed **BepInEx 5 x64** and [Apocalypter Multiplayer 0.4.1](https://www.nexusmods.com/apocalypter/mods/10). No dependency DLLs are bundled.\n\nManual check: host and guest hover the same ordinary crossbow and an unpaid shop crossbow with player projectiles enabled; both should show 50. Repeat after purchase/drop and reconnect, and check another weapon's tooltip remains unchanged. With player projectiles disabled, confirm vanilla crossbow text remains 20. Runtime/visual acceptance remains **Testing**; no game or harness was launched.\n\nSource: `src/Modules/Guns/WeaponDamageText.cs` now checks the crossbow name immediately after an optional native `MP_` prefix, preserving case-insensitive matching, literal text checks and finalizer restoration. No new patch target, hook, job, packet or config key.\n\nWindows Release/Deploy=false passed with zero warnings/errors. Exact stage `V:/Repos/Apocalypter/_releases/WildWastelandMP_0.1.47-RC11a.dll`, built/staged DLL MD5 **F7B44D8615C47F652869847749272DE9**. Current standard-WW installation/running game retained; no MP folder/dependency, no deployment or live config/save edits.\n\nRuntime-only ZIP: 287 files, 236,668,234 bytes; SHA256 **f6cd3b783238b2b32ec022e3847a86902651ab3815ae7c0d424119016791b774**. CRC, exact source bytes, safe unique paths, single plugin DLL, 18 loading images and 156 retained baseline assets checked. Dependency DLLs, documentation and personal runtime data are excluded.\n",
         "zip": {
-          "name": "WildWastelandMP-0.1.45-RC9.zip",
-          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.45/WildWastelandMP-0.1.45-RC9.zip",
-          "size": 236668535,
-          "assetId": 657639399,
-          "updated": "2026-10-19T22:43:40Z",
-          "sha256": "81651e13d3088a516f543edede08e7c27165cf67dd72af2b9ac8ce459a7cb9cf",
+          "name": "WildWastelandMP-0.1.47-RC11.zip",
+          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.47/WildWastelandMP-0.1.47-RC11.zip",
+          "size": 236668234,
+          "assetId": 657759646,
+          "updated": "2026-10-19T23:52:29Z",
+          "sha256": "f6cd3b783238b2b32ec022e3847a86902651ab3815ae7c0d424119016791b774",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWastelandMP",
