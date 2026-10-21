@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-21T17:24:02Z",
+  "generated": "2026-10-21T18:08:32Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1496,19 +1496,19 @@
         "com.denis.apocalypter.apocaraider"
       ],
       "latest": {
-        "version": "0.1.52",
-        "tag": "v0.1.52",
-        "title": "Wild Wasteland MP 0.1.52 RC16 - Save synchronization timeout",
-        "published": "2026-10-21T15:27:44Z",
-        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.52",
-        "notes": "# Wild Wasteland MP RC16 (0.1.52) — Save synchronization timeout\r\n\r\nFixes a host save remaining paused indefinitely while owner or mod synchronization is pending. Both owner phases now share a 30-second real-time budget. On timeout, saving continues with the host's last confirmed state; pending queues are retained for later processing rather than discarded or falsely acknowledged.\r\n\r\nAfter a successful save, a wrapping yellow top-left warning remains visible for 15 seconds. It names the elapsed wait, phase and pending work: player replies, part queues/incoming updates/receipts, item edits, and Ultimate Tools initialization/discovery/unapplied changes. The warning is also written to the log, with missing player IDs separately recorded. Guests receive the warning; a text-only top-left fallback supports CleanHUD off. Successful Save and Exit still exits normally.\r\n\r\n**Unconfirmed changes may be absent from the timeout-assisted snapshot.** The limit covers synchronization, not total disk-save duration. Terrain preparation, resource-integrity gates, actual write errors and rollback safeguards remain in force. The triggering log identifies the save barrier, but does not prove which queue blocked that particular attempt.\r\n\r\nVersion **0.1.52**, tag **v0.1.52**, handshake **27** retained. Update every peer to the same release for full warning diagnostics. No new config, packet kind or save key. Existing host-notice strings allow save warnings up to 1024 characters; ordinary notices retain their previous limit. RC15's single-player save-selection fix remains included.",
+        "version": "0.1.53",
+        "tag": "v0.1.53",
+        "title": "Wild Wasteland MP 0.1.53 RC17 - Merchant stock and first-spawn loot",
+        "published": "2026-10-21T17:55:02Z",
+        "page": "https://github.com/DeonUrist/WildWastelandMP/releases/tag/v0.1.53",
+        "notes": "# Wild Wasteland MP RC17 (0.1.53) — Merchant stock and first-spawn loot\n\nMerchant buses now reconcile tracked sale items every three seconds using cached FSM references. Paid purchases remain available to other players; unpaid stock is free while Coyotes are hostile and returns to its recorded price when friendliness returns. New stock is registered after its price and sale flag are initialized. Purchase confirmation remains host-controlled.\n\nFresh trader buses use empty ordinary loot. A bounded PhysicsLock-area check removes newly appeared non-trader native items only on the bus's first spawn, preserving existing objects, fitted parts and trader stock. It does not run on unload/revisit or as a continuing sweep. Revisited buses restore saved cargo, and future cargo snapshots exclude separately restored trader stock to prevent duplicate loose goods.\n\n**Update every peer to 0.1.53.** Handshake 27 is retained. No new config, packet kind or top-level save key; existing merchant JSON gains optional hostility/object-identity fields. Install BepInEx 5 x64 and the separately distributed [Apocalypter Multiplayer mod 0.4.1](https://www.nexusmods.com/apocalypter/mods/10), then extract the full ZIP into BepInEx/plugins. Keep standard Wild Wasteland disabled.\n\nGameplay and save-integrity verification remain **Testing**. Check purchases between host/two guests, hostility recovery, and repeated unload/revisit/save/reload with personal cargo aboard. Old records marked purchased or containing legacy duplicate cargo are retained without speculative deletion. The first-spawn audit skips missing/full queries and does not cover later or out-of-area mod spawns. RC16's save timeout and earlier fixes remain included.\n",
         "zip": {
-          "name": "WildWastelandMP-0.1.52-RC16.zip",
-          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.52/WildWastelandMP-0.1.52-RC16.zip",
-          "size": 236693207,
-          "assetId": 662937788,
-          "updated": "2026-10-21T15:27:35Z",
-          "sha256": "94f94d12798876592d6f57db21a15d74343e4a102d2ad5a464b0ec28defaa0e1",
+          "name": "WildWastelandMP-0.1.53-RC17.zip",
+          "url": "https://github.com/DeonUrist/WildWastelandMP/releases/download/v0.1.53/WildWastelandMP-0.1.53-RC17.zip",
+          "size": 236692449,
+          "assetId": 663336734,
+          "updated": "2026-10-21T17:54:45Z",
+          "sha256": "6ea6a764538bdc87f3899d0c7e6163ed3b8e533ea7af9a700dcc5d8301bba307",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWastelandMP",
