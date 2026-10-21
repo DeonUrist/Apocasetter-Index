@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-21T16:28:14Z",
+  "generated": "2026-10-21T17:24:02Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1406,19 +1406,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "1.0.6",
-        "tag": "v1.0.6",
-        "title": "Wild Wasteland 1.0.6",
-        "published": "2026-10-20T20:41:03Z",
-        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.6",
-        "notes": "# Wild Wasteland 1.0.6 — Towns on Vistas terrain\n\nWhen Vistas World Gen / World Amp is loaded, Towns and added POIs now leave terrain heights to Vistas. Towns no longer flatten pads, grade access tracks, restore earlier terrain snapshots or add parking pavement. Buildings, walls and dressing use existing ground heights. The separate added-POI system also stops inserting its flattening step into the native height output.\n\nTowns can appear without a road connection and use naturally flatter sites. This can produce fewer towns, even with Ensure selected towns enabled. Town bus/convoy visits that require access routes are unavailable in this mode. Roadside gas stations use stricter natural-ground checks. Loose object clearance remains, and normal terrain preparation is retained when Vistas is absent.\n\nExisting town names, horizontal layouts and spawner progress remain; vertical placement and derived access paths update on load. No new settings or save format. The save countdown/warning text is also smaller and has no background plate.\n\nInstall the complete ZIP into `BepInEx/plugins/`, preserving customized external files. This supersedes 1.0.5's post-grade town-pad restoration. The starting-square seam was traced to a starting tile at 600 m height scale beside 1,500 m neighbours; the exact startup cause is not yet established. This release removes WW's Towns/POI terrain-writing paths with Vistas, but seam resolution and natural-ground placement remain **Testing**. Read-only starting-tile diagnostics remain available in the log.\n\nAfter updating, start a Vistas world and check the starting tile's four borders in 3D. Visit a new town, check entrances/walls and absence of access tracks, then save/reload. Startup reports `[Towns] Vistas natural-terrain mode`. Check a world without Vistas retains its normal town pads. Compilation does not verify these gameplay results.\n",
+        "version": "1.0.7",
+        "tag": "v1.0.7",
+        "title": "Wild Wasteland 1.0.7",
+        "published": "2026-10-21T17:05:06Z",
+        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.7",
+        "notes": "# Wild Wasteland 1.0.7 — Towns, vehicle crews and distant detail\n\n- Coyote buses defend themselves against nearby visible enemies while parked. Shooting a vehicle part provokes its crew immediately. Surviving Coyote crews can repair and refit their original nearby wheel after the attacker leaves; stolen or destroyed wheels are not replaced. Temporary repair/return orders do not survive reload.\n- Town gas-station NPC markers now follow town allegiance. Completed spawn groups stay completed; existing NPCs are retained. The supplied station layout includes authored loot and enemy areas, and existing customized layouts retain precedence.\n- Town allegiance and wall planning happen before residents arrive. Town walls have simpler distant panels with optional generated LODs enabled. Material lookup avoids missing-texture-property errors.\n- The POI dressing editor adds collapsed categories, more native scenery, hiding points, exits, and item/car-part/NPC spawn areas using native randomized lists.\n- Optional generated mesh LODs support zoom-aware original detail and transitions 50% farther away by default. Generate/install the separate pack with `tools/lod-generator/Generate.cmd -Install` from the source repository; the pack is not bundled in this ZIP. Camera culling, fog and world streaming still limit visibility.\n- Patrols avoid the starting camp, use faction-appropriate town parking and exterior routes, and can dismount to pursue a player inside a POI. Cargo convoys normally ignore player POI pursuit; directly attacking Coyote vehicles still provokes defence. Vehicle gearbox control has also been corrected.\n- Town/interior construction and spawning share pacing, nearby locations queue their actors on arrival, and POI navigation uses cached routes and sliced preparation. Town ground is prepared before buildings, including with Vistas; this supersedes 1.0.6's natural-ground-only town behavior. No town access roads are added.\n- Storm resources prepare earlier and new storms begin farther away. HUD additions include damage-direction arrows and clearer location icons. Optional exit-saving and map icon choices are included.\n\nExtract the complete ZIP into `BepInEx/plugins/`. Preserve customized external layouts, artwork, models and pose files when updating, and back up saves. Use the included DLL and matching asset folders together. The standalone developer profiler is available in the source repository and is not installed by this package.\n\nGas-station allegiance was confirmed working by Denis. Other changes retain their existing Testing status; this release does not claim all visual, performance or lifecycle scenarios have been verified. Existing wrong-faction NPCs are not removed. For pending station markers, visit an unspawned town station and check new NPCs match the town. Try a parked bus fight and wheel recovery, then save/reload; inspect town entrances, walls and nearby actor pacing. Compare optional LOD visuals while aiming/zooming and after lowering zoom. No frame-rate improvement is guaranteed.\n",
         "zip": {
-          "name": "WildWasteland-1.0.6.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.6/WildWasteland-1.0.6.zip",
-          "size": 205914488,
-          "assetId": 660429559,
-          "updated": "2026-10-20T20:41:03Z",
-          "sha256": "4d227a46b8837718206be59245f9481373b3cd0d7ad4595f28c08dff889d1c2d",
+          "name": "WildWasteland-1.0.7.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.7/WildWasteland-1.0.7.zip",
+          "size": 206198647,
+          "assetId": 663213122,
+          "updated": "2026-10-21T17:04:57Z",
+          "sha256": "45bd70cf4c724f0f5682c3013b04a6b92ae79f955f15ec9cdb1b190fbbd6cad6",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland",
