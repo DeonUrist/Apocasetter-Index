@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-21T18:08:32Z",
+  "generated": "2026-10-21T18:31:29Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -182,8 +182,8 @@
       "trust": "official",
       "blocked": false,
       "blockedReason": "",
-      "deprecated": false,
-      "deprecatedReason": "",
+      "deprecated": true,
+      "deprecatedReason": "Outdated",
       "replacedBy": [],
       "replaces": [],
       "latest": {
