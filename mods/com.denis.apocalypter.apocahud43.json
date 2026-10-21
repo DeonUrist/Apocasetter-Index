@@ -12,5 +12,7 @@
   "optional": [],
   "pluginFolder": null,
   "trust": "official",
-  "blocked": false
+  "blocked": false,
+  "deprecated": true,
+  "deprecatedReason": "Outdated"
 }
