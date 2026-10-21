@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-21T18:44:38Z",
+  "generated": "2026-10-21T20:06:26Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1458,19 +1458,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "1.0.7",
-        "tag": "v1.0.7",
-        "title": "Wild Wasteland 1.0.7",
-        "published": "2026-10-21T17:05:06Z",
-        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.7",
-        "notes": "# Wild Wasteland 1.0.7 — Towns, vehicle crews and distant detail\n\n- Coyote buses defend themselves against nearby visible enemies while parked. Shooting a vehicle part provokes its crew immediately. Surviving Coyote crews can repair and refit their original nearby wheel after the attacker leaves; stolen or destroyed wheels are not replaced. Temporary repair/return orders do not survive reload.\n- Town gas-station NPC markers now follow town allegiance. Completed spawn groups stay completed; existing NPCs are retained. The supplied station layout includes authored loot and enemy areas, and existing customized layouts retain precedence.\n- Town allegiance and wall planning happen before residents arrive. Town walls have simpler distant panels with optional generated LODs enabled. Material lookup avoids missing-texture-property errors.\n- The POI dressing editor adds collapsed categories, more native scenery, hiding points, exits, and item/car-part/NPC spawn areas using native randomized lists.\n- Optional generated mesh LODs support zoom-aware original detail and transitions 50% farther away by default. Generate/install the separate pack with `tools/lod-generator/Generate.cmd -Install` from the source repository; the pack is not bundled in this ZIP. Camera culling, fog and world streaming still limit visibility.\n- Patrols avoid the starting camp, use faction-appropriate town parking and exterior routes, and can dismount to pursue a player inside a POI. Cargo convoys normally ignore player POI pursuit; directly attacking Coyote vehicles still provokes defence. Vehicle gearbox control has also been corrected.\n- Town/interior construction and spawning share pacing, nearby locations queue their actors on arrival, and POI navigation uses cached routes and sliced preparation. Town ground is prepared before buildings, including with Vistas; this supersedes 1.0.6's natural-ground-only town behavior. No town access roads are added.\n- Storm resources prepare earlier and new storms begin farther away. HUD additions include damage-direction arrows and clearer location icons. Optional exit-saving and map icon choices are included.\n\nExtract the complete ZIP into `BepInEx/plugins/`. Preserve customized external layouts, artwork, models and pose files when updating, and back up saves. Use the included DLL and matching asset folders together. The standalone developer profiler is available in the source repository and is not installed by this package.\n\nGas-station allegiance was confirmed working by Denis. Other changes retain their existing Testing status; this release does not claim all visual, performance or lifecycle scenarios have been verified. Existing wrong-faction NPCs are not removed. For pending station markers, visit an unspawned town station and check new NPCs match the town. Try a parked bus fight and wheel recovery, then save/reload; inspect town entrances, walls and nearby actor pacing. Compare optional LOD visuals while aiming/zooming and after lowering zoom. No frame-rate improvement is guaranteed.\n",
+        "version": "1.0.9",
+        "tag": "v1.0.9",
+        "title": "Wild Wasteland 1.0.9 — Authored patrol vehicles",
+        "published": "2026-10-21T19:52:06Z",
+        "page": "https://github.com/DeonUrist/WildWasteland/releases/tag/v1.0.9",
+        "notes": "# Wild Wasteland 1.0.9 — Authored patrol vehicles\n\n- Patrol groups can use authored truck and bus templates. Runtime roster composition and Coyote group eligibility no longer exclude entries because they are classified as trucks.\n- The patrol editor now allows adding these templates and includes them in its vehicle count and entry status.\n- Template availability, faction compatibility and explicit patrol-size/spawn-limit settings still apply. Existing saved groups retain their recorded roster and losses; updating does not rebuild them.\n\nIncludes all 1.0.8 Weapons Pack/BloodFX compatibility and native IK changes. Optional companion mods, generated LOD packs and the developer profiler remain separate installations. Extract the full ZIP into `BepInEx/plugins/`, preserving customized external files and backing up saves.\n\nThe reported Scrapyard Truck War Rig encounter containing one car was not conclusively diagnosed: detailed journey logging was off, and the installed rig was tagged `small`, so the removed truck filter alone does not establish that encounter's cause. This release implements the requested roster rule; gameplay remains Testing. Check a newly generated patrol with authored trucks/buses, including duplicate entries, and verify the editor count matches the roster at 100% group size.\n",
         "zip": {
-          "name": "WildWasteland-1.0.7.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.7/WildWasteland-1.0.7.zip",
-          "size": 206198647,
-          "assetId": 663213122,
-          "updated": "2026-10-21T17:04:57Z",
-          "sha256": "45bd70cf4c724f0f5682c3013b04a6b92ae79f955f15ec9cdb1b190fbbd6cad6",
+          "name": "WildWasteland-1.0.9.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland/releases/download/v1.0.9/WildWasteland-1.0.9.zip",
+          "size": 206203827,
+          "assetId": 663618029,
+          "updated": "2026-10-21T19:52:05Z",
+          "sha256": "5aa0485c4fb4da89a7cc3546c86d2b37ef0980762edd906395b774f45e9a6f6a",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland",
