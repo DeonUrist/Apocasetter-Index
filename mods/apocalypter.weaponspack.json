@@ -1,0 +1,18 @@
+{
+  "guid": "apocalypter.weaponspack",
+  "name": "Apocalypter Weapons Pack",
+  "author": "JadedAutist",
+  "repo": "JadedAutist/Apocalypter-Weapons-Pack",
+  "summary": "Adds a gasoline-powered chainsaw and a refillable flamethrower with their own models, inventory images, Codex entries, fuel tanks and saved item identities.",
+  "tags": [
+    "vehicles",
+    "weapons",
+    "combat",
+    "npcs"
+  ],
+  "requires": [],
+  "optional": [],
+  "pluginFolder": "Apocalypter Weapons Pack",
+  "trust": "community",
+  "blocked": false
+}
