@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-21T18:31:29Z",
+  "generated": "2026-10-21T18:44:38Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -317,6 +317,58 @@
             "sha256": "f72dad807a175ea257768cd1a2cb877bc50444388fb5e5cb0cae515fddf62376",
             "png": "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"
           }
+        }
+      },
+      "error": null
+    },
+    {
+      "guid": "apocalypter.weaponspack",
+      "name": "Apocalypter Weapons Pack",
+      "author": "JadedAutist",
+      "repo": "JadedAutist/Apocalypter-Weapons-Pack",
+      "summary": "Adds a gasoline-powered chainsaw and a refillable flamethrower with their own models, inventory images, Codex entries, fuel tanks and saved item identities.",
+      "tags": [
+        "vehicles",
+        "weapons",
+        "combat",
+        "npcs"
+      ],
+      "requires": [],
+      "optional": [],
+      "pluginFolder": "Apocalypter Weapons Pack",
+      "trust": "community",
+      "blocked": false,
+      "blockedReason": "",
+      "deprecated": false,
+      "deprecatedReason": "",
+      "replacedBy": [],
+      "replaces": [],
+      "latest": {
+        "version": "1.6.4",
+        "tag": "1.6.4",
+        "title": "Apocalypter Weapons Pack 1.6.4",
+        "published": "2026-10-20T10:36:48Z",
+        "page": "https://github.com/JadedAutist/Apocalypter-Weapons-Pack/releases/tag/1.6.4",
+        "notes": "- Show the chainsaw and flamethrower models in Wild Wasteland's third-person view.\r\n- Give the third-person chainsaw two-handed holding, melee movement, both LMB swings and continuous RMB cutting animations.\r\n- Prevent RMB zoom while using either weapon.\r\n- Align the chainsaw crosshair with the game's normal HUD placement and scaling.\r\n- Group settings under Weapons, Fuel and Smoke tabs, keeping collapsible weapon sections.",
+        "zip": {
+          "name": "Apocalypter-Weapons-Pack-1.6.4.zip",
+          "url": "https://github.com/JadedAutist/Apocalypter-Weapons-Pack/releases/download/1.6.4/Apocalypter-Weapons-Pack-1.6.4.zip",
+          "size": 18687472,
+          "assetId": 659025405,
+          "updated": "2026-10-20T10:36:08Z",
+          "sha256": "959e0f93ae1aa37f6fa07d3b6512cea3279e124ee5237e629ccc06aa456db6ba",
+          "extractTo": "plugins",
+          "stripPrefix": "BepInEx/plugins/",
+          "topFolder": "Apocalypter Weapons Pack",
+          "dlls": [
+            "Apocalypter Weapons Pack/ChainsawPrototype.dll"
+          ],
+          "guidDll": "Apocalypter Weapons Pack/ChainsawPrototype.dll",
+          "skip": [
+            "README.md",
+            "CHANGELOG.md"
+          ],
+          "icon": null
         }
       },
       "error": null
