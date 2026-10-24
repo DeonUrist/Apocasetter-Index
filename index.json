@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-24T03:12:54Z",
+  "generated": "2026-10-24T06:36:54Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1550,19 +1550,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "2.0.6",
-        "tag": "v2.0.6",
-        "title": "Wild Wasteland 2 — 2.0.6",
-        "published": "2026-10-24T03:12:13Z",
-        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.6",
-        "notes": "# Wild Wasteland 2 — 2.0.6\r\n\r\nApocasetter now has a separate **Wild Wasteland 2** entry, alongside Wild Wasteland and Wild Wasteland MP. WW2's plugin ID is `com.denis.apocalypter.wildwasteland2`; its installation folder is `BepInEx/plugins/WildWasteland2`. The catalog treats all three variants as alternatives and disables the other installed variants when switching. WW2 also declares native BepInEx incompatibility with WW1 and MP to prevent both loading together.\r\n\r\nThe save screen now explains why CREATE NEW SAVE is unavailable in small text inside the existing button area. The normal button returns when saving is available. Reasons include missing names, loading or queued saves, recovery errors, death, and failures that require reloading. The original save/history/cleanup failure is retained independently of later status messages. Other UI layout and backend save protections are unchanged.\r\n\r\nAll finished perk artwork from 2.0.5 is included.\r\n\r\nInstall the complete `WildWasteland2` folder from the ZIP into `BepInEx/plugins/`. Keep every included asset folder and `asset-index.tsv` beside `WildWasteland.dll`.\r\n\r\nFor a manual update from WW2 2.0.5 or earlier, first move the old `plugins/WildWasteland` folder outside the active `plugins` tree. Install the complete new folder, then copy any customized assets to their matching paths. Do not leave both WW2 copies active. Existing WW2 saves and `config/WildWasteland` settings/data remain supported. The F3/settings-key and Enable Debug facade now uses `config/com.denis.apocalypter.wildwasteland2.cfg`; set those two preferences there if customized. No existing config files are deleted or migrated.\r\n\r\nWW1 and MP retain their own releases. Switching from WW1 to WW2 still requires fresh saves and settings. Disable absorbed standalone mods as described in the README. Optional host mods remain separate. Existing Vista and other compatibility limits from [2.0.4](https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.4) remain.\r\n\r\nValidation: Windows Release build/deploy passed with zero warnings and errors. Complete-package CRC and byte-for-byte verification passed: 597 entries including 593 runtime assets, the DLL, icon and README. The prior WW2 install was preserved outside active plugins during the local folder transition. In-game visual acceptance and variant-switching acceptance remain Testing.\r\n\r\nAfter refreshing Apocasetter's index, expect separate Wild Wasteland and Wild Wasteland 2 entries. Install WW2 and restart; expect `Loading [Wild Wasteland 2 2.0.6]` and a single active WW variant. In SAVE GAME, leave the name blank to see its explanation, then fill both names to restore the normal button.\r\n\r\nInstalled/package DLL MD5: `42851F080C71E4F852419FD6922AEA75`\r\n\r\nArchive: `WildWasteland2-2.0.6.zip` (230,151,926 bytes)\r\n\r\nArchive SHA256: `44253cdfb3e06973d83a7dfe97dd3090cb833d25363d66afe8bce75a9b433ac8`\r\n",
+        "version": "2.0.7",
+        "tag": "v2.0.7",
+        "title": "Wild Wasteland 2 — 2.0.7",
+        "published": "2026-10-24T05:27:28Z",
+        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.7",
+        "notes": "# Wild Wasteland 2 — 2.0.7\n\nCrawling in first person now uses the same hand visibility checks as standing and crouching. When native weapon hands are visible, the body's crawling hands are hidden, preventing two sets of hands from appearing together. Empty-handed crawling still shows the crawling animation.\n\nThe crawl condition previously bypassed the native-arm visibility check. Two lines in Presentation's `BodyRunner.cs` now route crawling through the existing check, retaining the tool-hand exception and traversal behavior. No configuration entries or save formats change.\n\nInstall the complete `WildWasteland2` folder from the ZIP into `BepInEx/plugins/`, retaining all included assets and `asset-index.tsv`. BepInEx 5 is required. Existing WW2 saves and settings remain supported. For manual updates from WW2 2.0.5 or earlier, follow the folder-transition instructions in the README and [2.0.6 release notes](https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.6). Use only one Wild Wasteland variant and disable absorbed standalone mods as described in the README.\n\nValidation: Windows Release build/deploy passed with zero warnings and errors. In-game acceptance remains Testing. No new diagnostic log lines were added.\n\nIn-game test: enter first-person crawl with weapon hands visible; expect only the weapon hands. With empty hands, expect the crawling hands. Check transitions between crawling, crouching and standing for duplicate or missing hands.\n\nInstalled/package DLL MD5: `73406FF7A953639D71FFAC67024871BD`\n\nComplete-package CRC and byte-for-byte verification passed: 597 entries, including 593 runtime assets, the DLL, icon and README.\n\nArchive: `WildWasteland2-2.0.7.zip` (230,151,955 bytes)\n\nArchive SHA256: `a74d90f821e2bff952aaa437e5ac37fe0a5df6550362a2f31e82b7c03cfb5517`\n",
         "zip": {
-          "name": "WildWasteland2-2.0.6.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.6/WildWasteland2-2.0.6.zip",
-          "size": 230151926,
-          "assetId": 671123939,
-          "updated": "2026-10-24T03:12:12Z",
-          "sha256": "44253cdfb3e06973d83a7dfe97dd3090cb833d25363d66afe8bce75a9b433ac8",
+          "name": "WildWasteland2-2.0.7.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.7/WildWasteland2-2.0.7.zip",
+          "size": 230151955,
+          "assetId": 671369414,
+          "updated": "2026-10-24T05:27:27Z",
+          "sha256": "a74d90f821e2bff952aaa437e5ac37fe0a5df6550362a2f31e82b7c03cfb5517",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland2",
