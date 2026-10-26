@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-26T06:52:35Z",
+  "generated": "2026-10-26T21:26:03Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1550,19 +1550,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "2.0.9",
-        "tag": "v2.0.9",
-        "title": "Wild Wasteland 2 — 2.0.9",
-        "published": "2026-10-25T15:58:35Z",
-        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.9",
-        "notes": "# Wild Wasteland 2 — 2.0.9\n\nBoss encounters now retain their native arena-entry triggers. Interior population preparation previously included boss spawners, so approaching another interior group at the same POI could spawn the boss and activate its nearby health display and music before the player reached the arena.\n\nActual boss spawners now bypass automatic arrival pre-spawning, spawn-event deferral and population suspension. Ordinary interior enemies and boss bodyguards keep the existing paced pre-spawn and hearing rules. Native boss spawning, arena doors and progression logic retain ownership of the encounter. No configuration entries or save formats change.\n\nBosses already spawned in an existing save remain present. Use a save from before the boss spawned, or an unvisited boss POI, to check the corrected entry behavior.\n\nInstall the complete `WildWasteland2` folder from the ZIP into `BepInEx/plugins/`, retaining all included assets and `asset-index.tsv`. BepInEx 5 is required. Existing WW2 saves and settings remain supported. For manual updates from WW2 2.0.5 or earlier, follow the folder-transition instructions in the README and [2.0.6 release notes](https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.6). Use only one Wild Wasteland variant and disable absorbed standalone mods as described in the README.\n\nIn-game acceptance remains **Testing**. Approach an undefeated boss POI without entering its arena: ordinary interior enemies and bodyguards should populate, while boss music and the health display remain absent. Enter the native arena trigger and expect the boss to spawn and its encounter to activate normally. At Debug logging level 1, `boss spawn left to native arena trigger: EnemySpawn_...Boss` confirms the spawner exclusion; ordinary groups retain `location population queued on arrival:`.\n\nValidation: Windows Release build/deploy passed with zero warnings and errors. Complete-package CRC and byte-for-byte verification passed: 597 entries, including 593 runtime assets, the DLL, icon and README.\n\nInstalled/package DLL MD5: `6FF6D2BB293843D783A16A16BE7385FC`\n\nArchive: `WildWasteland2-2.0.9.zip` (230,155,354 bytes)\n\nArchive SHA256: `6873fb01c5a5c805b5870892fa5df615c95c8820cd9977d9ad82ed3ecf8466dc`\n",
+        "version": "2.0.10",
+        "tag": "v2.0.10",
+        "title": "Wild Wasteland 2 — 2.0.10",
+        "published": "2026-10-26T20:31:44Z",
+        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.10",
+        "notes": "# Wild Wasteland 2 — 2.0.10\n\nYard Hounds use their native animal butchering again, regardless of the Cannibal perk. Their Scrapyard faction tag previously included them in the human-corpse list: without Cannibal, butchering was blocked; with it, they produced human loot. Corpses with native butchering now remain on that path.\n\nCooked food retains its nutrition tooltip when a Survival cooking bonus is applied. The replacement tooltip previously put the text into a PlayMaker variable's name instead of its displayed value, leaving the tooltip blank. This corrects the displayed text without changing the nutrition bonus.\n\nNo configuration entries or save formats change. Existing cooked items carrying a saved cooking bonus regain their nutrition tooltip when loaded.\n\nInstall the complete `WildWasteland2` folder from the ZIP into `BepInEx/plugins/`, retaining all included assets and `asset-index.tsv`. BepInEx 5 is required. Existing WW2 saves and settings remain supported. For manual updates from WW2 2.0.5 or earlier, follow the folder-transition instructions in the README and [2.0.6 release notes](https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.6). Use only one Wild Wasteland variant and disable absorbed standalone mods as described in the README.\n\nIn-game acceptance remains **Testing**. Butcher a Yard Hound using a knife, machete or shiv, with and without Cannibal: expect three raw dog meats and no human loot. With Survival skill above zero, grab raw meat, cook it, then hover repeatedly and after save/reload: expect the nutrition tooltip to remain visible with the cooking bonus. No dedicated success log lines were added.\n\nValidation: Windows Release build/deploy passed with zero warnings and errors. Complete-package CRC and byte-for-byte verification passed: 597 entries, including 593 runtime assets, the DLL, icon and README.\n\nInstalled/package DLL MD5: `B561611A62F6B5E805D0EDE0E43668EC`\n\nArchive: `WildWasteland2-2.0.10.zip` (230,155,442 bytes)\n\nArchive SHA256: `4ab0111afa2e441c5becf4d01a01fe5b6219a4e2c17fb3bfde9c86e0d9524f5c`\n",
         "zip": {
-          "name": "WildWasteland2-2.0.9.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.9/WildWasteland2-2.0.9.zip",
-          "size": 230155354,
-          "assetId": 675453144,
-          "updated": "2026-10-25T15:58:12Z",
-          "sha256": "6873fb01c5a5c805b5870892fa5df615c95c8820cd9977d9ad82ed3ecf8466dc",
+          "name": "WildWasteland2-2.0.10.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.10/WildWasteland2-2.0.10.zip",
+          "size": 230155442,
+          "assetId": 679384347,
+          "updated": "2026-10-26T20:31:34Z",
+          "sha256": "4ab0111afa2e441c5becf4d01a01fe5b6219a4e2c17fb3bfde9c86e0d9524f5c",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland2",
