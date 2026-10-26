@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-25T16:26:27Z",
+  "generated": "2026-10-26T06:52:35Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1259,27 +1259,27 @@
       "replacedBy": [],
       "replaces": [],
       "latest": {
-        "version": "2.6.1",
-        "tag": "v2.6.1",
-        "title": "SigmaMod 2.6.1",
-        "published": "2026-10-19T09:59:32Z",
-        "page": "https://github.com/Wad67/Apocalypter-sigmamod/releases/tag/v2.6.1",
-        "notes": "# SigmaMod 2.6.1\n\nNo changes to the plugin: released alongside the Blender add-on 2.6.1 (`sigmamod_blender-2.6.1.zip`).\n\n## Install\n\nUnzip into `Apocalypter/BepInEx/plugins`, replacing the `SigmaMod` folder.\n",
+        "version": "2.7.0",
+        "tag": "v2.7.0",
+        "title": "SigmaMod 2.7.0",
+        "published": "2026-10-26T05:58:15Z",
+        "page": "https://github.com/Wad67/Apocalypter-sigmamod/releases/tag/v2.7.0",
+        "notes": "# SigmaMod 2.7.0\n\nReleased alongside the Blender add-on 2.7.0 (`sigmamod_blender-2.7.0.zip`).\n\n## Added\n\n- Centre of mass for chassis: `center_of_mass` (an object, or `{ x, y, z }` from the root) and `dimensions` in\n  `parts.chassis` or the .json. Set up as every vanilla car has it: NWH's `VariableCenterOfMass` holding that point,\n  the inertia a solid box of the chassis' mass and dimensions (the body's size by default).\n- A changed game car keeps its donor's centre of mass; its inertia is worked out again for its own mass (it kept\n  the donor's, sized for the donor's mass).\n- Export All writes each car's `VariableCenterOfMass` (point, dimensions, inertia) into the root's extras.\n- A chassis without a centre of mass says so in the log: Unity then puts it in the middle of the colliders.\n\n## Changed\n\n- The Sigma's lift kit hides its stock suspension (`suspension front`, `suspension rear`) when fitted.\n\n## Install\n\nUnzip into `Apocalypter/BepInEx/plugins`, replacing the `SigmaMod` folder.\n",
         "zip": {
-          "name": "SigmaMod-2.6.1.zip",
-          "url": "https://github.com/Wad67/Apocalypter-sigmamod/releases/download/v2.6.1/SigmaMod-2.6.1.zip",
-          "size": 14705967,
-          "assetId": 655890332,
-          "updated": "2026-10-19T09:59:36Z",
-          "sha256": "45ded3254c5ef31ec292a4d25029a441787d6994e972076c131a4f5a75e01f16",
+          "name": "SigmaMod-2.7.0.zip",
+          "url": "https://github.com/Wad67/Apocalypter-sigmamod/releases/download/v2.7.0/SigmaMod-2.7.0.zip",
+          "size": 14707707,
+          "assetId": 677179909,
+          "updated": "2026-10-26T05:58:19Z",
+          "sha256": "8dd90c1258e9965dd11fe0b82967a157cf063a9a6f6fb145e824921024f2f23d",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "SigmaMod",
           "dlls": [
-            "SigmaMod/tools/GltfTest/GltfTest.dll",
-            "SigmaMod/live/SigmaParts.dll",
+            "SigmaMod/SigmaMod.dll",
             "SigmaMod/MoonSharp.Interpreter.dll",
-            "SigmaMod/SigmaMod.dll"
+            "SigmaMod/live/SigmaParts.dll",
+            "SigmaMod/tools/GltfTest/GltfTest.dll"
           ],
           "guidDll": "SigmaMod/SigmaMod.dll",
           "skip": [],
