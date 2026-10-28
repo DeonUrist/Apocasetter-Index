@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-26T21:26:03Z",
+  "generated": "2026-10-28T16:23:15Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1550,19 +1550,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "2.0.10",
-        "tag": "v2.0.10",
-        "title": "Wild Wasteland 2 — 2.0.10",
-        "published": "2026-10-26T20:31:44Z",
-        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.10",
-        "notes": "# Wild Wasteland 2 — 2.0.10\n\nYard Hounds use their native animal butchering again, regardless of the Cannibal perk. Their Scrapyard faction tag previously included them in the human-corpse list: without Cannibal, butchering was blocked; with it, they produced human loot. Corpses with native butchering now remain on that path.\n\nCooked food retains its nutrition tooltip when a Survival cooking bonus is applied. The replacement tooltip previously put the text into a PlayMaker variable's name instead of its displayed value, leaving the tooltip blank. This corrects the displayed text without changing the nutrition bonus.\n\nNo configuration entries or save formats change. Existing cooked items carrying a saved cooking bonus regain their nutrition tooltip when loaded.\n\nInstall the complete `WildWasteland2` folder from the ZIP into `BepInEx/plugins/`, retaining all included assets and `asset-index.tsv`. BepInEx 5 is required. Existing WW2 saves and settings remain supported. For manual updates from WW2 2.0.5 or earlier, follow the folder-transition instructions in the README and [2.0.6 release notes](https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.6). Use only one Wild Wasteland variant and disable absorbed standalone mods as described in the README.\n\nIn-game acceptance remains **Testing**. Butcher a Yard Hound using a knife, machete or shiv, with and without Cannibal: expect three raw dog meats and no human loot. With Survival skill above zero, grab raw meat, cook it, then hover repeatedly and after save/reload: expect the nutrition tooltip to remain visible with the cooking bonus. No dedicated success log lines were added.\n\nValidation: Windows Release build/deploy passed with zero warnings and errors. Complete-package CRC and byte-for-byte verification passed: 597 entries, including 593 runtime assets, the DLL, icon and README.\n\nInstalled/package DLL MD5: `B561611A62F6B5E805D0EDE0E43668EC`\n\nArchive: `WildWasteland2-2.0.10.zip` (230,155,442 bytes)\n\nArchive SHA256: `4ab0111afa2e441c5becf4d01a01fe5b6219a4e2c17fb3bfde9c86e0d9524f5c`\n",
+        "version": "2.0.11",
+        "tag": "v2.0.11",
+        "title": "Wild Wasteland 2 — 2.0.11",
+        "published": "2026-10-28T16:16:50Z",
+        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.11",
+        "notes": "# Wild Wasteland 2 — 2.0.11\n\n- **Motorbike with saddlebags:** the motorcycle gains an authored rear cargo rack, saddlebags and cargo lock areas, plus starter-vehicle support.\n- **Choose your start:** NEW GAME now lets you select your starting car or motorcycle and a loadout before entering the wasteland. Pick Random, Poloska, Junker, Piperat, Crossbreed, TinyTyrant, Halfbreed or Motorcycle. Loadouts range from Tarnished (no added gear) to Gunslinger, Adventurer, Agent, Hunter, Farmer and Guerilla, with the appropriate weapons, equipment and ammunition. Choices apply once to a new world.\n- **ApocaChaseCamera compatibility:** adapts the player/camera bridge to WW2, including weapon state and camera render hooks. The Gear/RPM/Speed HUD setting explains when the optional bridge is unavailable.\n- **Vista World Gen 1.2.0 compatibility:** supports the new world-generation version, terrain/road integration and native loading progress, while retaining the older 1.0.7 adapter. Vista owns its generation-completion gate; towns wait for its native release. Vista road furniture is disabled while WW Patrols is enabled to allow highway patrol spawning.\n- **Population density:** World → Enemies now offers Sparse, Normal and Dense. Sparse keeps the previous calculation; Normal uses the current town population percentage against each POI spawner's maximum native count; Dense fills every eligible enemy spawner to its maximum. **Normal is the default.** Reload to apply to unfinished groups; completed groups remain completed. Loot density is unchanged.\n- **Camp_8 support:** town generation now understands its species-dependent native spawn counts instead of excluding the camp. Town copies use their allocated faction and population through the existing paced spawning system.\n- **More gameplay and fixes:** enemy aim profiles, revised patrol/faction/event limits and traffic routing, restored Patrols authoring controls, navigation availability during terrain validation and rebaking, nearby navigation priority, starter seat/radiator handling, native hammer detection, and corrected WW2 paths for the LOD generator.\n\nApocaChaseCamera, Vista World Gen and Engine Sim remain optional separate downloads and are not bundled. Vista compatibility does not add elevated-highway lane/exit routing or town names to highway signs.\n\nInstall the complete `WildWasteland2` folder from the ZIP into `BepInEx/plugins/`, retaining all included assets and `asset-index.tsv`. BepInEx 5 is required. Existing WW2 saves and settings remain supported; the new population-density entry is added to `settings.cfg`. Use only one Wild Wasteland variant and disable absorbed standalone mods as described in the README. For manual updates from WW2 2.0.5 or earlier, follow the folder-transition instructions in the README and the 2.0.6 release notes.\n\nValidation: Windows Release build and deployment passed with **zero warnings and errors**. In-game acceptance remains **Testing**. Check a new game with the chosen vehicle/loadout, motorcycle cargo interaction, ChaseCamera in both views, Vista new/load and town restoration, and population modes on unfinished town groups. Camp_8 should no longer produce the unsupported-spawn warning. Global VerboseLog includes `town rolls ... density=Normal` for the selected density.\n\nComplete-package CRC and byte-for-byte verification passed: **599 entries**, including 595 runtime assets, the DLL, icon and README.\n\nInstalled/package DLL MD5: `474C67CCE6E24B6551618DB0658B6BBD`\n\nArchive: `WildWasteland2-2.0.11.zip` (238,291,744 bytes)\n\nArchive SHA256: `077166362d3a4455be2ecb01ddfb9ff8471d3a4e1a6f28626718d295ab3fec5b`\n",
         "zip": {
-          "name": "WildWasteland2-2.0.10.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.10/WildWasteland2-2.0.10.zip",
-          "size": 230155442,
-          "assetId": 679384347,
-          "updated": "2026-10-26T20:31:34Z",
-          "sha256": "4ab0111afa2e441c5becf4d01a01fe5b6219a4e2c17fb3bfde9c86e0d9524f5c",
+          "name": "WildWasteland2-2.0.11.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.11/WildWasteland2-2.0.11.zip",
+          "size": 238291744,
+          "assetId": 685574138,
+          "updated": "2026-10-28T16:16:49Z",
+          "sha256": "077166362d3a4455be2ecb01ddfb9ff8471d3a4e1a6f28626718d295ab3fec5b",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland2",
