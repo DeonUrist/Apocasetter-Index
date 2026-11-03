@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-10-29T00:44:45Z",
+  "generated": "2026-11-03T23:19:07Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -343,35 +343,8 @@
       "deprecatedReason": "",
       "replacedBy": [],
       "replaces": [],
-      "latest": {
-        "version": "1.6.4",
-        "tag": "1.6.4",
-        "title": "Apocalypter Weapons Pack 1.6.4",
-        "published": "2026-10-20T10:36:48Z",
-        "page": "https://github.com/JadedAutist/Apocalypter-Weapons-Pack/releases/tag/1.6.4",
-        "notes": "- Show the chainsaw and flamethrower models in Wild Wasteland's third-person view.\r\n- Give the third-person chainsaw two-handed holding, melee movement, both LMB swings and continuous RMB cutting animations.\r\n- Prevent RMB zoom while using either weapon.\r\n- Align the chainsaw crosshair with the game's normal HUD placement and scaling.\r\n- Group settings under Weapons, Fuel and Smoke tabs, keeping collapsible weapon sections.",
-        "zip": {
-          "name": "Apocalypter-Weapons-Pack-1.6.4.zip",
-          "url": "https://github.com/JadedAutist/Apocalypter-Weapons-Pack/releases/download/1.6.4/Apocalypter-Weapons-Pack-1.6.4.zip",
-          "size": 18687472,
-          "assetId": 659025405,
-          "updated": "2026-10-20T10:36:08Z",
-          "sha256": "959e0f93ae1aa37f6fa07d3b6512cea3279e124ee5237e629ccc06aa456db6ba",
-          "extractTo": "plugins",
-          "stripPrefix": "BepInEx/plugins/",
-          "topFolder": "Apocalypter Weapons Pack",
-          "dlls": [
-            "Apocalypter Weapons Pack/ChainsawPrototype.dll"
-          ],
-          "guidDll": "Apocalypter Weapons Pack/ChainsawPrototype.dll",
-          "skip": [
-            "README.md",
-            "CHANGELOG.md"
-          ],
-          "icon": null
-        }
-      },
-      "error": null
+      "latest": null,
+      "error": "no release"
     },
     {
       "guid": "com.denis.apocalypter.apocapatrol",
