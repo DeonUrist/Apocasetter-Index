@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-11-03T23:19:07Z",
+  "generated": "2026-11-16T11:23:25Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1523,19 +1523,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "2.0.13",
-        "tag": "v2.0.13",
-        "title": "Wild Wasteland 2 — 2.0.13",
-        "published": "2026-10-28T23:36:49Z",
-        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.13",
-        "notes": "Distant terrain extends the low-resolution mountain horizon and recognized gameplay camera range to 20 km. Nearby terrain detail and object generation distances stay unchanged.\n\nThe default-on **distant terrain** checkbox is at the top of the **Performance** tab. Turn it off to restore the previous terrain and camera distances for FPS and visibility comparisons. It also works with the Vanilla preset and with performance optimizations disabled. Allow terrain generation to settle before comparing steady FPS.\n\nThe setting is saved in tools.cfg under [Performance / Debug]. Existing saves remain supported; no save-format changes.\n\nInstall the complete WildWasteland2 folder from the ZIP into BepInEx/plugins, retaining all assets and asset-index.tsv. Optional camera, world-generation and engine mods remain separate downloads.\n\nValidation: Windows Release build and deployment passed with zero warnings and errors. Complete-package CRC and byte-for-byte verification passed: 599 entries, including 595 runtime assets. In-game visibility and FPS acceptance remain Testing.\n\nTest: restart, find an open mountain view, let terrain generation finish, then toggle distant terrain off/on from the same position. Compare the mountain horizon and FPS, and drive toward mountains to assess popping. Logs report Distant terrain: ON and Distant terrain: OFF when applied.\n\nInstalled/package DLL MD5: DB984C1E1DDC39D03AA6A8EF61F50376\n\nArchive: WildWasteland2-2.0.13.zip (238,292,604 bytes)\n\nArchive SHA256: b12a0172f42c2899fb81f3e51cc303b410b3b88800ad517dd652499f14a31276\r\n",
+        "version": "2.0.14",
+        "tag": "v2.0.14",
+        "title": "Wild Wasteland 2 — 2.0.14",
+        "published": "2026-11-16T10:44:32Z",
+        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.14",
+        "notes": "## Wild Wasteland 2.0.14\n\n- **Patrols spawn as you approach their map marker.** Encounter limits size new groups when they form. Existing groups keep their assigned vehicles. Crews can spot and engage enemies while their route is being planned. Terrain grade and waypoint checks govern route travel.\n- **Performance is an On/Off switch.** Generated mesh LODs work in both modes. On caps incremental garbage-collection slices at 2 ms during normal play. Advanced optimizations, including NPC animator culling and distant terrain, are off by default and available under **Developer → Optimizations**.\n- **Vehicle seats** include new player and patrol crew transition animations and rollouts for high-speed exits.\n- **Arachnophobia settings** include separate spider and scorpion replacement switches and a spider-web control. Enabled replacements use rats for future spawns.\n- **Madness System** can be disabled separately from skills and skill perks. Includes updates to the skills display and madness check timing.\n\nInstall the complete `WildWasteland2` folder from the ZIP into `BepInEx/plugins`, with `asset-index.tsv` and all bundled assets beside the DLL.\n\nDenis confirmed the patrol fix in game. The Windows Release build passed with zero warnings and errors. The archive passed CRC and byte-for-byte verification for all 600 entries.\n\nDLL MD5 `2D27C3FE88D3C2C63912536F01515CDA`\n\nZIP SHA-256 `c94d283a0262e49e72f41e8fc4638d67dd8feaa2640cd7d4232e1858a82d805f`\r\n",
         "zip": {
-          "name": "WildWasteland2-2.0.13.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.13/WildWasteland2-2.0.13.zip",
-          "size": 238292604,
-          "assetId": 686704494,
-          "updated": "2026-10-28T23:36:36Z",
-          "sha256": "b12a0172f42c2899fb81f3e51cc303b410b3b88800ad517dd652499f14a31276",
+          "name": "WildWasteland2-2.0.14.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.14/WildWasteland2-2.0.14.zip",
+          "size": 238625369,
+          "assetId": 754461955,
+          "updated": "2026-11-16T10:44:09Z",
+          "sha256": "c94d283a0262e49e72f41e8fc4638d67dd8feaa2640cd7d4232e1858a82d805f",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland2",
