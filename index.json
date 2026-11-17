@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generated": "2026-11-16T11:23:25Z",
+  "generated": "2026-11-17T15:19:24Z",
   "source": "https://github.com/DeonUrist/Apocasetter-Index",
   "mods": [
     {
@@ -1523,19 +1523,19 @@
         "com.denis.apocalypter.wildwastelandmp"
       ],
       "latest": {
-        "version": "2.0.14",
-        "tag": "v2.0.14",
-        "title": "Wild Wasteland 2 — 2.0.14",
-        "published": "2026-11-16T10:44:32Z",
-        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.14",
-        "notes": "## Wild Wasteland 2.0.14\n\n- **Patrols spawn as you approach their map marker.** Encounter limits size new groups when they form. Existing groups keep their assigned vehicles. Crews can spot and engage enemies while their route is being planned. Terrain grade and waypoint checks govern route travel.\n- **Performance is an On/Off switch.** Generated mesh LODs work in both modes. On caps incremental garbage-collection slices at 2 ms during normal play. Advanced optimizations, including NPC animator culling and distant terrain, are off by default and available under **Developer → Optimizations**.\n- **Vehicle seats** include new player and patrol crew transition animations and rollouts for high-speed exits.\n- **Arachnophobia settings** include separate spider and scorpion replacement switches and a spider-web control. Enabled replacements use rats for future spawns.\n- **Madness System** can be disabled separately from skills and skill perks. Includes updates to the skills display and madness check timing.\n\nInstall the complete `WildWasteland2` folder from the ZIP into `BepInEx/plugins`, with `asset-index.tsv` and all bundled assets beside the DLL.\n\nDenis confirmed the patrol fix in game. The Windows Release build passed with zero warnings and errors. The archive passed CRC and byte-for-byte verification for all 600 entries.\n\nDLL MD5 `2D27C3FE88D3C2C63912536F01515CDA`\n\nZIP SHA-256 `c94d283a0262e49e72f41e8fc4638d67dd8feaa2640cd7d4232e1858a82d805f`\r\n",
+        "version": "2.0.15",
+        "tag": "v2.0.15",
+        "title": "Wild Wasteland 2 — 2.0.15",
+        "published": "2026-11-17T15:13:28Z",
+        "page": "https://github.com/DeonUrist/WildWasteland2/releases/tag/v2.0.15",
+        "notes": "Wild Wasteland 2.0.15 improves first-person car entry and exit.\n\n- Entry begins at your current camera position and look direction, then eases into the seated view along one continuous path.\n- Exit eases outward and turns the camera perpendicular to the car, facing away from the exit side. The visible body turns with the camera, and normal mouse control resumes from the final view.\n- The first-person body follows beneath the camera to maintain clearance from the shoulders.\n- **F3 → Player → 1st person car entry animations** offers **Off / On**, defaulting to **On**. Off uses immediate first-person entry and exit. High-speed exits apply speed-based damage with either setting.\n- Third-person car entry, exit and bailout animations remain available.\n\nInstall the complete `WildWasteland2` folder from the ZIP into `BepInEx/plugins`, keeping `asset-index.tsv` and all bundled assets beside `WildWasteland.dll`. See the included README for installation and standalone-mod compatibility.\n\nDenis confirmed the revised first-person entry and exit in game. The Windows Release build passed with zero warnings and errors. The complete archive passed CRC and byte-for-byte verification for all 600 entries.\n\nDLL MD5 `DB960F9D518415932F0E458B8D792827`\n\nZIP SHA-256 `d167a7ba60b33c7bf79ed3e81f436df7b1a6f8616c2f861db535e73bbb19b3f7`\n",
         "zip": {
-          "name": "WildWasteland2-2.0.14.zip",
-          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.14/WildWasteland2-2.0.14.zip",
-          "size": 238625369,
-          "assetId": 754461955,
-          "updated": "2026-11-16T10:44:09Z",
-          "sha256": "c94d283a0262e49e72f41e8fc4638d67dd8feaa2640cd7d4232e1858a82d805f",
+          "name": "WildWasteland2-2.0.15.zip",
+          "url": "https://github.com/DeonUrist/WildWasteland2/releases/download/v2.0.15/WildWasteland2-2.0.15.zip",
+          "size": 238626669,
+          "assetId": 759529314,
+          "updated": "2026-11-17T15:12:44Z",
+          "sha256": "d167a7ba60b33c7bf79ed3e81f436df7b1a6f8616c2f861db535e73bbb19b3f7",
           "extractTo": "plugins",
           "stripPrefix": "",
           "topFolder": "WildWasteland2",
